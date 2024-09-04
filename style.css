@@ -1,0 +1,47 @@
+body{
+    background-image: url(img/luxa.org-opacity-changed-avi.jpg);
+    height:100vh;
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card{
+    margin-top: 150px;
+    width: 100%;
+    align-items: center;
+}
+
+.card{
+    border: none;
+    background: #192b43;
+    width: 1100px;
+}
+
+.row{
+    margin-bottom: 30px;
+}
+
+.btn{
+    width: 275px;
+    border-radius: 15px !important;
+}
+
+.imagis{
+    position: absolute;
+    left: 50%;
+}
+
+.babar{
+    box-shadow: 6px 5px 7px 2px #0000007a;
+}
+
+.menus{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
