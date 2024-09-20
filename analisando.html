@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP-DEV Clube de Milhas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="analisando.js"></script>
+        <link rel="stylesheet" href="analisando.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand bg-dark navbar-dark">
+        <div class="container-fluid d-flex justify-content-start align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="vmm-removebg-preview.png"height:80px; width="100px;">
+            </a>
+            
+            <div class="text-center">
+                <h1 class="ms-3"><strong>Pagamentos de boletos nos apps</strong><br>com taxas e sem cashback</h1>
+            </div>
+        </div>
+    </nav>
+    <main id="container">
+        <div id="calculator">
+            <div id="input-box">
+                <div class="input-field">
+                    <label for="boleto">Valor do boleto</label>
+                    <input type="number" id="boleto">
+                </div>
+                <div class="input-field">
+                    <label for="taxa">Taxa cobrada pelo apilicativo em %</label>
+                    <input type="number" id="taxa">
+                </div>
+                <div class="input-field">
+                    <label for="dolar">Valor do dólar</label>
+                    <input type="number" id="dolar">
+                </div>
+                <div class="input-field">
+                    <label for="fator">Fator de conversão do cartão</label>
+                    <input type="number" id="fator">
+                </div>
+                <div class="input-field">
+                    <label for="percentual">Percentual da transferência bonificada</label>
+                    <input type="number" id="percentual">
+                </div>
+                <div id="resultados">
+                <div id="result">
+                    <h4>Valor da taxa</h4>
+                    <span id="custoTaxa">0,00</span>
+                </div> 
+                <div id="result">
+                    <h4>Valor em dólar</h4>
+                    <span id="custoDolar">0,00</span>
+                </div>  
+                <div id="result">
+                    <h4>Quantidade de pontos</h4>
+                    <span id="custoPontos">0,00</span>
+                </div>  
+                <div id="result">
+                    <h4>Total em milhas após transferência</h4>
+                    <span id="custoTransferencia">0,00</span>
+                </div>   
+                </div>  
+                <div class="input-field">
+                    <label for="custoMedio">Valor do custo médio do milheiro</label>
+                    <input type="number" id="custoMedio">
+                </div>
+                <div id="resultados">
+                <div id="result">
+                    <h4>Valor das milhas</h4>
+                    <span id="valorMilhas">0,00</span>
+                </div>    
+                <div id="result">
+                    <h4>Resultado final</h4>
+                    <span id="resultadoFinal">0,00</span>
+                </div>  
+                <div id="result">
+                    <h4>Custo do milheiro na compra indireta das milhas</h4>
+                    <span id="custoCompraIndireta">0,00</span> 
+                </div>
+                </div>
+            </div>
+            <button id="calculate">
+                <strong>Calcular</strong>
+            </button>
+            <div id="analise">
+                <h4><strong>Análise final da operação ...</strong></h4>
+            </div>
+            <div id="lucro">
+                <h4><strong>LUCRO</strong></h4>
+            </div>  
+        </div>
+        <div>
+            <button id="menu-principal">
+                <strong>MENU PRINCIPAL</strong>
+            </button>
+        </div>    
+    </main>
+    <script type="text/javascript" src="analisando.js"></script>
+</body>
+
+</html>
