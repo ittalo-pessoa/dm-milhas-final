@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acumulo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="APdeMilhas.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://brunopessoa.com.br">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit; font-size: 30px; font-family: 'Montserrat', sans-serif;">
+                            Mentoria sobre Milhas</font>
+                    </font>
+                </a>
+                <img src="vmm- turbo- 12.png" class="img-thumbnail imagis"
+                    style="height: 60px; width: 80px; background: transparent;">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;"></font>
+                                </font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;"></font>
+                                </font>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="alert hide">
+            <span class="fas fa-exclamation-circle"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                </svg>
+            </span>
+            <span class="msg">Warning: This is a Warning alert!</span>
+            <div class="close-btn">
+                <span class="fas fa-times">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="container">
+            <section class="header">
+                <h2>Calculando anuidade do cartão</h2>
+            </section>
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="username">Gasto mensal no cartão: </label>
+                    <input type="number" name="num1" id="tex1" placeholder="R$ 00,0">
+                    <label for="username">Quantidade de meses: </label>
+                    <input type="number" name="num1" id="tex2" placeholder="R$ 00,0">
+
+
+
+                    <label for="username" id="saida">Gasto anual: </label>
+                    <div id="res1" style="text-align: center; font-size:20px;">R$ 00,0</div>
+
+                </div>
+
+                <div class="form-content">
+                    <label for="username">Cotação do dólar: </label>
+                    <input type="number" name="num1" id="tex3" placeholder="R$ 00,0">
+
+                    <label for="username" id="saida">Valor em dólar: </label>
+                    <div id="res2" style="text-align: center; font-size:20px;">R$ 00,0</div>
+                </div>
+
+
+                <div class="form-content">
+                    <label for="username">Conversor do cartão </label>
+                    <input type="number" name="num1" id="tex4" placeholder="R$ 00,0">
+                    <label for="username" id="saida">Total de pontos: </label>
+
+                    <div id="res3" style="text-align: center; font-size:20px;">00</div>
+
+                    <input type="button" value="somar" id="btn" onclick="gastoAnual()">
+                </div>
+            </form>
+
+
+
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="username">Transferência bonificada: </label>
+                    <input type="number" name="num1" id="tex5" placeholder="R$ 00,0">
+                    
+
+
+
+                    <label for="username" id="saida">Total de milhas no ano: </label>
+                    <div id="res4" style="text-align: center; font-size:20px;">R$ 00,0</div>
+
+                </div>
+
+                <div class="form-content">
+                    <label for="username">Valor do custo médio do milheiro: </label>
+                    <input type="number" name="num1" id="tex6" placeholder="R$ 00,0">
+                    <input type="button" value="somar" id="btn" onclick="valorMilhas()">
+
+
+
+                    <label for="username" id="saida">Valor das milhas no ano: </label>
+                    <div id="res5" style="text-align: center; font-size:20px;">R$ 00,0</div>
+
+                </div>
+            </form>
+
+
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="username">Anuidade do cartão: </label>
+                    <input type="number" name="num1" id="tex7" placeholder="R$ 00,0">
+                    <input type="button" id="btn" value="Converter">
+
+
+
+                    <label for="username" id="saida">Lucro: </label>
+                    <div id="res6" style="text-align: center; font-size:20px;">R$ 00,0</div>
+
+                </div>
+
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="total" id="btn" onclick="gastoAnual()">Button</button>
+
+                </div>
+            </form>
+
+
+
+
+
+
+        </div>
+    </main>
+
+
+    <script src="APdeMilhas.js"></script>
+</body>
+
+</html>
