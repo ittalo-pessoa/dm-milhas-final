@@ -58,123 +58,58 @@
             </div>
         </nav>
 
-        <div class="container rounded-container mt-5">
-            <h2 class="text-center mb-4">Clube de Milhas</h2>
-            <table class="table table-bordered">
-                <thead> 
-                    <tr>
-                        <th>Mês</th>
-                        <th>Inputs (Custo & Pontos)</th>
-                        <th>Mês</th>
-                        <th>Inputs (Custo & Pontos)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="month-column">Janeiro</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-jan" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-jan" placeholder="Pontos">
-                            </div>
-                        </td>
-                        <td class="month-column">Julho</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-jul" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-jul" placeholder="Pontos">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="month-column">Fevereiro</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-feb" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-feb" placeholder="Pontos">
-                            </div>
-                        </td>
-                        <td class="month-column">Agosto</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-aug" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-aug" placeholder="Pontos">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="month-column">Março</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-mar" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-mar" placeholder="Pontos">
-                            </div>
-                        </td>
-                        <td class="month-column">Setembro</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-sep" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-sep" placeholder="Pontos">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="month-column">Abril</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-apr" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-apr" placeholder="Pontos">
-                            </div>
-                        </td>
-                        <td class="month-column">Outubro</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-oct" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-oct" placeholder="Pontos">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="month-column">Maio</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-may" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-may" placeholder="Pontos">
-                            </div>
-                        </td>
-                        <td class="month-column">Novembro</td>
-                        <td class="input-column">
-                            <div class="input-group" >
-                                <input type="number" class="form-control" id="cost-nov" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-nov" placeholder="Pontos">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="month-column">Junho</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-jun" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-jun" placeholder="Pontos">
-                            </div>
-                        </td>
-                        <td class="month-column">Dezembro</td>
-                        <td class="input-column">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="cost-dec" placeholder="Custo">
-                                <input type="number" class="form-control" id="points-dec" placeholder="Pontos">
-                            </div>
-                        </td>
-                    </tr>
+        <div class="container">
+            <h2 class="text-center">Tabela de Custos e Acúmulo de Pontos</h2>
+            <div class="fundo">
+                <form id="tabela-form">
+                    <div class="row">
+                        <!-- Janeiro até Junho -->
+                         
+                        <div class="col-12 col-md-6">
+                            <table class="table table-bordered" style="border: none;
+                            border-radius:15px;">
+                                <thead>
+                                    <tr>
+                                        <th class="mes-col" style="background: rgb(0, 160, 181);">Mês</th>
+                                        <th class="input-col" style="background: rgb(0, 160, 181);">Custo</th>
+                                        <th class="input-col" style="background: rgb(0, 160, 181);">Acúmulo</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="primeira-parte">
+                                    <!-- Os meses são adicionados aqui via JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
                     
-                </tbody>
-                
-            </table>
-           
-        
-            <button class="btn calculate-btn btn-block" onclick="calculateTotals()">Calcular Totais</button>
-        </div>
+                        <!-- Julho até Dezembro -->
+                        <div class="col-12 col-md-6">
+                            <table class="table table-bordered" style="border:none;">
+                                <thead >
+                                    <tr>
+                                        <th class="mes" style="background: rgb(0, 160, 181);">Mês</th>
+                                        <th class="input-col" style="background: rgb(0, 160, 181);">Custo</th>
+                                        <th class="input-col" style="background: rgb(0, 160, 181);">Acúmulo</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="segunda-parte" >
+                                    <!-- Os meses são adicionados aqui via JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <h5>Total de Custos: <span id="total-custo">0</span></h5>
+                        <h5>Total de Pontos: <span id="total-pontos">0</span></h5>
+                    </div>
 
+                    <div class="text-center mt-4">
+                        <button type="button" class="btn btn-primary" onclick="calcularTotal()">Somar</button>
+                    </div>
+
+                    
+                </form>
+            </div>
+        </div>
     </main>
     <script src="AcumuloAzul.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

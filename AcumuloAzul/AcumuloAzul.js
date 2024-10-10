@@ -1,30 +1,78 @@
-function calculateTotals() {
-    // IDs dos meses para cada semestre
-    const firstSemester = ["jan", "feb", "mar", "apr", "may", "jun"];
-    const secondSemester = ["jul", "aug", "sep", "oct", "nov", "dec"];
+const meses = [
+    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+];
 
-    let totalCost1st = 0, totalPoints1st = 0;
-    let totalCost2nd = 0, totalPoints2nd = 0;
+// Função para gerar inputs e colunas para os meses
+function gerarTabela() {
+    const primeiraParte = document.getElementById('primeira-parte');
+    const segundaParte = document.getElementById('segunda-parte');
 
-    // Calcular os totais do 1º semestre
-    firstSemester.forEach(month => {
-        let cost = parseFloat(document.getElementById(`cost-${month}`).value) || 0;
-        let points = parseFloat(document.getElementById(`points-${month}`).value) || 0;
-        totalCost1st += cost;
-        totalPoints1st += points;
+    meses.slice(0, 6).forEach((mes, index) => {
+        primeiraParte.innerHTML += `
+            <tr>
+                <td class="mes-col">${mes}</td>
+                <td><input type="number" class="form-control" id="custo-${index}" min="0"></td>
+                <td><input type="number" class="form-control" id="pontos-${index}" min="0"></td>
+            </tr>
+        `;
     });
 
-    // Calcular os totais do 2º semestre
-    secondSemester.forEach(month => {
-        let cost = parseFloat(document.getElementById(`cost-${month}`).value) || 0;
-        let points = parseFloat(document.getElementById(`points-${month}`).value) || 0;
-        totalCost2nd += cost;
-        totalPoints2nd += points;
+    meses.slice(6, 12).forEach((mes, index) => {
+        segundaParte.innerHTML += `
+            <tr>
+                <td class="mes-col">${mes}</td>
+                <td><input type="number" class="form-control" id="custo-${index + 6}" min="0"></td>
+                <td><input type="number" class="form-control" id="pontos-${index + 6}" min="0"></td>
+            </tr>
+        `;
     });
-
-    // Exibir os totais
-    document.getElementById("total-cost-1st").textContent = totalCost1st.toFixed(2);
-    document.getElementById("total-points-1st").textContent = totalPoints1st.toFixed(2);
-    document.getElementById("total-cost-2nd").textContent = totalCost2nd.toFixed(2);
-    document.getElementById("total-points-2nd").textContent = totalPoints2nd.toFixed(2);
 }
+
+function calcularTotal() {
+    let totalCusto = 0;
+    let totalPontos = 0;
+
+    for (let i = 0; i < 12; i++) {
+        const custoInput = document.getElementById(`custo-${i}`);
+        const pontosInput = document.getElementById(`pontos-${i}`);
+
+        let custo = parseFloat(custoInput.value) || 0;
+        let pontos = parseFloat(pontosInput.value) || 0;
+
+        // Verificação de valores negativos
+        if (custo < 0 || pontos < 0) {
+            if (custo < 0) {
+                custoInput.classList.add('erro');
+                custoInput.value = '';
+            } else {
+                custoInput.classList.remove('erro');
+                custoInput.classList.add('correto');
+            }
+
+            if (pontos < 0) {
+                pontosInput.classList.add('erro');
+                pontosInput.value = '';
+            } else {
+                pontosInput.classList.remove('erro');
+                pontosInput.classList.add('correto');
+            }
+
+            continue; // Não soma valores negativos
+        } else {
+            custoInput.classList.remove('erro');
+            pontosInput.classList.remove('erro');
+            custoInput.classList.add('correto');
+            pontosInput.classList.add('correto');
+        }
+
+        totalCusto += custo;
+        totalPontos += pontos;
+    }
+
+    document.getElementById('total-custo').innerText = totalCusto;
+    document.getElementById('total-pontos').innerText = totalPontos;
+}
+
+// Gera a tabela ao carregar a página
+gerarTabela();

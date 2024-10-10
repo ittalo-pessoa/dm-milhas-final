@@ -1,207 +1,75 @@
-const tn1 = document.getElementById('lec1');
-const tn2 = document.getElementById('lec2');
-const tn3 = document.getElementById('lec3');
-const tn4 = document.getElementById('lec4');
-const tn5 = document.getElementById('lec5');
+// Função para pegar elementos do DOM por ID
+function getElementsById(ids) {
+    return ids.map(id => document.getElementById(id));
+}
 
-const tn6 = document.getElementById('sm1');
-const tn7 = document.getElementById('sm2');
-const tn8 = document.getElementById('sm3');
-const tn9 = document.getElementById('sm4');
-const tn10 = document.getElementById('sm5');
+// Função para validar entradas e garantir que sejam positivas
+function validarEntradas(inputs) {
+    let valido = true;
+    inputs.forEach(input => {
+        if (Number(input.value) < 0 || input.value === "") {
+            input.value = ""; // Limpa campo se for inválido
+            input.style.border = "2px solid red"; // Adiciona borda vermelha para destacar
+            valido = false;
+        } else {
+            input.style.border = "1px solid #ccc"; // Mantém borda padrão
+        }
+    });
+    return valido;
+}
 
-const tn11 = document.getElementById('azul1');
-const tn12 = document.getElementById('azul2');
-const tn13 = document.getElementById('azul3');
-const tn14 = document.getElementById('azul4');
-const tn15 = document.getElementById('azul5');
+// Função para realizar o cálculo genérico
+function calcularValores(n1, n2, n3, n5, results) {
+    const s = n1 / n3;
+    const decimal = s.toFixed(2);
+    const s2 = 0.02 * decimal;
+    const decimal2 = s2.toFixed(2);
+    const s3 = ((n1 * n2) / 1000) / decimal2;
+    const decimal3 = s3.toFixed(2);
+    const s4 = (((decimal3 / n5) - 1) * (-1)) * 100;
+    const decimal4 = s4.toFixed(2);
 
-const tn16 = document.getElementById('latam1');
-const tn17 = document.getElementById('latam2');
-const tn18 = document.getElementById('latam3');
-const tn19 = document.getElementById('latam4');
-const tn20 = document.getElementById('latam5');
+    results[0].innerHTML = `${decimal}`;
+    results[1].innerHTML = `${decimal2}`;
+    results[2].innerHTML = `€ ${decimal3}`;
+    results[3].innerHTML = `${decimal4} %`;
+}
 
+// Função principal para inicializar os cálculos
+function inicializarCalculo(inputIds, resultIds) {
+    const inputs = getElementsById(inputIds);
+    const results = getElementsById(resultIds);
+    if (validarEntradas(inputs)) {
+        const [n1, n2, n3, , n5] = inputs.map(input => Number(input.value));
+        calcularValores(n1, n2, n3, n5, results);
+    }
+}
 
-
-
-const res1 = document.getElementById('res1');
-const res2 = document.getElementById('res2');
-const res3 = document.getElementById('res3');
-const res4 = document.getElementById('res4');
-
-
-const res5 = document.getElementById('res5');
-const res6 = document.getElementById('res6');
-const res7 = document.getElementById('res7');
-const res8 = document.getElementById('res8');
-
-const res9 = document.getElementById('res9');
-const res10 = document.getElementById('res10');
-const res11 = document.getElementById('res11');
-const res12 = document.getElementById('res12');
-
-const res13 = document.getElementById('res13');
-const res14 = document.getElementById('res14');
-const res15 = document.getElementById('res15');
-const res16 = document.getElementById('res16');
+// Funções específicas para cada grupo de inputs
 function total() {
-    const n1 = Number(tn1.value)
-    const n2 = Number(tn2.value)
-    const n3 = Number(tn3.value)
-    const n4 = Number(tn4.value)
-    const n5 = Number(tn5.value)
-    const s = n1 / n3
-    const decimal = s.toFixed(2)
-    const s2 = 0.02 * decimal
-    const decimal2 = s2.toFixed(2)
-    const s3 = ((n1 * n2) / 1000) / decimal2
-    const decimal3 = s3.toFixed(2)
-    const s4 = (((decimal3/n5) - 1) * (-1)) *100
-    const decimal4 = s4.toFixed(2)
-
-    function verificarIn() {
-        if (n1 < 0) {
-            tn1.value = " "
-        }
-        if (n2 < 0) {
-            tn2.value = " "
-        }
-        if (n3 < 0) {
-            tn3.value = " "
-        }
-        if (n4 < 0) {
-            tn4.value = " "
-        }
-        if (n5 < 0) {
-            tn5.value = " "
-        }
-        else {
-            res1.innerHTML = `${decimal}`
-            res2.innerHTML = `${decimal2}`
-            res3.innerHTML = `€ ${decimal3}`
-            res4.innerHTML = `${decimal4} %`
-        }
-    }
-    verificarIn()
+    inicializarCalculo(
+        ['lec1', 'lec2', 'lec3', 'lec4', 'lec5'],
+        ['res1', 'res2', 'res3', 'res4']
+    );
 }
+
 function smile() {
-    const n1 = Number(tn6.value)
-    const n2 = Number(tn7.value)
-    const n3 = Number(tn8.value)
-    const n4 = Number(tn9.value)
-    const n5 = Number(tn10.value)
-    const s = n1 / n3
-    const decimal = s.toFixed(2)
-    const s2 = 0.02 * decimal
-    const decimal2 = s2.toFixed(2)
-    const s3 = ((n1 * n2) / 1000) / decimal2
-    const decimal3 = s3.toFixed(2)
-    const s4 = (((decimal3/n5) - 1) * (-1)) *100
-    const decimal4 = s4.toFixed(2)
-
-    function verificarIn() {
-        if (n1 < 0) {
-            tn6.value = " "
-        }
-        if (n2 < 0) {
-            tn7.value = " "
-        }
-        if (n3 < 0) {
-            tn8.value = " "
-        }
-        if (n4 < 0) {
-            tn9.value = " "
-        }
-        if (n5 < 0) {
-            tn10.value = " "
-        }
-        else {
-            res5.innerHTML = `${decimal}`
-            res6.innerHTML = `${decimal2}`
-            res7.innerHTML = `€ ${decimal3}`
-            res8.innerHTML = `${decimal4} %`
-        }
-    }
-    verificarIn()
+    inicializarCalculo(
+        ['sm1', 'sm2', 'sm3', 'sm4', 'sm5'],
+        ['res5', 'res6', 'res7', 'res8']
+    );
 }
-function azulFidelidade(){
-    const n1 = Number(tn11.value)
-    const n2 = Number(tn12.value)
-    const n3 = Number(tn13.value)
-    const n4 = Number(tn14.value)
-    const n5 = Number(tn15.value)
-    const s = n1 / n3
-    const decimal = s.toFixed(2)
-    const s2 = 0.02 * decimal
-    const decimal2 = s2.toFixed(2)
-    const s3 = ((n1 * n2) / 1000) / decimal2
-    const decimal3 = s3.toFixed(2)
-    const s4 = (((decimal3/n5) - 1) * (-1)) *100
-    const decimal4 = s4.toFixed(2)
 
-    function verificarIn() {
-        if (n1 < 0) {
-            tn11.value = " "
-        }
-        if (n2 < 0) {
-            tn12.value = " "
-        }
-        if (n3 < 0) {
-            tn13.value = " "
-        }
-        if (n4 < 0) {
-            tn14.value = " "
-        }
-        if (n5 < 0) {
-            tn15.value = " "
-        }
-        else {
-            res9.innerHTML = `${decimal}`
-            res10.innerHTML = `${decimal2}`
-            res11.innerHTML = `€ ${decimal3}`
-            res12.innerHTML = `${decimal4} %`
-        }
-    }
-    verificarIn()
+function azulFidelidade() {
+    inicializarCalculo(
+        ['azul1', 'azul2', 'azul3', 'azul4', 'azul5'],
+        ['res9', 'res10', 'res11', 'res12']
+    );
 }
+
 function latam() {
-    const n1 = Number(tn16.value)
-    const n2 = Number(tn17.value)
-    const n3 = Number(tn18.value)
-    const n4 = Number(tn19.value)
-    const n5 = Number(tn20.value)
-    const s = n1 / n3
-    const decimal = s.toFixed(2)
-    const s2 = 0.02 * decimal
-    const decimal2 = s2.toFixed(2)
-    const s3 = ((n1 * n2) / 1000) / decimal2
-    const decimal3 = s3.toFixed(2)
-    const s4 = (((decimal3/n5) - 1) * (-1)) *100
-    const decimal4 = s4.toFixed(2)
-
-    function verificarIn() {
-        if (n1 < 0) {
-            tn16.value = " "
-        }
-        if (n2 < 0) {
-            tn17.value = " "
-        }
-        if (n3 < 0) {
-            tn18.value = " "
-        }
-        if (n4 < 0) {
-            tn19.value = " "
-        }
-        if (n5 < 0) {
-            tn20.value = " "
-        }
-        else {
-            res13.innerHTML = `${decimal}`
-            res14.innerHTML = `${decimal2}`
-            res15.innerHTML = `$ ${decimal3}`
-            res16.innerHTML = `${decimal4} %`
-        }
-    }
-    verificarIn()
+    inicializarCalculo(
+        ['latam1', 'latam2', 'latam3', 'latam4', 'latam5'],
+        ['res13', 'res14', 'res15', 'res16']
+    );
 }

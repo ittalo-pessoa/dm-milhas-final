@@ -23,58 +23,53 @@ input[type=number] {
    appearance: textfield;
 
 }
-.rounded-container {
-    background-color: #006eb7;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#primeira-parte{
+    background: rgb(0, 115, 157);
+    border: 1px solid #007bff;
 }
-.month-column {
-    border: 1px solid black ;
+#segunda-parte{
+    background: rgb(0, 115, 157);
+    border: 1px solid #007bff;
+}
+.container {
+    border-radius: 20px;
+    background-color: #00509f;
+    padding: 20px;
+    margin-top: 200px;
+}
+.fundo{
+    margin: 20px;
+    background: #fcea2ccd;
+    border-radius: 15px;
+}
+.mes-col {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
     text-align: center;
-    background-color: #000000; /* Azul */
-    color: white;
+}
+button{
+    margin-bottom: 15px;
+}
+.input-col {
+    background-color: #00f339ff;
+}
+
+input[type="number"] {
+    background-color: transparent;
+    border: 0px solid #ccc;
+    color: black;
+    width: 100%;
+    overflow: hidden;
     
 }
-.resultado{
-    background: #000000;
+input{
+    text-align: center;
+    background: #007bff;
 }
-th{
-    border-style: none;
+input[type="number"].erro {
+    border-color: red;
 }
-td{
-    border-style: none;
-}
-.table th, .table td {
-    vertical-align: middle;
-    background: #0093b4;
-}
-.input-column {
-    background: #28a745; /* Verde */
-}
-.input-group input {
-    background-color: rgb(234, 255, 0); /* Inputs transparentes */
-    border: 0 solid #ccc; /* Borda dos inputs */
-    border-radius: 5px;
-    padding: 5px;
-    margin-right: 5px;
-}
-.calculate-btn {
-    background-color: #28a745;
-    color: white;
-    border-radius: 5px;
-    border: none;
-}
-.calculate-btn:hover {
-    background-color: #218838;
-}
-/* Responsividade */
-@media (max-width: 576px) {
-    .input-group {
-        flex-direction: column; /* Inputs em coluna no mobile */
-    }
-    .input-group input {
-        width: 100%; /* Deixar os inputs ocuparem 100% no mobile */
-        margin-bottom: 5px;
-    }
+
+input[type="number"].correto {
+    border-color: white;
 }
