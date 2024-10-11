@@ -16,7 +16,7 @@ function calcularValores(n1, n2, n3, n4, n5, n6, n7) {
     const s2 = s / n3;
     const decimal = s2.toFixed(2);
     const s3 = decimal * n4;
-    
+    const decimal2 = s3.toFixed(2);
     const s4 = s3 + ((n5 / 100) * s3);
     const s5 = (0.001 * n6) * s4;
     const s6 = s5 - n7;
@@ -24,7 +24,7 @@ function calcularValores(n1, n2, n3, n4, n5, n6, n7) {
     return {
         s: s.toFixed(2),
         decimal: decimal,
-        s3: s3.toFixed(2),
+        decimal2: decimal2,
         s4: s4.toFixed(2),
         s5: s5.toFixed(2),
         s6: s6.toFixed(2)
