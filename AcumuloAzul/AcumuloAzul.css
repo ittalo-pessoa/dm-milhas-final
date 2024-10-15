@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(100,131,136);
+    background: radial-gradient(circle, rgb(133, 133, 133) 44%, rgba(58,54,54,1) 100%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+#primeira-parte{
+    background: rgb(0, 115, 157);
+    border: 1px solid #007bff;
+}
+#segunda-parte{
+    background: rgb(0, 115, 157);
+    border: 1px solid #007bff;
+}
+.container {
+    border-radius: 20px;
+    background-color: #00509f;
+    padding: 20px;
+    margin-top: 200px;
+}
+.fundo{
+    margin: 20px;
+    background: #fcea2ccd;
+    border-radius: 15px;
+}
+.mes-col {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+button{
+    margin-bottom: 15px;
+}
+.input-col {
+    background-color: #00f339ff;
+}
+
+input[type="number"] {
+    background-color: transparent;
+    border: 0px solid #ccc;
+    color: black;
+    width: 100%;
+    overflow: hidden;
+    
+}
+input{
+    text-align: center;
+    background: #007bff;
+}
+input[type="number"].erro {
+    border-color: red;
+}
+
+input[type="number"].correto {
+    border-color: white;
+}
