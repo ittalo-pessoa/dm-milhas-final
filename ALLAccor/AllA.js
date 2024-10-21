@@ -18,6 +18,21 @@ function validarEntradas(inputs) {
     return valido;
 }
 
+// Função para impedir a entrada de letras ou caracteres especiais
+function impedirLetras(input) {
+    input.value = input.value.replace(/[^0-9.]/g, ''); // Permite apenas números e pontos
+}
+
+// Função para vincular o evento de impedir letras aos campos de entrada
+function vincularEventosDeEntrada(ids) {
+    ids.forEach(id => {
+        const input = document.getElementById(id);
+        input.oninput = function() {
+            impedirLetras(this); // Chama a função para impedir a entrada de letras
+        };
+    });
+}
+
 // Função para realizar o cálculo genérico
 function calcularValores(n1, n2, n3, n5, results) {
     const s = n1 / n3;
@@ -73,3 +88,9 @@ function latam() {
         ['res13', 'res14', 'res15', 'res16']
     );
 }
+
+// Vinculando a função impedirLetras aos inputs relevantes
+vincularEventosDeEntrada(['lec1', 'lec2', 'lec3', 'lec4', 'lec5']);
+vincularEventosDeEntrada(['sm1', 'sm2', 'sm3', 'sm4', 'sm5']);
+vincularEventosDeEntrada(['azul1', 'azul2', 'azul3', 'azul4', 'azul5']);
+vincularEventosDeEntrada(['latam1', 'latam2', 'latam3', 'latam4', 'latam5']);

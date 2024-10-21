@@ -1,78 +1,51 @@
-const meses = [
-    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
-    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
-];
-
-// Função para gerar inputs e colunas para os meses
-function gerarTabela() {
-    const primeiraParte = document.getElementById('primeira-parte');
-    const segundaParte = document.getElementById('segunda-parte');
-
-    meses.slice(0, 6).forEach((mes, index) => {
-        primeiraParte.innerHTML += `
-            <tr>
-                <td class="mes-col">${mes}</td>
-                <td><input type="number" class="form-control" id="custo-${index}" min="0"></td>
-                <td><input type="number" class="form-control" id="pontos-${index}" min="0"></td>
-            </tr>
-        `;
-    });
-
-    meses.slice(6, 12).forEach((mes, index) => {
-        segundaParte.innerHTML += `
-            <tr>
-                <td class="mes-col">${mes}</td>
-                <td><input type="number" class="form-control" id="custo-${index + 6}" min="0"></td>
-                <td><input type="number" class="form-control" id="pontos-${index + 6}" min="0"></td>
-            </tr>
-        `;
-    });
-}
-
-function calcularTotal() {
+function calcularTotais() {
     let totalCusto = 0;
-    let totalPontos = 0;
+    let totalAcumulo = 0;
+    let isValid = true;
 
-    for (let i = 0; i < 12; i++) {
-        const custoInput = document.getElementById(`custo-${i}`);
-        const pontosInput = document.getElementById(`pontos-${i}`);
+    // Selecionar todos os campos de custo e acúmulo
+    const custos = document.querySelectorAll(".custo");
+    const acumulos = document.querySelectorAll(".acumulo");
 
-        let custo = parseFloat(custoInput.value) || 0;
-        let pontos = parseFloat(pontosInput.value) || 0;
+    // Limpar status de erro e mensagens
+    custos.forEach(input => {
+        input.classList.remove('error', 'valid');
+        document.getElementById(`error${input.id.charAt(0).toUpperCase() + input.id.slice(1)}`).innerText = '';
+    });
 
-        // Verificação de valores negativos
-        if (custo < 0 || pontos < 0) {
-            if (custo < 0) {
-                custoInput.classList.add('erro');
-                custoInput.value = '';
-            } else {
-                custoInput.classList.remove('erro');
-                custoInput.classList.add('correto');
-            }
+    acumulos.forEach(input => {
+        input.classList.remove('error', 'valid');
+        document.getElementById(`error${input.id.charAt(0).toUpperCase() + input.id.slice(1)}`).innerText = '';
+    });
 
-            if (pontos < 0) {
-                pontosInput.classList.add('erro');
-                pontosInput.value = '';
-            } else {
-                pontosInput.classList.remove('erro');
-                pontosInput.classList.add('correto');
-            }
-
-            continue; // Não soma valores negativos
+    // Calcular os totais
+    custos.forEach(input => {
+        const custoValue = parseFloat(input.value) || 0;
+        if (custoValue < 0) {
+            input.classList.add('error');  // Borda vermelha para negativos
+            document.getElementById(`error${input.id.charAt(0).toUpperCase() + input.id.slice(1)}`).innerText = 'Valor não pode ser negativo';
+            isValid = false;
         } else {
-            custoInput.classList.remove('erro');
-            pontosInput.classList.remove('erro');
-            custoInput.classList.add('correto');
-            pontosInput.classList.add('correto');
+            input.classList.add('valid'); // Borda branca para válidos
+            totalCusto += custoValue;
         }
+    });
 
-        totalCusto += custo;
-        totalPontos += pontos;
+    acumulos.forEach(input => {
+        const acumuloValue = parseFloat(input.value) || 0;
+        if (acumuloValue < 0) {
+            input.classList.add('error');  // Borda vermelha para negativos
+            document.getElementById(`error${input.id.charAt(0).toUpperCase() + input.id.slice(1)}`).innerText = 'Valor não pode ser negativo';
+            isValid = false;
+        } else {
+            input.classList.add('valid'); // Borda branca para válidos
+            totalAcumulo += acumuloValue;
+        }
+    });
+
+    // Atualizar os totais somente se todos os valores forem válidos
+    if (isValid) {
+        document.getElementById("totalCusto").innerText = totalCusto;
+        document.getElementById("totalAcumulo").innerText = totalAcumulo;
     }
-
-    document.getElementById('total-custo').innerText = totalCusto;
-    document.getElementById('total-pontos').innerText = totalPontos;
 }
-
-// Gera a tabela ao carregar a página
-gerarTabela();

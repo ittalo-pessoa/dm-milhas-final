@@ -58,58 +58,416 @@
             </div>
         </nav>
 
-        <div class="container">
-            <h2 class="text-center">Tabela de Custos e Acúmulo de Pontos</h2>
-            <div class="fundo">
-                <form id="tabela-form">
+        <div class="container my-4 p-4 rounded">
+            <h2 class="text-center">CLUBE DE MILHAS AZUL</h2>
+            <div class="card">
+                <form id="formTabela">
                     <div class="row">
-                        <!-- Janeiro até Junho -->
-                         
-                        <div class="col-12 col-md-6">
-                            <table class="table table-bordered" style="border: none;
-                            border-radius:15px;">
+                        <!-- Primeira Coluna (Janeiro - Junho) -->
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
                                 <thead>
-                                    <tr>
-                                        <th class="mes-col" style="background: rgb(0, 160, 181);">Mês</th>
-                                        <th class="input-col" style="background: rgb(0, 160, 181);">Custo</th>
-                                        <th class="input-col" style="background: rgb(0, 160, 181);">Acúmulo</th>
+                                    <tr class="cabeca">
+                                        <th>Mês</th>
+                                        <th>Custo</th>
+                                        <th>Acúmulo</th>
                                     </tr>
                                 </thead>
-                                <tbody id="primeira-parte">
-                                    <!-- Os meses são adicionados aqui via JavaScript -->
+                                <tbody>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Janeiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJan"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJan"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJan"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Fevereiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoFev"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoFev"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloFev"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloFev"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Março</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMar"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMar"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMar"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMar"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Abril</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAbr"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAbr"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAbr"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAbr"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Maio</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMai"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMai"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMai"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Junho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJun"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJun"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJun"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJun"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- Segunda Coluna (Julho - Dezembro) -->
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>Mês</th>
+                                        <th>Custo</th>
+                                        <th>Acúmulo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Julho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJul"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJul"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJul"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJul"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Agosto</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAgo"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAgo"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAgo"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAgo"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Setembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoSet"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoSet"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloSet"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloSet"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Outubro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoOut"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoOut"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloOut"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloOut"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Novembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoNov"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoNov"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloNov"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloNov"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)"> Dezembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoDez"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoDez"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloDez"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloDez"></span>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
-                    
-                        <!-- Julho até Dezembro -->
-                        <div class="col-12 col-md-6">
-                            <table class="table table-bordered" style="border:none;">
-                                <thead >
-                                    <tr>
-                                        <th class="mes" style="background: rgb(0, 160, 181);">Mês</th>
-                                        <th class="input-col" style="background: rgb(0, 160, 181);">Custo</th>
-                                        <th class="input-col" style="background: rgb(0, 160, 181);">Acúmulo</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="segunda-parte" >
-                                    <!-- Os meses são adicionados aqui via JavaScript -->
-                                </tbody>
-                            </table>
+                        <!-- Botão para calcular -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary" onclick="calcularTotais()"
+                                style="margin-top: 15px;">Calcular Totais</button>
+                        </div>
+                        <!-- Exibição dos resultados -->
+                        <div class="mt-4 text-center">
+                            <h5>Total de Custos: <span id="totalCusto">0</span></h5>
+                            <h5>Total de Acúmulo: <span id="totalAcumulo">0</span></h5>
                         </div>
                     </div>
-                    <div class="mt-4" style="text-align: center;">
-                        <h5>Total de Custos: <span id="total-custo">0</span></h5>
-                        <h5>Total de Pontos: <span id="total-pontos">0</span></h5>
-                    </div>
-
-                    <div class="text-center mt-4">
-                        <button type="button" class="btn btn-primary" onclick="calcularTotal()">Somar</button>
-                    </div>
-
-                    
                 </form>
             </div>
+            <h2 class="text-center">CRÉDITO DE COMPRAS BONIFICADAS NA AZUL</h2>
+            <div class="card">
+                <form id="formTabela">
+                    <div class="row">
+                        <!-- Primeira Coluna (Janeiro - Junho) -->
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>Mês</th>
+                                        <th>Custo</th>
+                                        <th>Acúmulo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Janeiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJan"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJan"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJan"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Fevereiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoFev" 
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoFev"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloFev"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloFev"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Março</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMar"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMar"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMar"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMar"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Abril</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAbr"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAbr"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAbr"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAbr"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Maio</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMai"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMai"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMai"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Junho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJun"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJun"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJun"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJun"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- Segunda Coluna (Julho - Dezembro) -->
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>Mês</th>
+                                        <th>Custo</th>
+                                        <th>Acúmulo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Julho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJul"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJul"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJul"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJul"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Agosto</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAgo"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAgo"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAgo"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAgo"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Setembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoSet"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoSet"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloSet"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloSet"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Outubro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoOut"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoOut"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloOut"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloOut"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)">Novembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoNov"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoNov"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloNov"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloNov"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(255, 251, 0)"> Dezembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoDez"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoDez"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloDez"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloDez"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Botão para calcular -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary" onclick="calcularTotais()"
+                                style="margin-top: 15px;">Calcular Totais</button>
+                        </div>
+                        <!-- Exibição dos resultados -->
+                        <div class="mt-4 text-center">
+                            <h5>Total de Custos: <span id="totalCustoB">0</span></h5>
+                            <h5>Total de Acúmulo: <span id="totalAcumuloB">0</span></h5>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+           
         </div>
+        </div>
+
     </main>
     <script src="AcumuloAzul.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
