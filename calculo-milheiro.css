@@ -131,3 +131,11 @@
 .d-flex.justify-content-end img {
     margin-left: auto;
 }
+
+.error-message {
+    display: none; /* Oculta por padrão */
+    color: red; /* Cor do texto de erro */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
