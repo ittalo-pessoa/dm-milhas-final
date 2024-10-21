@@ -133,8 +133,8 @@
 }
 
 .error-message {
-    display: none; /* Oculta por padrão */
-    color: red; /* Cor do texto de erro */
+    display: none;
+    color: yellow;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
