@@ -58,6 +58,197 @@
             </div>
         </nav>
 
+
+
+        <div class="container mt-5">
+    <!-- Tabela 1: Compras Bonificadas (Janeiro a Junho) -->
+    <div class="card">
+        <div class="card-header text-center bg-primary text-white">Compras Bonificadas (Jan - Jun)</div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Custo</th>
+                        <th>Acúmulo de Pontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Janeiro</td><td><input type="number" min="0" id="cb-custo-jan"></td><td><input type="number" min="0" id="cb-pontos-jan"></td></tr>
+                    <tr><td>Fevereiro</td><td><input type="number" min="0" id="cb-custo-fev"></td><td><input type="number" min="0" id="cb-pontos-fev"></td></tr>
+                    <tr><td>Março</td><td><input type="number" min="0" id="cb-custo-mar"></td><td><input type="number" min="0" id="cb-pontos-mar"></td></tr>
+                    <tr><td>Abril</td><td><input type="number" min="0" id="cb-custo-abr"></td><td><input type="number" min="0" id="cb-pontos-abr"></td></tr>
+                    <tr><td>Maio</td><td><input type="number" min="0" id="cb-custo-mai"></td><td><input type="number" min="0" id="cb-pontos-mai"></td></tr>
+                    <tr><td>Junho</td><td><input type="number" min="0" id="cb-custo-jun"></td><td><input type="number" min="0" id="cb-pontos-jun"></td></tr>
+                </tbody>
+            </table>
+            <div class="text-end">
+                <button class="btn btn-primary" onclick="calcularTotal('cb')">Calcular Total</button>
+            </div>
+            <div class="mt-3">
+                <strong>Total Custo: </strong><span id="cb-total-custo">0</span><br>
+                <strong>Total Acúmulo: </strong><span id="cb-total-pontos">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela 1: Compras Bonificadas (Julho a Dezembro) -->
+    <div class="card">
+        <div class="card-header text-center bg-primary text-white">Compras Bonificadas (Jul - Dez)</div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Custo</th>
+                        <th>Acúmulo de Pontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Julho</td><td><input type="number" min="0" id="cb-custo-jul"></td><td><input type="number" min="0" id="cb-pontos-jul"></td></tr>
+                    <tr><td>Agosto</td><td><input type="number" min="0" id="cb-custo-ago"></td><td><input type="number" min="0" id="cb-pontos-ago"></td></tr>
+                    <tr><td>Setembro</td><td><input type="number" min="0" id="cb-custo-set"></td><td><input type="number" min="0" id="cb-pontos-set"></td></tr>
+                    <tr><td>Outubro</td><td><input type="number" min="0" id="cb-custo-out"></td><td><input type="number" min="0" id="cb-pontos-out"></td></tr>
+                    <tr><td>Novembro</td><td><input type="number" min="0" id="cb-custo-nov"></td><td><input type="number" min="0" id="cb-pontos-nov"></td></tr>
+                    <tr><td>Dezembro</td><td><input type="number" min="0" id="cb-custo-dez"></td><td><input type="number" min="0" id="cb-pontos-dez"></td></tr>
+                </tbody>
+            </table>
+            <div class="text-end">
+                <button class="btn btn-primary" onclick="calcularTotal('cb')">Calcular Total</button>
+            </div>
+            <div class="mt-3">
+                <strong>Total Custo: </strong><span id="cb-total-custo">0</span><br>
+                <strong>Total Acúmulo: </strong><span id="cb-total-pontos">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela 2: Clube de Milhas Azul (Jan - Jun) -->
+    <div class="card">
+        <div class="card-header text-center bg-success text-white">Clube de Milhas Azul (Jan - Jun)</div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Custo</th>
+                        <th>Acúmulo de Pontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Janeiro</td><td><input type="number" min="0" id="cm-custo-jan"></td><td><input type="number" min="0" id="cm-pontos-jan"></td></tr>
+                    <tr><td>Fevereiro</td><td><input type="number" min="0" id="cm-custo-fev"></td><td><input type="number" min="0" id="cm-pontos-fev"></td></tr>
+                    <tr><td>Março</td><td><input type="number" min="0" id="cm-custo-mar"></td><td><input type="number" min="0" id="cm-pontos-mar"></td></tr>
+                    <tr><td>Abril</td><td><input type="number" min="0" id="cm-custo-abr"></td><td><input type="number" min="0" id="cm-pontos-abr"></td></tr>
+                    <tr><td>Maio</td><td><input type="number" min="0" id="cm-custo-mai"></td><td><input type="number" min="0" id="cm-pontos-mai"></td></tr>
+                    <tr><td>Junho</td><td><input type="number" min="0" id="cm-custo-jun"></td><td><input type="number" min="0" id="cm-pontos-jun"></td></tr>
+                </tbody>
+            </table>
+            <div class="text-end">
+                <button class="btn btn-success" onclick="calcularTotal('cm')">Calcular Total</button>
+            </div>
+            <div class="mt-3">
+                <strong>Total Custo: </strong><span id="cm-total-custo">0</span><br>
+                <strong>Total Acúmulo: </strong><span id="cm-total-pontos">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela 2: Clube de Milhas Azul (Jul - Dez) -->
+    <div class="card">
+        <div class="card-header text-center bg-success text-white">Clube de Milhas Azul (Jul - Dez)</div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Custo</th>
+                        <th>Acúmulo de Pontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Julho</td><td><input type="number" min="0" id="cm-custo-jul"></td><td><input type="number" min="0" id="cm-pontos-jul"></td></tr>
+                    <tr><td>Agosto</td><td><input type="number" min="0" id="cm-custo-ago"></td><td><input type="number" min="0" id="cm-pontos-ago"></td></tr>
+                    <tr><td>Setembro</td><td><input type="number" min="0" id="cm-custo-set"></td><td><input type="number" min="0" id="cm-pontos-set"></td></tr>
+                    <tr><td>Outubro</td><td><input type="number" min="0" id="cm-custo-out"></td><td><input type="number" min="0" id="cm-pontos-out"></td></tr>
+                    <tr><td>Novembro</td><td><input type="number" min="0" id="cm-custo-nov"></td><td><input type="number" min="0" id="cm-pontos-nov"></td></tr>
+                    <tr><td>Dezembro</td><td><input type="number" min="0" id="cm-custo-dez"></td><td><input type="number" min="0" id="cm-pontos-dez"></td></tr>
+                </tbody>
+            </table>
+            <div class="text-end">
+                <button class="btn btn-success" onclick="calcularTotal('cm')">Calcular Total</button>
+            </div>
+            <div class="mt-3">
+                <strong>Total Custo: </strong><span id="cm-total-custo">0</span><br>
+                <strong>Total Acúmulo: </strong><span id="cm-total-pontos">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela 3: Compras de Milhas Azuis (Jan - Jun) -->
+    <div class="card">
+        <div class="card-header text-center bg-info text-white">Compras de Milhas Azuis (Jan - Jun)</div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Custo</th>
+                        <th>Acúmulo de Pontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Janeiro</td><td><input type="number" min="0" id="cmz-custo-jan"></td><td><input type="number" min="0" id="cmz-pontos-jan"></td></tr>
+                    <tr><td>Fevereiro</td><td><input type="number" min="0" id="cmz-custo-fev"></td><td><input type="number" min="0" id="cmz-pontos-fev"></td></tr>
+                    <tr><td>Março</td><td><input type="number" min="0" id="cmz-custo-mar"></td><td><input type="number" min="0" id="cmz-pontos-mar"></td></tr>
+                    <tr><td>Abril</td><td><input type="number" min="0" id="cmz-custo-abr"></td><td><input type="number" min="0" id="cmz-pontos-abr"></td></tr>
+                    <tr><td>Maio</td><td><input type="number" min="0" id="cmz-custo-mai"></td><td><input type="number" min="0" id="cmz-pontos-mai"></td></tr>
+                    <tr><td>Junho</td><td><input type="number" min="0" id="cmz-custo-jun"></td><td><input type="number" min="0" id="cmz-pontos-jun"></td></tr>
+                </tbody>
+            </table>
+            <div class="text-end">
+                <button class="btn btn-info" onclick="calcularTotal('cmz')">Calcular Total</button>
+            </div>
+            <div class="mt-3">
+                <strong>Total Custo: </strong><span id="cmz-total-custo">0</span><br>
+                <strong>Total Acúmulo: </strong><span id="cmz-total-pontos">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela 3: Compras de Milhas Azuis (Jul - Dez) -->
+    <div class="card">
+        <div class="card-header text-center bg-info text-white">Compras de Milhas Azuis (Jul - Dez)</div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Custo</th>
+                        <th>Acúmulo de Pontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Julho</td><td><input type="number" min="0" id="cmz-custo-jul"></td><td><input type="number" min="0" id="cmz-pontos-jul"></td></tr>
+                    <tr><td>Agosto</td><td><input type="number" min="0" id="cmz-custo-ago"></td><td><input type="number" min="0" id="cmz-pontos-ago"></td></tr>
+                    <tr><td>Setembro</td><td><input type="number" min="0" id="cmz-custo-set"></td><td><input type="number" min="0" id="cmz-pontos-set"></td></tr>
+                    <tr><td>Outubro</td><td><input type="number" min="0" id="cmz-custo-out"></td><td><input type="number" min="0" id="cmz-pontos-out"></td></tr>
+                    <tr><td>Novembro</td><td><input type="number" min="0" id="cmz-custo-nov"></td><td><input type="number" min="0" id="cmz-pontos-nov"></td></tr>
+                    <tr><td>Dezembro</td><td><input type="number" min="0" id="cmz-custo-dez"></td><td><input type="number" min="0" id="cmz-pontos-dez"></td></tr>
+                </tbody>
+            </table>
+            <div class="text-end">
+                <button class="btn btn-info" onclick="calcularTotal('cmz')">Calcular Total</button>
+            </div>
+            <div class="mt-3">
+                <strong>Total Custo: </strong><span id="cmz-total-custo">0</span><br>
+                <strong>Total Acúmulo: </strong><span id="cmz-total-pontos">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
         <div class="container my-4 p-4 rounded">
             <h2 class="text-center">CLUBE DE MILHAS AZUL</h2>
             <div class="card">
