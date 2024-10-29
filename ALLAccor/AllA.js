@@ -33,16 +33,16 @@ function vincularEventosDeEntrada(ids) {
     });
 }
 
-// Função para realizar o cálculo genérico
+// Função para realizar o cálculo genérico e exibir com vírgula
 function calcularValores(n1, n2, n3, n5, results) {
     const s = n1 / n3;
-    const decimal = s.toFixed(2);
-    const s2 = 0.02 * decimal;
-    const decimal2 = s2.toFixed(2);
-    const s3 = ((n1 * n2) / 1000) / decimal2;
-    const decimal3 = s3.toFixed(2);
-    const s4 = (((decimal3 / n5) - 1) * (-1)) * 100;
-    const decimal4 = s4.toFixed(2);
+    const decimal = s.toFixed(2).replace('.', ',');
+    const s2 = 0.02 * s;
+    const decimal2 = s2.toFixed(2).replace('.', ',');
+    const s3 = ((n1 * n2) / 1000) / s2;
+    const decimal3 = s3.toFixed(2).replace('.', ',');
+    const s4 = (((s3 / n5) - 1) * (-1)) * 100;
+    const decimal4 = s4.toFixed(2).replace('.', ',');
 
     results[0].innerHTML = `${decimal}`;
     results[1].innerHTML = `${decimal2}`;
