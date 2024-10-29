@@ -34,6 +34,8 @@ document.getElementById("calculate").addEventListener("click", function () {
     document.getElementById("valorMilhas").innerHTML = "R$ " + valorMilhas.toFixed(2);
     document.getElementById("resultadoFinal").innerHTML = resultadoFinal.toFixed(2);
     document.getElementById("custoCompraIndireta").innerHTML = custoMilhasCompraIndireta.toFixed(2);
+    //Colocar tela de aviso vermelha,não um simples alert
+    //Parte de input na esquerda e saída na direita
 
 });;
             
