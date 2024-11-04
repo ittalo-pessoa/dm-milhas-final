@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acúmulo Smiles</title>
+    <link rel="icon" href="img/vmm-removebg-preview.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="acumuloSmiles.js"></script>
+    <link rel="stylesheet" href="acumuloLatam.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="vertical-align: inherit; font-size: 30px; font-family: 'Montserrat', sans-serif;"><strong>ACÚMULO LATAM PASS</strong></a>
+                <img src="img/vmm-removebg-preview.png" class=" position-absolute start-50 translate-middle-x" 
+                style="height: 60px; width: 80px; top: 15%; transform: translate(-50%, -50%); background: transparent;">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="vertical-align: inherit;"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="vertical-align: inherit;"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true" style="vertical-align: inherit;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container my-4 p-4 rounded">
+            <h2 class="text-center">CLUBE DE MILHAS LATAM PASS</h2>
+            <div class="card">
+                <form id="formTabela">
+                    <div class="row">
+                        <!-- Primeira Coluna (Janeiro - Junho) -->
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>MÊS</th>
+                                        <th>CUSTO(R$ SE HOUVER)</th>
+                                        <th>ACÚMULO EM MILHAS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="birda">
+                                        <td class="corToda">Janeiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJan1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJan"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJan1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Fevereiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoFev1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoFev"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloFev1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloFev"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Março</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMar1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMar"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMar1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMar"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Abril</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAbr1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAbr"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAbr1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAbr"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Maio</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMai1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMai"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMai1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Junho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJun1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJun"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJun1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJun"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- Segunda Coluna (Julho - Dezembro) -->
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>MÊS</th>
+                                        <th>CUSTO(R$ SE HOUVER)</th>
+                                        <th>ACÚMULO EM MILHAS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="birda">
+                                        <td class="corToda">Julho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJul1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJul"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJul1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJul"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Agosto</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAgo1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAgo"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAgo1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAgo"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Setembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoSet1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoSet"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloSet1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloSet"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Outubro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoOut1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoOut"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloOut1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloOut"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Novembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoNov1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoNov"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloNov1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloNov"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda"> Dezembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoDez1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoDez"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloDez1"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloDez"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    
+                        <!-- Exibição dos resultados -->
+                        <div class="mt-4 text-center">
+                            <h5>CUSTO TOTAL(R$): <span id="totalCusto1">0</span></h5>
+                            <h5>ACÚMULO TOTAL: <span id="totalAcumulo1">0</span></h5>
+                            <h5>ACÚMULO ANUAL: <span id="acumuloAnual1">0</span></h5>
+                            
+                        </div>
+                        <!-- Botão para calcular -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-warning" id="calculate"
+                                style="margin-top: 15px;"><strong>CALCULAR TOTAIS</strong></button>
+                                
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h2 class="text-center">CRÉDITO DE COMPRAS BONIFICADAS NO LATAM PASS</h2>
+            <div class="card">
+                <form id="formTabela">
+                    <div class="row">
+                        <!-- Primeira Coluna (Janeiro - Junho) -->
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>MÊS</th>
+                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>ACÚMULO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="birda">
+                                        <td class="corToda">Janeiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJan2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJan2"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJan2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Fevereiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoFev2" 
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoFev"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloFev2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloFev"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Março</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMar2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMar"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMar2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMar"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Abril</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAbr2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAbr"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAbr2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAbr"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Maio</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMai2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMai"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMai2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Junho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJun2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJun"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJun2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJun"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- Segunda Coluna (Julho - Dezembro) -->
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>MÊS</th>
+                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>ACÚMULO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="birda">
+                                        <td class="corToda">Julho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJul2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJul2"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJul2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJul"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Agosto</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAgo2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAgo"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAgo2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAgo"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Setembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoSet2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoSet"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloSet2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloSet"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Outubro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoOut2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoOut"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloOut2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloOut"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Novembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoNov2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoNov"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloNov2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloNov"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda"> Dezembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoDez2"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoDez"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloDez2"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloDez"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    
+                        <!-- Exibição dos resultados -->
+                        <div class="mt-4 text-center">
+                            <h5>TOTAL DE CUSTOS: <span id="totalCusto2">0</span></h5>
+                            <h5>TOTAL DE ACÚMULO: <span id="totalAcumulo2">0</span></h5>
+                        </div>
+                        <!-- Botão para calcular -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-warning" id="calculate2"
+                                style="margin-top: 15px;"><strong>CALCULAR TOTAIS</strong></button>
+                               
+                                <br><br><br>
+                        </div>
+                        <h2 class="text-center">COMPRA DE MILHAS NA LATAM PASS / PAGOL</h2>
+                        <div class="card">
+                            <form id="formTabela">
+                                <div class="row">
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>MÊS</th>
+                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>ACÚMULO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="birda">
+                                        <td class="corToda">Janeiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJan3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJan3"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJan3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Fevereiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoFev3" 
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoFev"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloFev3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloFev"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Março</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMar3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMar"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMar3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMar"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Abril</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAbr3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAbr"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAbr3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAbr"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Maio</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMai3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMai"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMai3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Junho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJun3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJun"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJun3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJun"></span>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                                
+                            </table>
+
+                        </div>
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>MÊS</th>
+                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>ACÚMULO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="birda">
+                                        <td class="corToda">Julho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJul3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJul3"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJul3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJul"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Agosto</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAgo3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAgo"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAgo3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAgo"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Setembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoSet3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoSet"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloSet3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloSet"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Outubro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoOut3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoOut"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloOut3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloOut"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Novembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoNov3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoNov"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloNov3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloNov"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda"> Dezembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoDez3"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoDez"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloDez3"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloDez"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Exibição dos resultados -->
+                        <div class="mt-4 text-center">
+                            <h5>TOTAL DE CUSTOS: <span id="totalCusto3">0</span></h5>
+                            <h5>TOTAL DE ACÚMULO: <span id="totalAcumulo3">0</span></h5>
+                        </div>
+                        <!-- Botão para calcular -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-warning" id="calculate3"
+                                style="margin-top: 15px;"><strong>CALCULAR TOTAIS</strong></button>
+                                
+                                <br><br><br>
+                        </div>
+                    </div>
+                    <h2 class="text-center">Minhas Aplicações - MILHAS LATAM PASS</h2>
+                        <div class="card">
+                            <form id="formTabela">
+                                <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>MÊS E CUSTO OPERACIONAL</th>
+                                        <th>CARTÕES CO-BRANDED</th>
+                                        <th>PROGRAMAS BANCÁRIOS</th>
+                                        <th>BÔNUS RECEBIDOS</th>
+                                        <th>CLUBES DE MILHAS</th>
+                                        <th>COMPRAS BONIFICADAS</th>
+                                        <th>COMPRAS DE MILHAS</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="birda">
+                                        <td class="corToda">Custo operacional</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoOpera11"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJan4"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloOpera12"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloOpera13"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoacumuloOpera1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoacumuloOpera12">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoacumuloOpera13">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Janeiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJan21"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJan"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJan22"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJan23"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoJan1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoJan12">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoJan13">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Fevereiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoFev21" 
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoFev"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloFev22"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloFev"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloFev23"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJan"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoFev1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoFev2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoFev3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Março</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMar31"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMar"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMar32"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMar"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMar33"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMar"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoMarco1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoMarco2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoMarco3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Abril</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAbr41"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAbr"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAbr42"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAbr"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAbr43"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAbr"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoAbril1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoAbril2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoAbril3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Maio</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoMai51"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoMai"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMai52"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMai53"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoMai1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoMai2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoMai3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Junho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJun61"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJun"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJun62"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJun"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloMai63"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoJun1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoJun2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoJun3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Julho</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoJul71"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJul"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJul72"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloJul"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloJul73"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoJul1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoJul2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoJul3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Agosto</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoAgo81"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoAgo"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAgo82"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloAgo"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloAgo83"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai">
+                                        </td>
+                                    
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoAgosto1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoAgosto2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoAgosto3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Setembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoSet91"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoSet"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloSet92"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloSet"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloSet93"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoSet1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoSet2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoSet3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Outubro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoOut101"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoOut"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloOut102"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloOut"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloOut103"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoOut1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoOut2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoOut3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Novembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoNov111"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoNov"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloNov112"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloNov"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloNov113"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoNov1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoNov2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoNov3">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda"> Dezembro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="custoDez121"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoDez"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloDez122"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloDez123"></span>
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control acumulo" id="acumuloDez123"
+                                                placeholder="Acúmulo">
+                                            <span class="error-message" id="errorAcumuloMai"></span>
+                                        </td>
+                                    
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoDez1">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoDez2">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoDez3">...</span>
+                                            <span class="error-message" id="errorDezembro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Uso das milhas</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="usoDasMilhas"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorUsoMilhas4"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+
+                        </div>
+                        
+                        <!-- Exibição dos resultados -->
+                        <div class="mt-4 text-center">
+                            <h5>TOTAL - custo ANUAL TODAS APLICAÇÕES: <span id="custoAnualTodasAplicacoes">0</span></h5>
+                            <h5>TOTAL - acúmulo ANUAL TODAS APLICAÇÕES: <span id="acumuloAnualTodasAplicacoes">0</span></h5>
+                            <h5>CUSTO MÉDIO DO MILHEIRO TODAS APLICAÇÕES: <span id="custoMedioDoMilheiroTodas">0</span></h5>
+                            <h5>SALDO APÓS USO DE MILHAS: <span id="saldoAposUsoDeMilhas">0</span></h5>
+                            
+                            
+                        </div>
+                       
+                        <!-- Botão para calcular -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-warning" id="calculate4"
+                                style="margin-top: 15px;"><strong>CALCULAR TOTAIS</strong></button>
+                        </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+           
+        </div>
+        </div>
+
+    </main>
+    <script src="acumuloLatam.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>       
