@@ -76,6 +76,9 @@ td{
     margin-top: 5px;
 }
 
+
+
+
 input{
     text-align: center;
     color: aliceblue;
@@ -116,4 +119,8 @@ input[type="number"]::placeholder{
     color: red;
     font-size: 0.875rem;
     margin-top: 0.25rem;
+}
+.negrito{
+    font-weight: bold;
+   
 }
