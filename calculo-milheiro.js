@@ -1,4 +1,4 @@
-document.getElementById('calculate').addEventListener('click', function() {
+document.getElementById('calculate').addEventListener('click', function() {xc 
   const valorpm = parseFloat(document.getElementById('valorpm').value.replace('.', '').replace(',', '.')) || 0;
   const quantidadepm = parseFloat(document.getElementById('quantidadepm').value.replace('.', '').replace(',', '.')) || 0;
   const errorMessage = document.getElementById('error-message');
