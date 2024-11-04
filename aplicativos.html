@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passagens com Milhas</title>
+    <title>Aplicativos de Pagamentos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -17,18 +17,19 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="passagem.js"></script> 
-    <link rel="stylesheet" href="passagem.css">
+    <script src="aplicativos.js"></script>
+    <link rel="stylesheet" href="aplicativos.css">
+    <link rel="icon" type="image/x-icon" href="img/vmm-removebg-preview.png">
 </head>
 
 <body>
     <main>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
             <div class="container-fluid">
-                <a class="navbar-brand">
+                <a class="navbar-brand" >
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit; font-size: 30px; font-family: 'Montserrat', sans-serif;">
-                           <strong>VALOR DE PASSAGENS EM MILHAS</strong></font>
+                           <strong>APLICATIVOS DE PAGAMENTOS</strong></font>
                     </font>
                 </a>
                 <img src="img/vmm-removebg-preview.png" class=" position-absolute start-50 translate-middle-x" 
@@ -71,32 +72,32 @@
                                 <thead>
                                     <tr class="cabeca">
                 
-                                        <th colspan="3" class="titulo-completo">PASSAGEM</th>
+                                        <th colspan="3" class="titulo-completo">COMPRAS BONIFICADAS</th>
                                         
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="birda">
-                                        <td class="corToda">Passagem em milhas</td>
+                                        <td class="corToda">Valor do boleto</td>
                                         <td colspan="2">
-                                            <input type="number" class="form-control custo largura-total" id="passagemMilhas" placeholder="Digite">
-                                            <span class="error-message" id="errorpassagemMilhas"></span>
+                                            <input type="number" class="form-control custo largura-total" id="valorDoBoleto" placeholder="Digite">
+                                            <span class="error-message" id="errorvalorDoBoleto"></span>
                                         </td>
             
                                     </tr>
                                     <tr class="birda">
-                                        <td class="corToda">Taxa de embarque</td>
+                                        <td class="corToda">Taxa cobrada pelo aplicativo(%)</td>
                                         <td>
-                                            <input type="number" class="form-control custo"  id="taxaEmbarque"
+                                            <input type="number" class="form-control custo"  id="taxaCobradaPeloAplicativo"
                                                 placeholder="Digite">
                                             <span class="error-message" id="errorCustoFev"></span>
                                         </td>
                                     
                                     </tr>
                                     <tr class="birda">
-                                        <td class="corToda">Custo do seu milheiro ou custo médio(R$)</td>
+                                        <td class="corToda">Valor do dólar</td>
                                         <td>
-                                            <input type="number" class="form-control custo"  id="custoMilheiroOuMedio"
+                                            <input type="number" class="form-control custo"  id="valorDoDolar"
                                                 placeholder="Digite">
                                             <span class="error-message" id="errorCustoFev"></span>
                                         </td>
@@ -104,36 +105,95 @@
                                         
                                        
                                     </tr>
-                                
                                     <tr class="birda">
-                                        <td class="corToda">Custo em reais de passagens com milhas</td>
+                                        <td class="corToda">Fator de conversão do cartão</td>
                                         <td>
-                                            <span class="form-control negrito" id="resultadoCustoReaisMilhas">...</span>
-                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                            <input type="number" class="form-control custo" id="fatorDeConversaoDoCartao"
+                                                placeholder="Digite">
+                                            <span class="error-message" id="errorCustoAbr"></span>
                                         </td>
                                         
                                     </tr>
                                     <tr class="birda">
-                                        <td class="corToda">Valor da passagem em dinheiro</td>
+                                        <td class="corToda">Transferência bonificada(%)</td>
                                         <td>
-                                            <input type="number" class="form-control custo"  id="valorPassagemDinheiro"
+                                            <input type="number" class="form-control custo"  id="percentTransfBonificada"
                                                 placeholder="Digite">
                                             <span class="error-message" id="errorCustoFev"></span>
                                         </td>
                                         
                                     </tr>
                                     <tr class="birda">
-                                        <td class="corToda">Resultado emitido com milhas</td>
+                                        <td class="corToda">Valor da taxa</td>
                                         <td>
-                                            <span class="form-control negrito" id="resultadoEmitidoComMilhas">...</span>
+                                            <span class="form-control negrito" id="resultadovalorDaTaxa">...</span>
                                             <span class="error-message" id="errorDescontoIndireto"></span>
                                         </td>
                                         
                                     </tr>
                                     <tr class="birda">
-                                        <td class="corToda">Vantagem</td>
+                                        <td class="corToda">Valor em dólar</td>
                                         <td>
-                                            <span class="form-control negrito vantagem" id="resultadoVantagem">...</span>
+                                            <span class="form-control negrito" id="resultadoValorEmDolar">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        
+                                    </tr>
+                    
+                                    <tr class="birda">
+                                        <td class="corToda">Quantidade de pontos</td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoQuantidadeDePontos">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Total em milhas após transferência</td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoTotalEmMilhasAposTransf">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    
+                                    <tr class="birda">
+                                        <td class="corToda">Valor do custo médio do milheiro</td>
+                                        <td>
+                                            <input type="number" class="form-control custo"  id="valorDoCustoMedioDoMilheiro"
+                                                placeholder="Digite">
+                                            <span class="error-message" id="errorCustoFev"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Valor das milhas</td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadovalorDasMilhas">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Resultado final</td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoresultadoFinal">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Custo do milheiro na compra indireta das milhas</td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadocustoDoMilheiroNaCompraIndiretaDasMilhas">...</span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Análise final da operação</td>
+                                        <td class="lucro">
+                                            <span class="form-control" id="resultadoanaliseFinalDaOperacao"><strong>...</strong></span>
                                             <span class="error-message" id="errorDescontoIndireto"></span>
                                         </td>
                                         
@@ -148,12 +208,15 @@
                         <div class="text-center">
                             <button type="button" class="btn btn-primary" id="calculate"
                                 style="margin-top: 15px;background-color: #f7cc0b;color: black;"><strong>CALCULAR TOTAIS</strong></button>
-                                <script src="passagem.js"></script>
+                                <script type="text/javascript" src="aplicativos.js"></script>
                         </div>
-                        <div id="telinhaMensagem" class="telinha mensagem-invisivel"><strong><br>Se você encontrou isso parabéns</strong></div>
+                        <div id="telinhaMensagem" class="telinha" style="visibility: hidden;">
+                            <strong><br>É VANTAJOSO EMITIR COM MILHAS</strong>
+                        </div>
                         <!-- Exibição dos resultados -->
                     
                     </div>
+                   
                 </form>
             </div>
             

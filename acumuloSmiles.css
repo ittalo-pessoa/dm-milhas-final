@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(36, 40, 41);
-    background: radial-gradient(circle, #000000);
+    background: rgb(100,131,136);
+    background: radial-gradient(circle, rgb(133, 133, 133) 44%, rgba(58,54,54,1) 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -23,13 +23,19 @@ form [type="number" ] {
     margin-top: 200px;
     border-radius: 15px;
     padding: 20px;
-    background-color: #171515;
+    background-color: #000000;
 }
 .card{
     text-align: center;
-    background: rgba(30, 28, 28, 0.619);
+    background: rgba(27, 27, 27, 0.619);
     padding: 30px;
 }
+.btn-primary{
+    background-color: #f7cc0b;
+    border: none;
+    color: #000000;
+}
+
 h4{
     margin-bottom: 25px;
 }
@@ -39,7 +45,7 @@ h2{
 tr.cabeca{
     border: none;
     background-color: #f7cc0b;
-    color: #1d1414;
+    color: #000000;
 }
 td{
     border: none;
@@ -69,6 +75,9 @@ td{
     justify-content: center;
     margin-top: 5px;
 }
+
+
+
 
 input{
     text-align: center;
@@ -111,32 +120,7 @@ input[type="number"]::placeholder{
     font-size: 0.875rem;
     margin-top: 0.25rem;
 }
-.titulo-completo {
-    width: 100%;
-    text-align: center; /* Alinha o texto no centro */
-    font-size: 24px; /* Ajusta o tamanho da fonte */
-    background-color: #f8f9fa; /* Adicione uma cor de fundo se desejar */
-    font-weight: bold; /* Deixa o título em negrito */
-    padding: 10px 0; /* Espaçamento interno para maior visibilidade */
-}
-.largura-total {
-    width: 100%; /* Faz com que o input ocupe toda a largura da célula */
-}
-
-.titulo-completo {
-    text-align: center;
-    font-size: 24px;
-    background-color: #f8f9fa;
-    font-weight: bold;
-    padding: 10px 0;
-}
 .negrito{
     font-weight: bold;
-    
-}
-.mensagem-invisivel{
-    visibility: hidden;
-}
-.vantagem{
-    background-color: #bcde12;
+   
 }

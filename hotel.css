@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(36, 40, 41);
-    background: radial-gradient(circle, #000000);
+    background: rgb(100,131,136);
+    background: radial-gradient(circle, rgb(133, 133, 133) 44%, rgba(58,54,54,1) 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -23,11 +23,11 @@ form [type="number" ] {
     margin-top: 200px;
     border-radius: 15px;
     padding: 20px;
-    background-color: #171515;
+    background-color: #000000;
 }
 .card{
     text-align: center;
-    background: rgba(30, 28, 28, 0.619);
+    background: rgba(27, 27, 27, 0.619);
     padding: 30px;
 }
 h4{
@@ -38,8 +38,8 @@ h2{
 }
 tr.cabeca{
     border: none;
-    background-color: #f7cc0b;
-    color: #1d1414;
+    background-color:  #f7cc0b;
+    color: #000000;
 }
 td{
     border: none;
@@ -130,13 +130,17 @@ input[type="number"]::placeholder{
     font-weight: bold;
     padding: 10px 0;
 }
+.error-message {
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Oculto inicialmente */
+}
 .negrito{
     font-weight: bold;
-    
 }
-.mensagem-invisivel{
-    visibility: hidden;
-}
-.vantagem{
-    background-color: #bcde12;
-}
+
+
+
+
+

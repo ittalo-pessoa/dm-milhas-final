@@ -131,12 +131,8 @@ input[type="number"]::placeholder{
     padding: 10px 0;
 }
 .negrito{
-    font-weight: bold;
-    
+    font-weight:bold ;
 }
-.mensagem-invisivel{
-    visibility: hidden;
-}
-.vantagem{
-    background-color: #bcde12;
+.lucro{
+    background-color: #B2D600;
 }

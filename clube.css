@@ -132,11 +132,4 @@ input[type="number"]::placeholder{
 }
 .negrito{
     font-weight: bold;
-    
-}
-.mensagem-invisivel{
-    visibility: hidden;
-}
-.vantagem{
-    background-color: #bcde12;
 }
