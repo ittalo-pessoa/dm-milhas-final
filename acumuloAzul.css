@@ -124,3 +124,28 @@ input[type="number"]::placeholder{
     font-weight: bold;
    
 }
+
+@media (max-width: 900px) {
+    *{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    *{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 400px) {
+    *{
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 350px) {
+    *{
+        font-size: 5px;
+    }
+}
