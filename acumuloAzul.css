@@ -129,6 +129,9 @@ input[type="number"]::placeholder{
     *{
         font-size: 12px;
     }
+    .testi{
+        width: 390px;
+    }
 }
 
 
@@ -136,16 +139,25 @@ input[type="number"]::placeholder{
     *{
         font-size: 11px;
     }
+    .testi{
+        width: 330px;
+    }
 }
 
 @media (max-width: 400px) {
     *{
         font-size: 7px;
     }
+    .testi{
+        width: 300px;
+    }
 }
 
 @media (max-width: 350px) {
     *{
         font-size: 5px;
+    }
+    .testi{
+        width: 290px;
     }
 }
