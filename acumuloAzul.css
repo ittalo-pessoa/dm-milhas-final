@@ -130,26 +130,26 @@ input[type="number"]::placeholder{
         font-size: 12px;
     }
     .testi{
-        width: 390px;
+        width: 880px;
     }
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     *{
-        font-size: 11px;
+        font-size: 10px;
     }
     .testi{
-        width: 330px;
+        width: 380px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
     *{
         font-size: 7px;
     }
     .testi{
-        width: 300px;
+        width: 350px;
     }
 }
 
@@ -158,6 +158,6 @@ input[type="number"]::placeholder{
         font-size: 5px;
     }
     .testi{
-        width: 290px;
+        width: 320px;
     }
 }
