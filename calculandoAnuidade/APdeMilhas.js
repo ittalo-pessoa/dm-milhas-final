@@ -1,13 +1,19 @@
-// Função para validar se um número é maior que um valor mínimo
+// Função para validar se o número é maior que o valor mínimo e menor que o valor máximo
 function validarInput(input, min, max = Infinity) {
     const value = Number(input.value);
     if (value < min || value > max || isNaN(value)) {
-        input.value = ""; // Limpa o campo em caso de valor inválido
-        input.style.border = "2px solid red"; // Destaque visual
+        input.value = "";  // Limpa o campo em caso de valor inválido
+        input.style.border = "2px solid red";  // Destaque visual para o campo inválido
         return false;
     }
-    input.style.border = "1px solid #ccc"; // Remove destaque se o valor for válido
+    input.style.border = "1px solid #ccc";  // Remove destaque se o valor for válido
     return true;
+}
+
+// Função para impedir a entrada de letras ou caracteres especiais
+function impedirLetras(input) {
+    // Substitui qualquer caractere que não seja dígito ou ponto decimal por vazio
+    input.value = input.value.replace(/[^0-9.]/g, '');
 }
 
 // Função para realizar os cálculos com base nos inputs
@@ -45,7 +51,7 @@ function total() {
     // Validações
     const validInputs = [
         validarInput(tn1, 0),
-        validarInput(tn2, 0, 12), // Limita n2 entre 0 e 12
+        validarInput(tn2, 0, 12),  // Limita o valor de n2 entre 0 e 12
         validarInput(tn3, 0),
         validarInput(tn4, 0),
         validarInput(tn5, 0),
@@ -79,9 +85,18 @@ function total() {
 
     // Verifica se o lucro (s6) é positivo ou negativo e altera a cor da borda
     const res6Element = document.getElementById('res6');
-    if (resultados.s6 > 0) {
+    if (parseFloat(resultados.s6) > 0) {
         res6Element.style.border = "2px solid green";  // Lucro positivo: verde
     } else {
         res6Element.style.border = "2px solid red";  // Prejuízo: vermelho
     }
 }
+
+// Vinculando a função impedirLetras ao evento oninput para todos os campos numéricos
+document.getElementById('tex1').oninput = function() { impedirLetras(this); };
+document.getElementById('tex2').oninput = function() { impedirLetras(this); };
+document.getElementById('tex3').oninput = function() { impedirLetras(this); };
+document.getElementById('tex4').oninput = function() { impedirLetras(this); };
+document.getElementById('tex5').oninput = function() { impedirLetras(this); };
+document.getElementById('tex6').oninput = function() { impedirLetras(this); };
+document.getElementById('tex7').oninput = function() { impedirLetras(this); };

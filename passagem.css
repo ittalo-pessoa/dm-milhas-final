@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(36, 40, 41);
+    background: radial-gradient(circle, #000000);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 110px;
+}
+form [type="number" ] {
+    background-color: #6a6969a5;
+    color: #FFFFFF;
+}
+.container {
+    color: aliceblue;
+    margin-top: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #171515;
+}
+.card{
+    text-align: center;
+    background: rgba(30, 28, 28, 0.619);
+    padding: 30px;
+}
+h4{
+    margin-bottom: 25px;
+}
+h2{
+    margin: 15px;
+}
+tr.cabeca{
+    border: none;
+    background-color: #f7cc0b;
+    color: #1d1414;
+}
+td{
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.borda{
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.custo{
+    border: none;
+    margin-bottom: 5px;
+}
+
+.acumulo{
+    border: none;
+    margin-bottom: 5px;
+}
+
+.corToda{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+input{
+    text-align: center;
+    color: aliceblue;
+    background: #57575726;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none; 
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+input[type="number"]::placeholder{
+    color: rgb(255, 255, 255);
+}
+::placeholder{ 
+    text-align: center;
+}
+
+.input-group input {
+    background-color: transparent;
+    border: 0px solid #ccc;
+}
+
+.input-group input:focus {
+    box-shadow: none;
+}
+
+.input-group input.error {
+    border-color: red;
+}
+
+.input-group input.valid {
+    border-color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+.titulo-completo {
+    width: 100%;
+    text-align: center; /* Alinha o texto no centro */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+    background-color: #f8f9fa; /* Adicione uma cor de fundo se desejar */
+    font-weight: bold; /* Deixa o título em negrito */
+    padding: 10px 0; /* Espaçamento interno para maior visibilidade */
+}
+.largura-total {
+    width: 100%; /* Faz com que o input ocupe toda a largura da célula */
+}
+
+.titulo-completo {
+    text-align: center;
+    font-size: 24px;
+    background-color: #f8f9fa;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.negrito{
+    font-weight: bold;
+    
+}
+.mensagem-invisivel{
+    visibility: hidden;
+}
+.vantagem{
+    background-color: #bcde12;
+}

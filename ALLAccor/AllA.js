@@ -18,16 +18,31 @@ function validarEntradas(inputs) {
     return valido;
 }
 
-// Função para realizar o cálculo genérico
+// Função para impedir a entrada de letras ou caracteres especiais
+function impedirLetras(input) {
+    input.value = input.value.replace(/[^0-9.]/g, ''); // Permite apenas números e pontos
+}
+
+// Função para vincular o evento de impedir letras aos campos de entrada
+function vincularEventosDeEntrada(ids) {
+    ids.forEach(id => {
+        const input = document.getElementById(id);
+        input.oninput = function() {
+            impedirLetras(this); // Chama a função para impedir a entrada de letras
+        };
+    });
+}
+
+// Função para realizar o cálculo genérico e exibir com vírgula
 function calcularValores(n1, n2, n3, n5, results) {
     const s = n1 / n3;
-    const decimal = s.toFixed(2);
-    const s2 = 0.02 * decimal;
-    const decimal2 = s2.toFixed(2);
-    const s3 = ((n1 * n2) / 1000) / decimal2;
-    const decimal3 = s3.toFixed(2);
-    const s4 = (((decimal3 / n5) - 1) * (-1)) * 100;
-    const decimal4 = s4.toFixed(2);
+    const decimal = s.toFixed(2).replace('.', ',');
+    const s2 = 0.02 * s;
+    const decimal2 = s2.toFixed(2).replace('.', ',');
+    const s3 = ((n1 * n2) / 1000) / s2;
+    const decimal3 = s3.toFixed(2).replace('.', ',');
+    const s4 = (((s3 / n5) - 1) * (-1)) * 100;
+    const decimal4 = s4.toFixed(2).replace('.', ',');
 
     results[0].innerHTML = `${decimal}`;
     results[1].innerHTML = `${decimal2}`;
@@ -73,3 +88,9 @@ function latam() {
         ['res13', 'res14', 'res15', 'res16']
     );
 }
+
+// Vinculando a função impedirLetras aos inputs relevantes
+vincularEventosDeEntrada(['lec1', 'lec2', 'lec3', 'lec4', 'lec5']);
+vincularEventosDeEntrada(['sm1', 'sm2', 'sm3', 'sm4', 'sm5']);
+vincularEventosDeEntrada(['azul1', 'azul2', 'azul3', 'azul4', 'azul5']);
+vincularEventosDeEntrada(['latam1', 'latam2', 'latam3', 'latam4', 'latam5']);
