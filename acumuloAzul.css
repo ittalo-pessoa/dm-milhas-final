@@ -151,11 +151,8 @@ input[type="number"]::placeholder{
     .testi{
         width: 350px;
     }
-    .negrito{
-        width: 20px;
-    }
-    .custo{
-        width: 20px;
+    .barto{
+        font-size: 4px;
     }
 }
 
@@ -165,11 +162,5 @@ input[type="number"]::placeholder{
     }
     .testi{
         width: 320px;
-    }
-    .negrito{
-        width: 15px;
-    }
-    .custo{
-        width: 15px;
     }
 }
