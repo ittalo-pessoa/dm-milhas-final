@@ -154,8 +154,11 @@ input[type="number"]::placeholder{
     .testi{
         width: 350px;
     }
+    .tita{
+        font-size: 20px;
+    }
     .barto{
-        font-size: 6px;
+        font-size: 4px;
     }
 }
 
