@@ -126,7 +126,7 @@ input[type="number"]::placeholder{
 }
 
 @media (max-width: 900px) {
-    .testi{
+    *{
         font-size: 12px;
     }
     .testi{
@@ -136,7 +136,7 @@ input[type="number"]::placeholder{
 
 
 @media (max-width: 750px) {
-    .testi{
+    *{
         font-size: 10px;
     }
     .testi{
@@ -145,22 +145,25 @@ input[type="number"]::placeholder{
 }
 
 @media (max-width: 440px) {
-    .testi{
+    *{
         font-size: 7px;
     }
     .testi{
         width: 350px;
     }
     .barto{
-        font-size: 6px;
+        font-size: 8px;
     }
 }
 
 @media (max-width: 350px) {
-    .testi{
+    *{
         font-size: 5px;
     }
     .testi{
         width: 320px;
+    }
+    .barto{
+        font-size: 8px;
     }
 }
