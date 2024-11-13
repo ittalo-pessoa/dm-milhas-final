@@ -136,6 +136,9 @@ input[type="number"]::placeholder{
 
 
 @media (max-width: 750px) {
+    .nav{
+        font-size: 20px;
+    }
     *{
         font-size: 10px;
     }
@@ -152,7 +155,7 @@ input[type="number"]::placeholder{
         width: 350px;
     }
     .barto{
-        font-size: 8px;
+        font-size: 5px;
     }
 }
 
@@ -162,8 +165,5 @@ input[type="number"]::placeholder{
     }
     .testi{
         width: 320px;
-    }
-    .barto{
-        font-size: 8px;
     }
 }
