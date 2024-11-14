@@ -133,6 +133,38 @@ input[type="number"]::placeholder{
     }
     .testi {
         width: 320px;
-        background-color: #000000;
+       
     }
+}
+/* Estilos padrão para a logo */
+.logo-vmm {
+    max-width: 80px; /* Tamanho padrão */
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Ajuste para telas médias */
+@media (max-width: 768px) {
+    .logo-vmm {
+        max-width: 60px; /* Tamanho em tablets */
+    }
+}
+
+
+
+/* Ajuste para telas muito pequenas */
+@media (max-width: 350px) {
+    .logo-vmm {
+        max-width: 40px; /* Tamanho em telas muito pequenas */
+    }
+}
+
+/* Ajuste do texto do navbar */
+.navbar-brand {
+    font-size: 1.25rem;
+    text-align: center;
+}
+.qualquer{
+    margin-right: 1000px;
 }
