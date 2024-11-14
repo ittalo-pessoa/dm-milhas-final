@@ -25,27 +25,16 @@
 <body>
     <main>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
-            <div class="container-fluid">
-                <a class="navbar-brand" style="vertical-align: inherit; font-size: 30px; font-family: 'Montserrat', sans-serif;"><strong>ACÚMULO GERAL-LIVELO</strong></a>
-                <img src="vmm- turbo- 12.png" class=" position-absolute start-50 translate-middle-x responsive" 
-                style="height: 60px; width: 80px; top: 15%; transform: translate(-50%, -50%); background: transparent;">
-                   
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" style="vertical-align: inherit;"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="vertical-align: inherit;"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true" style="vertical-align: inherit;"></a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <a class="navbar-brand d-flex align-items-center" style="font-size: 1.5rem; font-family: 'Montserrat', sans-serif;">
+                    <p class="qualquer"> <strong>ACÚMULO LIVELO</strong></p>
+                </a>
+                <!-- Logo com classe específica -->
+                <img src="img/vmm-removebg-preview.png" class="logo-vmm position-absolute" alt="Logo VMM Turbo">
             </div>
         </nav>
-
+        
+        
 
         <div class="container my-4 p-4 rounded">
             <h2 class="text-center">CLUBE DE PONTOS LIVELO</h2> 
@@ -53,8 +42,9 @@
                 <form id="formTabela">
                     <div class="row">
                         <!-- Primeira Coluna (Janeiro - Junho) -->
-                        <div class="col-md-6">
-                            <table class="table table-bordered">
+                        <div class="col-sm-12 col-md-6 mb-3">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
                                 <thead>
                                     <tr class="cabeca">
 
@@ -144,6 +134,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            </div>
 
                         </div>
                         <!-- Segunda Coluna (Julho - Dezembro) -->
@@ -1190,4 +1181,6 @@
                 </form>
 
             </div>
-            
+            </form>
+</body>
+</html>
