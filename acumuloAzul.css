@@ -154,8 +154,11 @@ input[type="number"]::placeholder{
     .testi{
         width: 350px;
     }
+    .navbar-brand{
+        font-size: 20px;
+    }
     .barto{
-        font-size: 5px;
+        font-size: 4px;
     }
 }
 
