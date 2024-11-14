@@ -144,22 +144,6 @@ input[type="number"]::placeholder{
     transform: translateY(-50%);
 }
 
-/* Ajuste para telas médias */
-@media (max-width: 768px) {
-    .logo-vmm {
-        max-width: 60px; /* Tamanho em tablets */
-    }
-}
-
-
-
-/* Ajuste para telas muito pequenas */
-@media (max-width: 350px) {
-    .logo-vmm {
-        max-width: 40px; /* Tamanho em telas muito pequenas */
-    }
-}
-
 /* Ajuste do texto do navbar */
 .navbar-brand {
     font-size: 1.25rem;
