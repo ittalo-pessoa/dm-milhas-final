@@ -46,11 +46,13 @@ tr.cabeca{
     border: none;
     background-color: #f7cc0b;
     color: #000000;
+    font-size: 13px;
 }
 td{
     border: none;
     color: #FFFFFF;
     font-weight: bold;
+    
 }
 .borda{
     border: none;
@@ -62,18 +64,22 @@ td{
 .custo{
     border: none;
     margin-bottom: 5px;
+    font-size: 12px;
 }
 
 .acumulo{
     border: none;
     margin-bottom: 5px;
+    font-size: 12px;
 }
+
 
 .corToda{
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     margin-top: 5px;
+    font-size: 14px;
 }
 
 
@@ -117,56 +123,124 @@ input[type="number"]::placeholder{
 
 .error-message {
     color: red;
-    font-size: 0.875rem;
+    font-size: 0.700em;
     margin-top: 0.25rem;
 }
 .negrito{
     font-weight: bold;
    
 }
+.novaIdeia{
+    font-size: 12px;
+    font-weight: bold;
+   
+}
+#responsive{
+    font-size: max(50px, 5vw);
+}
+/* Estilos padrão para a logo */
+.logo-vmm {
+    max-width: 80px; /* Tamanho padrão */
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.livelo {
+    max-width: 80px; /* Tamanho máximo para telas maiores */
+    width: 80px; /* Adaptação relativa */
+    height: 50px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -370px; /* Espaçamento entre as imagens */
+    transform: translateY(10%);
 
-@media (max-width: 900px) {
-    *{
-        font-size: 12px;
-    }
-    .testi{
-        width: 880px;
-    }
+}
+.casa {
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 300px; /* Adaptação relativa */
+    height: 160px; /* Mantém a proporção */
+    position: relative;
+    margin-left: 670px; /* Espaçamento entre as imagens */
+    transform: translateY(1%);
+
+}
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 110px; /* Adaptação relativa */
+    height: 55px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -30px; /* Espaçamento entre as imagens */
+    transform: translateY(-30%);
+
+}
+.cartoes{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 155px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-47%);
+}
+.clubes{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 140px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-50%);
+}
+.compras{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 120px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-50%);
+}
+.compra{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 140px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-49%);
+}
+.calendar{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 22px; /* Adaptação relativa */
+    height: -620px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -15px; /* Espaçamento entre as imagens */
+    transform: translateY(-55%);
+}
+.engrenagem{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 32px; /* Adaptação relativa */
+    height: -1220px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -53px; /* Espaçamento entre as imagens */
+    transform: translateY(55%);
 }
 
-
-@media (max-width: 750px) {
-    .nav{
-        font-size: 20px;
-    }
-    *{
-        font-size: 10px;
-    }
-    .testi{
-        width: 380px;
-    }
+/* Ajuste do texto do navbar */
+.navbar-brand {
+    font-size: 0,5rem;
+    text-align: center;
 }
-
-@media (max-width: 440px) {
-    *{
-        font-size: 7px;
-    }
-    .testi{
-        width: 350px;
-    }
-    .navbar-brand{
-        font-size: 20px;
-    }
-    .barto{
-        font-size: 4px;
-    }
+.qualquer{
+    margin-right: 650px;
+    font-size: 18px;
+    transform: translateY(54%);
 }
-
-@media (max-width: 350px) {
-    *{
-        font-size: 5px;
-    }
-    .testi{
-        width: 320px;
-    }
+.nova{
+    font-size: 21px;
+}
+.diminuicao{
+    font-size: 10px;
+}
+.menu{
+    background-color:#b6e200;
+}
+.custo {
+    position: relative;
+    z-index: 10; /* Garante que o input fique acima de outros elementos */
 }
