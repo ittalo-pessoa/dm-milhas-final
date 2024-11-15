@@ -46,11 +46,13 @@ tr.cabeca{
     border: none;
     background-color: #f7cc0b;
     color: #000000;
+    font-size: 13px;
 }
 td{
     border: none;
     color: #FFFFFF;
     font-weight: bold;
+    
 }
 .borda{
     border: none;
@@ -62,11 +64,16 @@ td{
 .custo{
     border: none;
     margin-bottom: 5px;
+    font-size: 12px;
 }
 
 .acumulo{
     border: none;
     margin-bottom: 5px;
+    font-size: 12px;
+}
+.birda{
+    font-size: 13px;
 }
 
 .corToda{
@@ -74,6 +81,7 @@ td{
     display: flex;
     justify-content: center;
     margin-top: 5px;
+    font-size: 14px;
 }
 
 
@@ -117,10 +125,15 @@ input[type="number"]::placeholder{
 
 .error-message {
     color: red;
-    font-size: 0.875rem;
+    font-size: 0.700em;
     margin-top: 0.25rem;
 }
 .negrito{
+    font-weight: bold;
+   
+}
+.novaIdeia{
+    font-size: 12px;
     font-weight: bold;
    
 }
@@ -139,16 +152,20 @@ input[type="number"]::placeholder{
 /* Estilos padrão para a logo */
 .logo-vmm {
     max-width: 80px; /* Tamanho padrão */
-    height: auto;
+    height: 50px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 /* Ajuste do texto do navbar */
 .navbar-brand {
-    font-size: 1.25rem;
+    font-size: 0,5rem;
     text-align: center;
 }
 .qualquer{
-    margin-right: 1000px;
+    margin-right: 900px;
+    font-size: 20px;
+}
+.nova{
+    font-size: 21px;
 }
