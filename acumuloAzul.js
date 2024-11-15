@@ -9,7 +9,7 @@ function mostrarErro(campoId, mensagem) {
 document.getElementById('calculate').addEventListener('click',function(){
 
 
-    const custoJan1 = isNaN(parseFloat(document.getElementById('custoJan1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoJan1').value.replace(/\./g, ""));
+const custoJan1 = isNaN(parseFloat(document.getElementById('custoJan1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoJan1').value.replace(/\./g, ""));
 const acumuloJan1 = isNaN(parseFloat(document.getElementById('acumuloJan1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloJan1').value.replace(/\./g, ""));
 const custoFev1 = isNaN(parseFloat(document.getElementById('custoFev1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoFev1').value.replace(/\./g, ""));
 const acumuloFev1 = isNaN(parseFloat(document.getElementById('acumuloFev1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloFev1').value.replace(/\./g, ""));
@@ -75,7 +75,7 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
 
     document.getElementById('totalCusto1').innerHTML = "R$ " + totalCusto1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   document.getElementById('totalAcumulo1').innerHTML = "R$ " + totalAcumulo1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    document.getElementById('acumuloAnual1').innerHTML = "R$ " + acumuloAnual.toLocaleString("pt-BR", {maximumFractionDigits:2, minimumFractionDigits: 2 });
+
 
    
 
@@ -418,6 +418,20 @@ if (acumuloAnualTodasAplicacoes === 0) {
 
 const saldoAposUsoDeMilhas=acumuloAnualTodasAplicacoes-usoMilhas
 document.getElementById('saldoAposUsoDeMilhas').innerHTML = "R$ " + saldoAposUsoDeMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+const pantasTrans1 = parseFloat(document.getElementById('pantasTrans1').value);
+
+const pORCENTA = parseFloat(document.getElementById('pancartualPro').value);
+
+const pancartualPro = pORCENTA / 100;
+
+const totAcumuloAnual03 = pantasTrans1 + (pantasTrans1*pancartualPro);
+
+const custoMedioMilheiroSmiles = ((custoMedioDoMilheiroTodas * pantasTrans1) / 1000)/totAcumuloAnual03 * 1000;
+
+document.getElementById('totAcumuloAnual03').innerHTML = totAcumuloAnual03.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('custoMedioMilheiroSmiles').innerHTML = "R$ " + custoMedioMilheiroSmiles.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
 
 });
 
