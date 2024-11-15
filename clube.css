@@ -110,7 +110,7 @@ input[type="number"]::placeholder{
 
 .error-message {
     color: red;
-    font-size: 0.875rem;
+    font-size: 0.700rem;
     margin-top: 0.25rem;
 }
 .titulo-completo {
