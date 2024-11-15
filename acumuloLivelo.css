@@ -163,9 +163,13 @@ input[type="number"]::placeholder{
     text-align: center;
 }
 .qualquer{
-    margin-right: 900px;
-    font-size: 20px;
+    margin-right: 650px;
+    font-size: 18px;
+    transform: translateY(54%);
 }
 .nova{
     font-size: 21px;
+}
+.diminuicao{
+    font-size: 10px;
 }
