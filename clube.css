@@ -174,12 +174,11 @@ input[type="number"]::placeholder{
 
 /* Estilo básico para o texto */
 .navbar-brand .qualquer {
-    font-size: 5vw; /* Tamanho de fonte dinâmico baseado na largura da tela */
+    font-size: 0.9vw; /* Tamanho de fonte dinâmico baseado na largura da tela */
     font-family: 'Montserrat', sans-serif;
     margin-left: -80px; /* Margem pequena para manter a estética */
     text-align: center; /* Centraliza o texto */
     white-space: nowrap; /* Impede quebra de linha */
-    font-size: small;
     transform: translateY(46%);
 }
 .navbar-brand .qualquer2 {
