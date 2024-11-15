@@ -40,6 +40,6 @@ document.getElementById("calculate").addEventListener("click", function () {
 
     document.getElementById("resultadoCustoDoMilheiro").innerHTML = "R$ " + custoDoMilheiro.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     document.getElementById("resultadoTotalPontosAnoClube").innerHTML = "R$ " + totalPontosAnoClube.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("resultadoTotalPontosPosTransfBonificada").innerHTML = totalPontosPosTransfBonificada.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("custoFinalDoMilheiro").innerHTML = custoFinalDoMilheiro.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("resultadoTotalPontosPosTransfBonificada").innerHTML = "R$ " +  totalPontosPosTransfBonificada.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("custoFinalDoMilheiro").innerHTML = "R$ " +  custoFinalDoMilheiro.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
 });
