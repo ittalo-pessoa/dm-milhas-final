@@ -397,13 +397,9 @@ if (quantDePontosTransfLatamPass === 0) {
 const totalDeAcumuloAnual4 = (quantDePontosTransfIberia / conversorDeTransf) + ((quantDePontosTransfIberia / conversorDeTransf) * (percentDaPromocao4 / 100));
 document.getElementById('resultadoTotalDeAcumuloAnual4').innerHTML = "R$ " + totalDeAcumuloAnual4.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-if (quantDePontosTransfIberia === 0) {
-    let calc = 0;
-    document.getElementById("custoMedioDoMilheiroIberia").innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-} else {
     const calc = ((custoMedioDoMilheiroDoLivelo2 * quantDePontosTransfIberia) / 1000) / totalDeAcumuloAnual4 * 1000;
     document.getElementById('custoMedioDoMilheiroIberia').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
+
 
 
 
