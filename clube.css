@@ -113,6 +113,18 @@ input[type="number"]::placeholder{
     font-size: 0.700rem;
     margin-top: 0.25rem;
 }
+/* Navbar com largura ajustável */
+.navbar {
+    width: 100%; /* Ocupa toda a largura da tela */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza no desktop */
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
 .titulo-completo {
     width: 100%;
     text-align: center; /* Alinha o texto no centro */
