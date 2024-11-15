@@ -174,7 +174,7 @@ input[type="number"]::placeholder{
 
 /* Estilo básico para o texto */
 .navbar-brand .qualquer {
-    font-size: 1.1vw; /* Tamanho de fonte dinâmico baseado na largura da tela */
+    font-size: 1.2vw; /* Tamanho de fonte dinâmico baseado na largura da tela */
     font-family: 'Montserrat', sans-serif;
     margin-left: -80px; /* Margem pequena para manter a estética */
     text-align: center; /* Centraliza o texto */
