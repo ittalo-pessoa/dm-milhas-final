@@ -153,6 +153,21 @@ input[type="number"]::placeholder{
     }
 }
 
+@media (max-width: 768px) {
+    th, td {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+}
+
 @media (max-width: 480px) {
     th, td {
         font-size: 10px;
