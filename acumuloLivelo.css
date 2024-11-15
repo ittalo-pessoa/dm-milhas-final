@@ -138,52 +138,6 @@ input[type="number"]::placeholder{
 #responsive{
     font-size: max(50px, 5vw);
 }
-@media (max-width: 768px) {
-    th, td {
-        font-size: 12px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .container {
-        padding: 5px;
-    }
-}
-
-@media (max-width: 768px) {
-    th, td {
-        font-size: 12px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .container {
-        padding: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    th, td {
-        font-size: 10px;
-        display: block;
-    }
-
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-
-    button {
-        font-size: 12px;
-        padding: 6px;
-    }
-}
 /* Estilos padrão para a logo */
 .logo-vmm {
     max-width: 80px; /* Tamanho padrão */
