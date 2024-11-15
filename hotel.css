@@ -165,11 +165,15 @@ input[type="number"]::placeholder{
 
 }
 .qualquer {
-    margin-left: 30%; /* Faz o elemento ir para a direita */
-    margin-right: 10vw; /* Define a margem direita como 10% da largura da tela */
-    font-size: 2vw;     /* Tamanho da fonte baseado em 2% da largura da tela */
-    transform: translateY(2vh); /* Deslocamento vertical baseado em 10% da altura da tela */
+   
+    font-size: 1.5rem; /* Tamanho da fonte consistente */
+    /* Mantém o deslocamento vertical */
+    max-width: 280px; /* Define um limite para o tamanho do texto */
+    transform: translateY(30%);
+    margin-left: 55%;
 }
+
+
 .nova{
     font-size: 16px;
 }
