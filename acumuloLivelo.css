@@ -138,12 +138,12 @@ input[type="number"]::placeholder{
 #responsive{
     font-size: max(50px, 5vw);
 }
-@media (max-width: 350px) {
+@media (max-width: 1000px) {
     * {
         font-size: 5px;
     }
     .testi {
-        width: 320px;
+        width: 1000px;
        
     }
 }
