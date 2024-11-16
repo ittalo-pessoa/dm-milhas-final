@@ -56,18 +56,16 @@ td{
 .custo{
     border: none;
     margin-bottom: 5px;
+    font-size: 13px;
 }
 
-.acumulo{
-    border: none;
-    margin-bottom: 5px;
-}
 
 .corToda{
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     margin-top: 5px;
+    font-size: 13px;
 }
 
 input{
@@ -100,6 +98,8 @@ input[type="number"]::placeholder{
 
 .input-group input.error {
     border-color: red;
+    font-size: 0.700rem;
+    margin-top: 0.25rem;
 }
 
 .input-group input.valid {
@@ -125,7 +125,7 @@ input[type="number"]::placeholder{
 
 .titulo-completo {
     text-align: center;
-    font-size: 24px;
+    font-size: 15px;
     background-color: #f8f9fa;
     font-weight: bold;
     padding: 10px 0;
@@ -138,4 +138,56 @@ input[type="number"]::placeholder{
 }
 .negrito{
     font-weight: bold;
+    font-size: 13px;
 }
+.navbar-brand .qualquer {
+    font-size: 12.5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 180px;
+    text-align: center;
+    white-space: nowrap;
+    transform: translateY(46%);
+}
+
+.logo-vmm {
+    max-width: 80px; /* Tamanho padrão */
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 46%;
+}
+@media (max-width: 768px) {
+    .navbar-brand .qualquer {
+        font-size: 12.5px;
+        margin-left: 50px;
+        transform: translateY(30%);
+    }
+}
+
+/* Ajuste para telas muito pequenas (abaixo de 576px) */
+@media (max-width: 576px) {
+    .navbar-brand .qualquer {
+        font-size: 12.5px;
+        margin-left: 20px;
+        transform: translateY(20%);
+        text-align: left; /* Ajusta alinhamento para melhor legibilidade */
+    }
+}
+.menu{
+    background-color:#b6e200;
+}
+.doc {
+    max-width: 300px; /* Limita o tamanho para telas maiores */
+    width: 100%; /* Permite adaptação proporcional */
+    height: auto; /* Mantém proporção */
+    position: relative;
+    margin-left: 800px; /* Centraliza o elemento */
+    transform: translateY(6%);
+}
+@media (max-width: 1200px) {
+    .doc {
+        max-width: 250px; /* Reduz o tamanho */
+        transform: translateY(4%);
+    }
+}
+
