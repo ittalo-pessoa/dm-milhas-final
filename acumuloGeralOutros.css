@@ -30,6 +30,12 @@ form [type="number" ] {
     background: rgba(27, 27, 27, 0.619);
     padding: 30px;
 }
+.btn-primary{
+    background-color: #f7cc0b;
+    border: none;
+    color: #000000;
+}
+
 h4{
     margin-bottom: 25px;
 }
@@ -38,16 +44,9 @@ h2{
 }
 tr.cabeca{
     border: none;
-    background-color:  #f7cc0b;
+    background-color: #f7cc0b;
     color: #000000;
 }
-tr.cabeca2{
-    border: none;
-    background-color:  #f7cc0b;
-    color: #000000;
-    padding-bottom: 100px;
-}
-
 td{
     border: none;
     color: #FFFFFF;
@@ -63,7 +62,6 @@ td{
 .custo{
     border: none;
     margin-bottom: 5px;
-    font-size: 12px;
 }
 
 .acumulo{
@@ -76,8 +74,10 @@ td{
     display: flex;
     justify-content: center;
     margin-top: 5px;
-    font-size: 14px;
 }
+
+
+
 
 input{
     text-align: center;
@@ -117,69 +117,23 @@ input[type="number"]::placeholder{
 
 .error-message {
     color: red;
-    font-size: 0.700em;
+    font-size: 0.875rem;
     margin-top: 0.25rem;
-}
-.titulo-completo {
-    width: 100%;
-    text-align: center; /* Alinha o texto no centro */
-    font-size: 24px; /* Ajusta o tamanho da fonte */
-    background-color: #f8f9fa; /* Adicione uma cor de fundo se desejar */
-    font-weight: bold; /* Deixa o título em negrito */
-    padding: 10px 0; /* Espaçamento interno para maior visibilidade */
-}
-.largura-total {
-    width: 100%; /* Faz com que o input ocupe toda a largura da célula */
-}
-
-.titulo-completo {
-    text-align: center;
-    font-size: 24px;
-    background-color: #f8f9fa;
-    font-weight: bold;
-    padding: 10px 0;
-}
-.error-message {
-    color: #ff4c4c;
-    font-size: 14px;
-    margin-top: 5px;
-    display: none; /* Oculto inicialmente */
 }
 .negrito{
     font-weight: bold;
-    font-size: 12px;
-}
-.logo-vmm {
-    max-width: 80px; /* Tamanho padrão */
-    height: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 46%;
-}
-.hotel {
-    max-width: 300px; /* Tamanho padrão */
-    height: 180px;
-    top: 50%;
-    transform: translateY(-42%);
-    margin-left: 72%;
-
-}
-.qualquer {
    
-    font-size: 1.5rem; /* Tamanho da fonte consistente */
-    /* Mantém o deslocamento vertical */
-    max-width: 280px; /* Define um limite para o tamanho do texto */
-    transform: translateY(30%);
-    margin-left: 55%;
 }
-
-
-.nova{
-    font-size: 16px;
+#responsive{
+    font-size: max(50px, 5vw);
 }
-.menu{
-    background-color:#b6e200;
+.programa {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; /* Diminui o tamanho da fonte */
+    font-weight: bold;
+    color: #ffffff;
+    width: 50%; /* Define a largura do elemento */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    margin: 0 auto; /* Centraliza o elemento na página */
 }
-
-
 

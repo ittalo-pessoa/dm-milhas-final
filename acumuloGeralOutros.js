@@ -10,7 +10,9 @@ function mostrarErro(campoId, mensagem) {
 document.getElementById('calculate').addEventListener('click',function(){
 
 
-    const custoJan1 = isNaN(parseFloat(document.getElementById('custoJan1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoJan1').value);
+    const programaUtilizado = document.getElementById('programaUtilizado').value;
+
+const custoJan1 = isNaN(parseFloat(document.getElementById('custoJan1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoJan1').value);
 const acumuloJan1 = isNaN(parseFloat(document.getElementById('acumuloJan1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloJan1').value);
 const custoFev1 = isNaN(parseFloat(document.getElementById('custoFev1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoFev1').value);
 const acumuloFev1 = isNaN(parseFloat(document.getElementById('acumuloFev1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloFev1').value);
@@ -46,7 +48,7 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
         custoAgo1 == 0 && acumuloAgo1 == 0 &&
         custoSet1 == 0 && acumuloSet1 == 0 &&
         custoOut1 == 0 && acumuloOut1 == 0 &&
-        custoNov1 == 0 && acumuloNov1 == 0 &&
+        custoNov1 == 0 && acumuloNov1 == 0 && programaUtilizado == 0 &&
         custoDez1 == 0 && acumuloDez1 == 0||custoJan1 < 0 || acumuloJan1 < 0 ||
         custoFev1 < 0 || acumuloFev1 < 0 ||
         custoMar1 < 0 || acumuloMar1 < 0 ||
@@ -58,7 +60,7 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
         custoSet1 < 0 || acumuloSet1 < 0 ||
         custoOut1 < 0 || acumuloOut1 < 0 ||
         custoNov1 < 0 || acumuloNov1 < 0 ||
-        custoDez1 < 0 || acumuloDez1 < 0
+        custoDez1 < 0 || acumuloDez1 < 0 || programaUtilizado<0 || programaUtilizado>0
     ) 
     
      {
@@ -77,6 +79,9 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
     document.getElementById('totalCusto1').innerHTML = "R$ " + totalCusto1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   document.getElementById('totalAcumulo1').innerHTML = "R$ " + totalAcumulo1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     document.getElementById('custoMedioPorPrograma1').innerHTML = "R$ " + custoMedioPorPrograma1.toLocaleString("pt-BR", {maximumFractionDigits:2, minimumFractionDigits: 2 });
+    document.getElementById('programa').innerHTML = programaUtilizado;
+   
+
 
    
 
@@ -162,6 +167,7 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
         document.getElementById('totalCusto2').innerHTML = "R$ " + totalCusto2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         document.getElementById('totalAcumulo2').innerHTML = "R$ " + totalAcumulo2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         document.getElementById('custoMedioPorPrograma2').innerHTML = "R$ " + custoMedioPorPrograma2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        document.getElementById('programa2').innerHTML = programaUtilizado;
 
 document.getElementById('calculate3').addEventListener('click',function(){
 
@@ -243,6 +249,8 @@ document.getElementById('calculate3').addEventListener('click',function(){
             document.getElementById('totalCusto3').innerHTML = "R$ " + totalCusto3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             document.getElementById('totalAcumulo3').innerHTML = "R$ " + totalAcumulo3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             document.getElementById('custoMedioPorPrograma3').innerHTML = "R$ " + custoMedioPorPrograma3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            document.getElementById('programa3').innerHTML = programaUtilizado;
+            document.getElementById('programa4').innerHTML = programaUtilizado;
 
             document.getElementById('calculate4').addEventListener('click',function(){
 
@@ -252,10 +260,12 @@ const quantDePontosTransfSmiles = isNaN(parseFloat(document.getElementById('quan
 const quantDePontosTransfAzul = isNaN(parseFloat(document.getElementById('quantDePontosTransf2').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('quantDePontosTransf2').value);
 const quantDePontosTransfLatamPass = isNaN(parseFloat(document.getElementById('quantDePontosTransf3').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('quantDePontosTransf3').value);
 const quantDePontosTransfIberia = isNaN(parseFloat(document.getElementById('quantDePontosTransf4').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('quantDePontosTransf4').value);
+const quantDePontosTransfTapMilesGo = isNaN(parseFloat(document.getElementById('quantDePontosTransf5').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('quantDePontosTransf5').value);
 const percentDaPromocao1 = isNaN(parseFloat(document.getElementById('percentDaPromocao1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('percentDaPromocao1').value);
 const percentDaPromocao2 = isNaN(parseFloat(document.getElementById('percentDaPromocao2').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('percentDaPromocao2').value);
 const percentDaPromocao3 = isNaN(parseFloat(document.getElementById('percentDaPromocao3').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('percentDaPromocao3').value);
 const percentDaPromocao4 = isNaN(parseFloat(document.getElementById('percentDaPromocao4').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('percentDaPromocao4').value);
+const percentDaPromocao5 = isNaN(parseFloat(document.getElementById('percentDaPromocao5').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('percentDaPromocao5').value);
 const conversorDeTransf = isNaN(parseFloat(document.getElementById('conversorDeTransf').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('conversorDeTransf').value);
 const custoOpera11 = isNaN(parseFloat(document.getElementById('custoOpera11').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoOpera11').value);
 const custoJan21 = isNaN(parseFloat(document.getElementById('custoJan21').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoJan21').value);
@@ -290,75 +300,79 @@ if (
 document.getElementById('resultadoacumuloOpera1').innerHTML = "R$ " + totalCusto1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoacumuloOpera12').innerHTML = "R$ " + totalCusto2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoacumuloOpera13').innerHTML = "R$ " + totalCusto3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoJan1').innerHTML = "R$ " + acumuloJan1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoJan1').innerHTML = "R$ " + custoJan1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoJan12').innerHTML = "R$ " + acumuloJan2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoJan13').innerHTML = "R$ " + acumuloJan3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoFev1').innerHTML = "R$ " + acumuloFev1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoFev1').innerHTML = "R$ " + custoFev1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoFev2').innerHTML = "R$ " + acumuloFev2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoFev3').innerHTML = "R$ " + acumuloFev3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoMarco1').innerHTML = "R$ " + acumuloMar1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoMarco1').innerHTML = "R$ " + custoMar1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoMarco2').innerHTML = "R$ " + acumuloMar2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoMarco3').innerHTML = "R$ " + acumuloMar3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoAbril1').innerHTML = "R$ " + acumuloAbr1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoAbril1').innerHTML = "R$ " + custoAbr1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 // Compras Bonificadas
 document.getElementById('resultadoAbril2').innerHTML = "R$ " + acumuloAbr2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoAbril3').innerHTML = "R$ " + acumuloAbr3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoMai1').innerHTML = "R$ " + acumuloMai1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoMai1').innerHTML = "R$ " + custoMai1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoMai2').innerHTML = "R$ " + acumuloMai2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoMai3').innerHTML = "R$ " + acumuloMai3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoJun1').innerHTML = "R$ " + acumuloJun1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoJun1').innerHTML = "R$ " + custoJun1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoJun2').innerHTML = "R$ " + acumuloJun2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoJun3').innerHTML = "R$ " + acumuloJun3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoJul1').innerHTML = "R$ " + acumuloJul1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoJul1').innerHTML = "R$ " + custoJul1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoJul2').innerHTML = "R$ " + acumuloJul2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoJul3').innerHTML = "R$ " + acumuloJul3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoAgosto1').innerHTML = "R$ " + acumuloAgo1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoAgosto1').innerHTML = "R$ " + custoAgo1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 // Compras de Milhas
 document.getElementById('resultadoAgosto2').innerHTML = "R$ " + acumuloAgo2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoAgosto3').innerHTML = "R$ " + acumuloAgo3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoSet1').innerHTML = "R$ " + acumuloSet1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoSet1').innerHTML = "R$ " + custoSet1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoSet2').innerHTML = "R$ " + acumuloSet2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoSet3').innerHTML = "R$ " + acumuloSet3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoOut1').innerHTML = "R$ " + acumuloOut1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoOut1').innerHTML = "R$ " + custoOut1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoOut2').innerHTML = "R$ " + acumuloOut2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoOut3').innerHTML = "R$ " + acumuloOut3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoNov1').innerHTML = "R$ " + acumuloNov1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoNov1').innerHTML = "R$ " + custoNov1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoNov2').innerHTML = "R$ " + acumuloNov2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoNov3').innerHTML = "R$ " + acumuloNov3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoDez1').innerHTML = "R$ " + acumuloDez1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoDez1').innerHTML = "R$ " + custoDez1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoDez2').innerHTML = "R$ " + acumuloDez2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoDez3').innerHTML = "R$ " + acumuloDez3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 const custoAnualTodasAplicacoes= custoOpera11+totalCusto1+totalCusto2+totalCusto3
-const acumuloAnualTodasAplicacoes=  custoJan21 +  + acumuloJan1 + acumuloJan2 + acumuloJan3 +
-custoFev21 +  + acumuloFev1 + acumuloFev2 + acumuloFev3 +
-custoMarco21  + acumuloMar1 + acumuloMar2 + acumuloMar3 +
-custoAbr21 +   acumuloAbr1 + acumuloAbr2 + acumuloAbr3 +
-custoMai21 +   acumuloMai1 + acumuloMai2 + acumuloMai3 +
-custoJun21 +  acumuloJun1 + acumuloJun2 + acumuloJun3 +
-custoJul21 + acumuloJul1 + acumuloJul2 + acumuloJul3 +
-custoAgo21 +  acumuloAgo1 + acumuloAgo2 + acumuloAgo3 +
-custoSet21 + acumuloSet1 + acumuloSet2 + acumuloSet3 +
-custoOut21 +  acumuloOut1 + acumuloOut2 + acumuloOut3 +
-custoNov21 +  acumuloNov1 + acumuloNov2 + acumuloNov3 +
-custoDez21 +  acumuloDez1 + acumuloDez2 + acumuloDez3
+const acumuloAnualTodasAplicacoes=acumuloJan2 + acumuloJan3 +
+custoFev1 +   acumuloFev2 + acumuloFev3 +
+custoMar1  + acumuloMar2 + acumuloMar3 +
+custoAbr1 + acumuloAbr2 + acumuloAbr3 +
+custoMai1 +  acumuloMai2 + acumuloMai3 +
+custoJun1 + acumuloJun2 + acumuloJun3 +
+custoJul1  + acumuloJul2 + acumuloJul3 +
+custoAgo1 + acumuloAgo2 + acumuloAgo3 +
+custoSet1  + acumuloSet2 + acumuloSet3 +
+custoOut1  + acumuloOut2 + acumuloOut3 +
+custoNov1 + acumuloNov2 + acumuloNov3 +
+custoDez1  + acumuloDez2 + acumuloDez3+custoJan21+custoFev21+custoMarco21+custoAbr21+custoMai21+custoJun21+
+custoJul21+
+custoAgo21+
+custoSet21+custoOut21+custoNov21+custoDez21
+
 
 document.getElementById('custoAnualTodasAplicacoes').innerHTML = "R$ " + custoAnualTodasAplicacoes.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('acumuloAnualTodasAplicacoes').innerHTML = "R$ " + acumuloAnualTodasAplicacoes.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-let custoMedioDoMilheiroDoLivelo2; // Declara uma única vez no escopo global
+let custoMedioDoMilheiroTodosOsProgramas; // Declara uma única vez no escopo global
 
 if (acumuloAnualTodasAplicacoes === 0) {
-    custoMedioDoMilheiroDoLivelo2 = 0;
-    document.getElementById("custoMedioDoMilheiroDoLivelo").innerHTML = "R$ " + custoMedioDoMilheiroDoLivelo2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    custoMedioDoMilheiroTodosOsProgramas = 0;
+    document.getElementById("custoMedioDoMilheiroDoLivelo").innerHTML = "R$ " + custoMedioDoMilheiroTodosOsProgramas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 } else {
-    custoMedioDoMilheiroDoLivelo2 = (custoAnualTodasAplicacoes / acumuloAnualTodasAplicacoes) * 1000;
-    document.getElementById("custoMedioDoMilheiroDoLivelo").innerHTML = "R$ " + custoMedioDoMilheiroDoLivelo2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    custoMedioDoMilheiroTodosOsProgramas = (custoAnualTodasAplicacoes / acumuloAnualTodasAplicacoes) * 1000;
+    document.getElementById("custoMedioDoMilheiroDoLivelo").innerHTML = "R$ " + custoMedioDoMilheiroTodosOsProgramas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
-// Restante do código usando custoMedioDoMilheiroDoLivelo2
-const saldoAposTransf = acumuloAnualTodasAplicacoes - quantDePontosTransfSmiles - quantDePontosTransfAzul - quantDePontosTransfLatamPass - quantDePontosTransfIberia;
+// Restante do código usando custoMedioDoMilheiroTodosOsProgramas
+const saldoAposTransf = acumuloAnualTodasAplicacoes - quantDePontosTransfSmiles - quantDePontosTransfAzul - quantDePontosTransfLatamPass - quantDePontosTransfIberia - quantDePontosTransfTapMilesGo;
 document.getElementById('saldoAposTransf').innerHTML = "R$ " + saldoAposTransf.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 const totalDeAcumuloAnual1 = quantDePontosTransfSmiles + (quantDePontosTransfSmiles * (percentDaPromocao1 / 100));
@@ -368,7 +382,7 @@ if (quantDePontosTransfSmiles === 0) {
     let calc = 0;
     document.getElementById("custoMedioDoMilheiroSmiles").innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 } else {
-    let calc = ((custoMedioDoMilheiroDoLivelo2 * quantDePontosTransfSmiles) / 1000) / totalDeAcumuloAnual1 * 1000;
+    let calc = ((custoMedioDoMilheiroTodosOsProgramas * quantDePontosTransfSmiles) / 1000) / totalDeAcumuloAnual1 * 1000;
     document.getElementById('custoMedioDoMilheiroSmiles').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
@@ -379,7 +393,7 @@ if (quantDePontosTransfAzul === 0) {
     let calc = 0;
     document.getElementById("custoMedioDoMilheiroAzul").innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 } else {
-    let calc = ((custoMedioDoMilheiroDoLivelo2 * quantDePontosTransfAzul) / 1000) / totalDeAcumuloAnual2 * 1000;
+    let calc = ((custoMedioDoMilheiroTodosOsProgramas * quantDePontosTransfAzul) / 1000) / totalDeAcumuloAnual2 * 1000;
     document.getElementById('custoMedioDoMilheiroAzul').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
@@ -390,16 +404,30 @@ if (quantDePontosTransfLatamPass === 0) {
     let calc = 0;
     document.getElementById("custoMedioDoMilheiroLatamPass").innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 } else {
-    let calc = ((custoMedioDoMilheiroDoLivelo2 * quantDePontosTransfLatamPass) / 1000) / totalDeAcumuloAnual3 * 1000;
+    let calc = ((custoMedioDoMilheiroTodosOsProgramas * quantDePontosTransfLatamPass) / 1000) / totalDeAcumuloAnual3 * 1000;
     document.getElementById('custoMedioDoMilheiroLatamPass').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 const totalDeAcumuloAnual4 = (quantDePontosTransfIberia / conversorDeTransf) + ((quantDePontosTransfIberia / conversorDeTransf) * (percentDaPromocao4 / 100));
 document.getElementById('resultadoTotalDeAcumuloAnual4').innerHTML = "R$ " + totalDeAcumuloAnual4.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-    const calc = ((custoMedioDoMilheiroDoLivelo2 * quantDePontosTransfIberia) / 1000) / totalDeAcumuloAnual4 * 1000;
+if (quantDePontosTransfIberia === 0) {
+    let calc = 0;
+    document.getElementById("custoMedioDoMilheiroIberia").innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+} else {
+    const calc = ((custoMedioDoMilheiroTodosOsProgramas * quantDePontosTransfIberia) / 1000) / totalDeAcumuloAnual4 * 1000;
     document.getElementById('custoMedioDoMilheiroIberia').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+const totalDeAcumuloAnual5 = quantDePontosTransfTapMilesGo + (quantDePontosTransfTapMilesGo * (percentDaPromocao5 / 100));
+document.getElementById('resultadoTotalDeAcumuloAnual5').innerHTML = "R$ " + totalDeAcumuloAnual5.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
+if (quantDePontosTransfTapMilesGo === 0) {
+    let calc = 0;
+    document.getElementById("custoMedioDoMilheiroTapMilesGo").innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+} else {
+    let calc = ((custoMedioDoMilheiroTodosOsProgramas * quantDePontosTransfTapMilesGo) / 1000) / totalDeAcumuloAnual5 * 1000;
+    document.getElementById('custoMedioDoMilheiroTapMilesGo').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
 
 
 

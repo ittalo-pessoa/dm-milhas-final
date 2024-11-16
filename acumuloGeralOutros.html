@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acúmulo Geral-IberiaPlus</title>
-    <link rel="icon" href="img/vmm-removebg-preview.png" type="image/png">
+    <title>Acúmulo Geral-Outros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -18,17 +17,19 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="acumuloSmiles.js"></script>
-    <link rel="stylesheet" href="acumuloIberiaPlus.css">
+    <script src="acumuloGeralOutros.js"></script>
+    <link rel="stylesheet" href="acumuloGeralOutros.css">
+    <link rel="icon" type="image/x-icon" href="img/vmm-removebg-preview.png">
 </head>
 
 <body>
     <main>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
             <div class="container-fluid">
-                <a class="navbar-brand" style="vertical-align: inherit; font-size: 30px; font-family: 'Montserrat', sans-serif;"><strong>ACÚMULO IBERIA PLUS</strong></a>
-                <img src="img/vmm-removebg-preview.png" class=" position-absolute start-50 translate-middle-x" 
+                <a class="navbar-brand" style="vertical-align: inherit; font-size: 30px; font-family: 'Montserrat', sans-serif;"><strong>ACÚMULO GERAL-OUTROS</strong></a>
+                <img src="vmm- turbo- 12.png" class=" position-absolute start-50 translate-middle-x responsive" 
                 style="height: 60px; width: 80px; top: 15%; transform: translate(-50%, -50%); background: transparent;">
+                   
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
@@ -44,20 +45,41 @@
                 </div>
             </div>
         </nav>
+        
 
 
         <div class="container my-4 p-4 rounded">
-            <h2 class="text-center">CLUBE DE MILHAS IBERIA PLUS</h2>
+            
+            
+            <h2 class="text-center">DIGITE O NOME DO PROGRAMA</h2> 
+            <td>
+                <input type="text" class="form-control programa" id="programaUtilizado"
+                    placeholder="...">
+                <span class="error-message" id="errorProgramaUtil"></span>
+            </td>
+            <br>
+    
+            <h2 class="text-center">CLUBE DE PONTOS - OUTROS PROGRAMAS</h2> 
             <div class="card">
                 <form id="formTabela">
                     <div class="row">
                         <!-- Primeira Coluna (Janeiro - Junho) -->
+                        <div class="mt-4 text-center">
+                            
+                            <h5>PROGRAMA: <span id="programa">"DIGITADO"</span></h5>
+                            <br><br>
+                            
+                        </div>
                         <div class="col-md-6">
+                            
                             <table class="table table-bordered">
+                                
                                 <thead>
+                                    
                                     <tr class="cabeca">
+
                                         <th>MÊS</th>
-                                        <th>CUSTO(R$ SE HOUVER)</th>
+                                        <th>CUSTO(R$)</th>
                                         <th>ACÚMULO EM MILHAS</th>
                                     </tr>
                                 </thead>
@@ -150,7 +172,7 @@
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS</th>
-                                        <th>CUSTO(R$ SE HOUVER)</th>
+                                        <th>CUSTO(R$)</th>
                                         <th>ACÚMULO EM MILHAS</th>
                                     </tr>
                                 </thead>
@@ -241,7 +263,7 @@
                         <div class="mt-4 text-center">
                             <h5>CUSTO TOTAL(R$): <span id="totalCusto1">0</span></h5>
                             <h5>ACÚMULO TOTAL: <span id="totalAcumulo1">0</span></h5>
-                            <h5>ACÚMULO ANUAL: <span id="acumuloAnual1">0</span></h5>
+                            <h5>CUSTO MÉDIO POR PROGRAMA: <span id="custoMedioPorPrograma1">0</span></h5>
                             
                         </div>
                         <!-- Botão para calcular -->
@@ -254,11 +276,17 @@
                     </div>
                 </form>
             </div>
-            <h2 class="text-center">CRÉDITO DE COMPRAS BONIFICADAS NA IBERIA PLUS</h2>
+            <h2 class="text-center">CRÉDITO DE COMPRAS BONIFICADAS OUTROS PROGRAMAS</h2>
             <div class="card">
                 <form id="formTabela">
                     <div class="row">
                         <!-- Primeira Coluna (Janeiro - Junho) -->
+                        <div class="mt-4 text-center">
+                            
+                            <h5>PROGRAMA: <span id="programa2">"DIGITADO"</span></h5>
+                            <br><br>
+                            
+                        </div>
                         <div class="col-md-6">
                             <table class="table table-bordered">
                                 <thead>
@@ -446,8 +474,9 @@
                     
                         <!-- Exibição dos resultados -->
                         <div class="mt-4 text-center">
-                            <h5>TOTAL DE CUSTOS: <span id="totalCusto2">0</span></h5>
-                            <h5>TOTAL DE ACÚMULO: <span id="totalAcumulo2">0</span></h5>
+                            <h5>CUSTO TOTAL POR PROGRAMA: <span id="totalCusto2">0</span></h5>
+                            <h5>ACÚMULO TOTAL POR PROGRAMA: <span id="totalAcumulo2">0</span></h5>
+                            <h5>CUSTO MÉDIO POR PROGRAMA: <span id="custoMedioPorPrograma2">0</span></h5>
                         </div>
                         <!-- Botão para calcular -->
                         <div class="text-center">
@@ -456,16 +485,22 @@
                                
                                 <br><br><br>
                         </div>
-                        <h2 class="text-center">COMPRA DE MILHAS NA IBERIA PLUS / PAGOL</h2>
+                        <h2 class="text-center">CRÉDITO DE COMPRAS NO <span id="programa3">"DIGITADO"</span></h2> 
                         <div class="card">
                             <form id="formTabela">
+                                <div class="mt-4 text-center">
+                            
+                                    <h5>PROGRAMA: <span id="programa4">"DIGITADO"</span></h5>
+                                    <br><br>
+                                    
+                                </div>
                                 <div class="row">
                         <div class="col-md-6">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS</th>
-                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>CUSTO(R$)</th>
                                         <th>ACÚMULO</th>
                                     </tr>
                                 </thead>
@@ -559,7 +594,7 @@
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS</th>
-                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>CUSTO(R$)</th>
                                         <th>ACÚMULO</th>
                                     </tr>
                                 </thead>
@@ -647,8 +682,9 @@
                         </div>
                         <!-- Exibição dos resultados -->
                         <div class="mt-4 text-center">
-                            <h5>TOTAL DE CUSTOS: <span id="totalCusto3">0</span></h5>
-                            <h5>TOTAL DE ACÚMULO: <span id="totalAcumulo3">0</span></h5>
+                            <h5>CUSTO TOTAL POR PROGRAMA: <span id="totalCusto3">0</span></h5>
+                            <h5>ACÚMULO TOTAL POR PROGRAMA: <span id="totalAcumulo3">0</span></h5>
+                            <h5>CUSTO MÉDIO POR PROGRAMA: <span id="custoMedioPorPrograma3">0</span></h5>
                         </div>
                         <!-- Botão para calcular -->
                         <div class="text-center">
@@ -658,7 +694,7 @@
                                 <br><br><br>
                         </div>
                     </div>
-                    <h2 class="text-center">Minhas Aplicações - MILHAS IBERIA PLUS</h2>
+                    <h2 class="text-center">Minhas Aplicações - PONTOS</h2>
                         <div class="card">
                             <form id="formTabela">
                                 <div class="row">
@@ -667,13 +703,11 @@
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS E CUSTO OPERACIONAL</th>
-                                        <th>CARTÕES CO-BRANDED</th>
-                                        <th>PROGRAMAS BANCÁRIOS</th>
-                                        <th>BÔNUS RECEBIDOS</th>
-                                        <th>CLUBES DE MILHAS</th>
+                                        <th>CARTÕES DE PONTOS OPERACIONAIS</th>
+                                        <th>CLUBES DE PONTOS</th>
                                         <th>COMPRAS BONIFICADAS</th>
-                                        <th>COMPRAS DE MILHAS</th>
-                                        
+                                        <th>COMPRAS DE PONTOS</th>
+                                      
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -683,16 +717,6 @@
                                             <input type="number" class="form-control custo" id="custoOpera11"
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoJan4"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloOpera12"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloJan"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloOpera13"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloJan"></span>
                                         </td>
                                         <td>
                                             <span class="form-control negrito" id="resultadoacumuloOpera1">...</span>
@@ -715,16 +739,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoJan"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloJan22"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloJan"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloJan23"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloJan"></span>
-                                        </td>
+                                        
                                         <td>
                                             <span class="form-control negrito" id="resultadoJan1">...</span>
                                             <span class="error-message" id="errorDescontoIndireto"></span>
@@ -745,16 +760,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoFev"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloFev22"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloFev"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloFev23"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloJan"></span>
-                                        </td>
+                                        
                                         <td>
                                             <span class="form-control negrito" id="resultadoFev1">...</span>
                                             <span class="error-message" id="errorDescontoIndireto"></span>
@@ -776,16 +782,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoMar"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloMar32"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMar"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloMar33"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMar"></span>
-                                        </td>
+                                        
                                         <td>
                                             <span class="form-control negrito" id="resultadoMarco1">...</span>
                                             <span class="error-message" id="errorDescontoIndireto"></span>
@@ -807,16 +804,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoAbr"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloAbr42"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloAbr"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloAbr43"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloAbr"></span>
-                                        </td>
+                                        
                                         <td>
                                             <span class="form-control negrito" id="resultadoAbril1">...</span>
                                             <span class="error-message" id="errorDescontoIndireto"></span>
@@ -838,16 +826,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoMai"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloMai52"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMai"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloMai53"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMai"></span>
-                                        </td>
+                                        
                                     
                                         <td>
                                             <span class="form-control negrito" id="resultadoMai1">...</span>
@@ -869,16 +848,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoJun"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloJun62"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloJun"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloMai63"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMai"></span>
-                                        </td>
+                                       
                                     
                                         <td>
                                             <span class="form-control negrito" id="resultadoJun1">...</span>
@@ -900,16 +870,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoJul"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloJul72"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloJul"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloJul73"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMai"></span>
-                                        </td>
+                                        
                                     
                                         <td>
                                             <span class="form-control negrito" id="resultadoJul1">...</span>
@@ -931,16 +892,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoAgo"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloAgo82"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloAgo"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloAgo83"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMai">
-                                        </td>
+                                        
                                     
                                         <td>
                                             <span class="form-control negrito" id="resultadoAgosto1">...</span>
@@ -962,16 +914,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoSet"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloSet92"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloSet"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloSet93"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMai"></span>
-                                        </td>
+                                        
                                     
                                         <td>
                                             <span class="form-control negrito" id="resultadoSet1">...</span>
@@ -993,16 +936,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoOut"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloOut102"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloOut"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloOut103"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMai"></span>
-                                        </td>
+                                        
                                     
                                         <td>
                                             <span class="form-control negrito" id="resultadoOut1">...</span>
@@ -1024,16 +958,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoNov"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloNov112"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloNov"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloNov113"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMai"></span>
-                                        </td>
+                                        
                                     
                                         <td>
                                             <span class="form-control negrito" id="resultadoNov1">...</span>
@@ -1055,16 +980,7 @@
                                                 placeholder="Custo">
                                             <span class="error-message" id="errorCustoDez"></span>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloDez122"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloDez123"></span>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control acumulo" id="acumuloDez123"
-                                                placeholder="Acúmulo">
-                                            <span class="error-message" id="errorAcumuloMai"></span>
-                                        </td>
+                                       
                                     
                                         <td>
                                             <span class="form-control negrito" id="resultadoDez1">...</span>
@@ -1079,14 +995,7 @@
                                             <span class="error-message" id="errorDezembro"></span>
                                         </td>
                                     </tr>
-                                    <tr class="birda">
-                                        <td class="corToda">Uso das milhas</td>
-                                        <td>
-                                            <input type="number" class="form-control custo" id="usoDasMilhas"
-                                                placeholder="Custo">
-                                            <span class="error-message" id="errorUsoMilhas4"></span>
-                                        </td>
-                                    </tr>
+                                   
                                 </tbody>
                                 
                             </table>
@@ -1095,34 +1004,266 @@
                         
                         <!-- Exibição dos resultados -->
                         <div class="mt-4 text-center">
-                            <h5>TOTAL - custo ANUAL TODAS APLICAÇÕES: <span id="custoAnualTodasAplicacoes">0</span></h5>
-                            <h5>TOTAL - acúmulo ANUAL TODAS APLICAÇÕES: <span id="acumuloAnualTodasAplicacoes">0</span></h5>
-                            <h5>CUSTO MÉDIO DO MILHEIRO TODAS APLICAÇÕES: <span id="custoMedioDoMilheiroTodas">0</span></h5>
-                            <h5>SALDO APÓS USO DE MILHAS: <span id="saldoAposUsoDeMilhas">0</span></h5>
+                            <h5>TOTAL - custo ANUAL TODAS OPERACOES: <span id="custoAnualTodasAplicacoes">0</span></h5>
+                            <h5>TOTAL - acúmulo ANUAL TODAS OPERACOES: <span id="acumuloAnualTodasAplicacoes">0</span></h5>
+                            <h5>CUSTO MÉDIO DO MILHEIRO TODOS OS PROGRAMAS: <span id="custoMedioDoMilheiroDoLivelo">0</span></h5>
+                            <h5>SALDO APÓS TRANSFERÊNCIAS: <span id="saldoAposTransf">0</span></h5>
                             
-                            
+                            <br><br><br>
                         </div>
                        
-                        <!-- Botão para calcular -->
-                        <div class="text-center">
-                            <button type="button" class="btn btn-warning" id="calculate4"
-                                style="margin-top: 15px;"><strong>CALCULAR TOTAIS</strong></button>
-                        </div>
+                    
+                        
+                        <table class="table table-bordered">
+                         <tr class="cabeca">
+                                        <th>ATRIBUTOS</th>
+                                        <th>TRANSFERÊNCIA COM BÔNUS PARA SMILES(CUSTO MÉDIO MAX:R$16,10)</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="birda">
+                                        <td class="corToda">Quantidade de pontos transferidos</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="quantDePontosTransf1"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoJan3"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Percentual da promoção</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="percentDaPromocao1" 
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorCustoFev"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Total de acúmulo anual</td>
+                                        <td>
+                                            <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual1">...</span>
+                                            <span class="error-message" id="errorDezembro"></span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Custo medio do milheiro SMILES</td>
+                                        <td>
+                                            <span class="form-control negrito" id="custoMedioDoMilheiroSmiles">...</span>
+                                            <span class="error-message" id="errorDezembro"></span>
+                                        </td>
+                                       
+                                    </tr>
+                                    </table>
+                                    <table>
+
+                                    
+                                    </table>
+
+                                    <table class="table table-bordered">
+                                        <tr class="cabeca">
+                                                       <th>ATRIBUTOS</th>
+                                                       <th>TRANSFERÊNCIA COM BÔNUS PARA AZUL(CUSTO MÉDIO MAX:R$17,50)</th>
+                                                       
+                                                   </tr>
+                                               </thead>
+                                               <tbody>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Quantidade de pontos transferidos</td>
+                                                       <td>
+                                                           <input type="number" class="form-control custo" id="quantDePontosTransf2"
+                                                               placeholder="Custo">
+                                                           <span class="error-message" id="errorCustoJan3"></span>
+                                                       </td>
+                                                       
+                                                   </tr>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Percentual da promoção</td>
+                                                       <td>
+                                                           <input type="number" class="form-control custo" id="percentDaPromocao2" 
+                                                               placeholder="Custo">
+                                                           <span class="error-message" id="errorCustoFev"></span>
+                                                       </td>
+                                                       
+                                                   </tr>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Total de acúmulo anual</td>
+                                                       <td>
+                                                           <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual2">...</span>
+                                                           <span class="error-message" id="errorDezembro"></span>
+                                                       </td>
+                                                       
+                                                   </tr>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Custo medio do milheiro AZUL</td>
+                                                       <td>
+                                                           <span class="form-control negrito" id="custoMedioDoMilheiroAzul">...</span>
+                                                           <span class="error-message" id="errorDezembro"></span>
+                                                       </td>
+                                                      
+                                                   </tr>
+                                                   </table>
+                                                   <table>
+               
+                                                 
+                                                   </table>
+                                                   <table class="table table-bordered">
+                                                    <tr class="cabeca">
+                                                                   <th>ATRIBUTOS</th>
+                                                                   <th>TRANSFERÊNCIA COM BÔNUS PARA LATAM-PASS(CUSTO MÉDIO MAX:R$25,00)</th>
+                                                                   
+                                                               </tr>
+                                                           </thead>
+                                                           <tbody>
+                                                               <tr class="birda">
+                                                                   <td class="corToda">Quantidade de pontos transferidos</td>
+                                                                   <td>
+                                                                       <input type="number" class="form-control custo" id="quantDePontosTransf3"
+                                                                           placeholder="Custo">
+                                                                       <span class="error-message" id="errorCustoJan3"></span>
+                                                                   </td>
+                                                                   
+                                                               </tr>
+                                                               <tr class="birda">
+                                                                   <td class="corToda">Percentual da promoção</td>
+                                                                   <td>
+                                                                       <input type="number" class="form-control custo" id="percentDaPromocao3" 
+                                                                           placeholder="Custo">
+                                                                       <span class="error-message" id="errorCustoFev"></span>
+                                                                   </td>
+                                                                   
+                                                               </tr>
+                                                               <tr class="birda">
+                                                                   <td class="corToda">Total de acúmulo anual</td>
+                                                                   <td>
+                                                                       <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual3">...</span>
+                                                                       <span class="error-message" id="errorDezembro"></span>
+                                                                   </td>
+                                                                   
+                                                               </tr>
+                                                               <tr class="birda">
+                                                                   <td class="corToda">Custo medio do milheiro LATAM-PASS</td>
+                                                                   <td>
+                                                                       <span class="form-control negrito" id="custoMedioDoMilheiroLatamPass">...</span>
+                                                                       <span class="error-message" id="errorDezembro"></span>
+                                                                   </td>
+                                                                  
+                                                               </tr>
+                                                               </table>
+                                                               <table class="table table-bordered">
+                                                                <tr class="cabeca">
+                                                                               <th>ATRIBUTOS</th>
+                                                                               <th>TRANSFERÊNCIA COM BÔNUS PARA TAP MILES & GO(CUSTO MÉDIO MAX:R$35,00)</th>
+                                                                               
+                                                                           </tr>
+                                                                       </thead>
+                                                                       <tbody>
+                                                                           <tr class="birda">
+                                                                               <td class="corToda">Quantidade de pontos transferidos</td>
+                                                                               <td>
+                                                                                   <input type="number" class="form-control custo" id="quantDePontosTransf5"
+                                                                                       placeholder="Custo">
+                                                                                   <span class="error-message" id="errorCustoJan3"></span>
+                                                                               </td>
+                                                                               
+                                                                           </tr>
+                                                                           <tr class="birda">
+                                                                               <td class="corToda">Percentual da promoção</td>
+                                                                               <td>
+                                                                                   <input type="number" class="form-control custo" id="percentDaPromocao5" 
+                                                                                       placeholder="Custo">
+                                                                                   <span class="error-message" id="errorCustoFev"></span>
+                                                                               </td>
+                                                                               
+                                                                           </tr>
+                                                                           <tr class="birda">
+                                                                               <td class="corToda">Total de acúmulo anual</td>
+                                                                               <td>
+                                                                                   <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual5">...</span>
+                                                                                   <span class="error-message" id="errorDezembro"></span>
+                                                                               </td>
+                                                                               
+                                                                           </tr>
+                                                                           <tr class="birda">
+                                                                               <td class="corToda">Custo medio do milheiro MILES&GO</td>
+                                                                               <td>
+                                                                                   <span class="form-control negrito" id="custoMedioDoMilheiroTapMilesGo">...</span>
+                                                                                   <span class="error-message" id="errorDezembro"></span>
+                                                                               </td>
+                                                                              
+                                                                           </tr>
+                                                                           </table>
+                                                               <table>
+                           
+                                                         
+                                                               </table>
+                                                               <table class="table table-bordered">
+                                                                <tr class="cabeca">
+                                                                               <th>ATRIBUTOS</th>
+                                                                               <th>TRANSFERÊNCIA COM BÔNUS PARA IBERIA-PLUS(CUSTO MÉDIO MAX:R$70,00)</th>
+                                                                               
+                                                                           </tr>
+                                                                       </thead>
+                                                                       <tbody>
+                                                                           <tr class="birda">
+                                                                               <td class="corToda">Quantidade de pontos transferidos</td>
+                                                                               <td>
+                                                                                   <input type="number" class="form-control custo" id="quantDePontosTransf4"
+                                                                                       placeholder="Custo">
+                                                                                   <span class="error-message" id="errorCustoJan3"></span>
+                                                                               </td>
+                                                                               
+                                                                           </tr>
+                                                                           <tr class="birda">
+                                                                               <td class="corToda">Percentual da promoção</td>
+                                                                               <td>
+                                                                                   <input type="number" class="form-control custo" id="percentDaPromocao4" 
+                                                                                       placeholder="Custo">
+                                                                                   <span class="error-message" id="errorCustoFev"></span>
+                                                                               </td>
+                                                                               
+                                                                           </tr>
+                                                                           <tr class="birda">
+                                                                            <td class="corToda">Conversor da transferência</td>
+                                                                            <td>
+                                                                                <input type="number" class="form-control custo" id="conversorDeTransf" 
+                                                                                    placeholder="Custo">
+                                                                                <span class="error-message" id="errorCustoFev"></span>
+                                                                            </td>
+                                                                            
+                                                                        </tr>
+                                                                           <tr class="birda">
+                                                                               <td class="corToda">Total de acúmulo anual</td>
+                                                                               <td>
+                                                                                   <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual4">...</span>
+                                                                                   <span class="error-message" id="errorDezembro"></span>
+                                                                               </td>
+                                                                               
+                                                                           </tr>
+                                                                           <td class="corToda">Custo médio do milheiro IBERIA-PLUS</td>
+                                                                   <td>
+                                                                       <span class="form-control negrito" id="custoMedioDoMilheiroIberia">...</span>
+                                                                       <span class="error-message" id="errorDezembro"></span>
+                                                                   </td>
+                                                                        
+                                                                           </table>
+                                                                           <table>
+                                       
+                                                                           <div class="text-center">
+                                                                               <button type="button" class="btn btn-warning" id="calculate4"
+                                                                                   style="margin-top: 15px;"><strong>CALCULAR TOTAIS</strong></button>
+                                                                                   <script type="text/javascript" src="acumuloGeralOutros.js"></script>
+                                                                                   <br><br><br>
+                                                                                   
+                                                                           </div>
+                                                                           </table>
                     </div>
                     
+                    
                 </form>
-                
+
             </div>
-           
-        </div>
-        </div>
-
-    </main>
-    <script src="acumuloIberiaPlus.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>     
+        </body>
+</html>
