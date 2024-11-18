@@ -229,3 +229,12 @@ tr.diminuicao{
 .menu{
     background-color:#b6e200;
 }
+.casa {
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 300px; /* Adaptação relativa */
+    height: 160px; /* Mantém a proporção */
+    position: relative;
+    margin-left: 69.9%; /* Espaçamento entre as imagens */
+    transform: translateY(1%);
+
+}
