@@ -139,7 +139,7 @@ input[type="number"]::placeholder{
 .qualquer {
     font-size: 9.4px; /* Tamanho de fonte dinâmico */
     font-family: 'Montserrat', sans-serif;
-    margin-left: 75%; /* Margem ajustada com unidade relativa */
+    margin-left: 85%; /* Margem ajustada com unidade relativa */
     text-align: center; /* Centraliza o texto */
     white-space: nowrap; /* Impede quebra de linha */
     transform: translateY(50%); /* Mantém o deslocamento vertical */
