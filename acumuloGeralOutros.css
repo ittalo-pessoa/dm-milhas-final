@@ -46,6 +46,7 @@ tr.cabeca{
     border: none;
     background-color: #f7cc0b;
     color: #000000;
+    font-size: 13px;
 }
 td{
     border: none;
@@ -62,11 +63,13 @@ td{
 .custo{
     border: none;
     margin-bottom: 5px;
+    font-size: 13px;
 }
 
 .acumulo{
     border: none;
     margin-bottom: 5px;
+    font-size: 13px;
 }
 
 .corToda{
@@ -74,6 +77,7 @@ td{
     display: flex;
     justify-content: center;
     margin-top: 5px;
+    font-size: 13px;
 }
 
 
@@ -136,4 +140,92 @@ input[type="number"]::placeholder{
     text-align: center; /* Centraliza o texto dentro do elemento */
     margin: 0 auto; /* Centraliza o elemento na página */
 }
-
+.qualquer {
+    font-size: 24px; /* Tamanho de fonte dinâmico */
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2%; /* Margem ajustada com unidade relativa */
+    text-align: center; /* Centraliza o texto */
+    white-space: nowrap; /* Impede quebra de linha */
+    transform: translateY(50%); /* Mantém o deslocamento vertical */
+    font-weight: bold;
+}
+.qualquer2{
+    font-size: 13px;
+}
+tr.diminuicao{
+    border: none;
+    background-color: #f7cc0b;
+    color: #000000;
+    font-size: 10px;
+}
+.calendar{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 22px; /* Adaptação relativa */
+    height: -620px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -15px; /* Espaçamento entre as imagens */
+    transform: translateY(-55%);
+}
+.cartoes{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 155px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-47%);
+}
+.clubes{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 140px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-50%);
+}
+.compras{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 120px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-50%);
+}
+.compra{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 140px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-49%);
+}
+.calculo{
+    font-size: 13px;
+}
+.engrenagem{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 32px; /* Adaptação relativa */
+    height: -1220px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -53px; /* Espaçamento entre as imagens */
+    transform: translateY(55%);
+}
+.logo-vmm {
+    max-width: 80px; /* Tamanho padrão */
+    height: 50px;
+    position: absolute; /* Permite manipular a posição */
+    top: 50%; /* Centraliza verticalmente */
+    right: 48%; /* Move para a direita de forma relativa */
+    transform: translateY(-50%); /* Ajusta para centralizar verticalmente */
+}
+.qualquer3{
+    font-size: 13px; /* Tamanho de fonte dinâmico */
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10%; /* Margem ajustada com unidade relativa */
+    text-align: center; /* Centraliza o texto */
+    white-space: nowrap; /* Impede quebra de linha */
+    transform: translateY(29%); /* Mantém o deslocamento vertical */
+    font-weight: bold;
+}
+.menu{
+    background-color:#b6e200;
+}
