@@ -12,14 +12,9 @@ document.getElementById('calculate').addEventListener('click',function(){
 
     let pontosCar = parseFloat(document.getElementById('pontos-cartao').value);
     let promo = parseFloat(document.getElementById('promocao').value);
+    let milhasDesej = parseFloat(document.getElementById('milhas-desej').value);
+    let promo2 = parseFloat(document.getElementById('promo2').value);
 
-    if (
-        isNaN(pontosCar) || isNaN(promo) ||
-        pontosCar <= 0 || promo <= 0 
-    ) {
-        mostrarErro("errorPrecoPagante", "Todos os valores numéricos válidos devem ser preenchidos.");
-        return;
-    }
 
     let quantBonus = (promo * pontosCar) / 100;
 
@@ -29,16 +24,14 @@ document.getElementById('calculate').addEventListener('click',function(){
     
     document.getElementById('total1').innerHTML = (quantBonus.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
     document.getElementById('total2').innerHTML = (totAcu.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
-    
 
-    let milhasDesej = parseFloat(document.getElementById('milhas-desej').value);
-    let promo2 = parseFloat(document.getElementById('promo2').value);
 
     if (
-        isNaN(milhasDesej) || isNaN(promo2) ||
-        milhasDesej <= 0 || promo2 <= 0 
+        isNaN(pontosCar) || isNaN(promo) || isNaN(milhasDesej) || isNaN(promo2) ||
+        pontosCar <= 0 || promo <= 0 || milhasDesej <= 0 || promo2 <= 0 
     ) {
         mostrarErro("errorPrecoPagante", "Todos os valores numéricos válidos devem ser preenchidos.");
+        mostrarErro("errorPrecoPagante2", "Todos os valores numéricos válidos devem ser preenchidos.");
         return;
     }
 
@@ -49,6 +42,3 @@ document.getElementById('calculate').addEventListener('click',function(){
     document.getElementById('total3').innerHTML = (quantBonus2.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
     document.getElementById('total4').innerHTML = (pontosTrans.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
 });
-
-
-
