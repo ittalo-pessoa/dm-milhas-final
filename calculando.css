@@ -56,18 +56,17 @@ td{
 .custo{
     border: none;
     margin-bottom: 5px;
+    font-size: 13px;
 }
 
-.acumulo{
-    border: none;
-    margin-bottom: 5px;
-}
+
 
 .corToda{
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     margin-top: 5px;
+    font-size: 13px;
 }
 
 input{
@@ -125,14 +124,47 @@ input[type="number"]::placeholder{
 
 .titulo-completo {
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
     background-color: #f8f9fa;
     font-weight: bold;
     padding: 10px 0;
 }
 .negrito{
     font-weight:bold ;
+    font-size: 13px;
 }
 .lucro{
     background-color: #B2D600;
+}
+.qualquer {
+    font-size: 10.4px; /* Tamanho de fonte dinâmico */
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 75%; /* Margem ajustada com unidade relativa */
+    text-align: center; /* Centraliza o texto */
+    white-space: nowrap; /* Impede quebra de linha */
+    transform: translateY(50%); /* Mantém o deslocamento vertical */
+}
+.logo-vmm {
+    max-width: 80px; /* Tamanho padrão */
+    height: 50px;
+    position: absolute; /* Permite manipular a posição */
+    top: 50%; /* Centraliza verticalmente */
+    right: 48%; /* Move para a direita de forma relativa */
+    transform: translateY(-50%); /* Ajusta para centralizar verticalmente */
+}
+@media (max-width: 768px) {
+    .qualquer {
+        font-size: 8.4px; /* Fonte maior em telas menores */
+        margin-left: -5%; /* Margem adaptada para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .qualquer {
+        font-size: 8.4px; /* Ajuste para telas muito pequenas */
+        margin-left: 5%; /* Margem mais compacta */
+    }
+}
+.menu{
+    background-color:#b6e200;
 }
