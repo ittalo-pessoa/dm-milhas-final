@@ -164,7 +164,14 @@ input[type="number"]::placeholder{
         font-size: 7.4px; /* Ajuste para telas muito pequenas */
         margin-left: 5%; /* Margem mais compacta */
     }
-}
+
+  @media (min-width: 720px) and (max-width: 1650px) {
+    body {
+      font-size: 10px;
+      margin-left: -5%;
+    }
+  }}
+
 .menu{
     background-color:#b6e200;
 }
