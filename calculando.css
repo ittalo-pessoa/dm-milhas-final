@@ -137,7 +137,7 @@ input[type="number"]::placeholder{
     background-color: #B2D600;
 }
 .qualquer {
-    font-size: 10.4px; /* Tamanho de fonte dinâmico */
+    font-size: 9.4px; /* Tamanho de fonte dinâmico */
     font-family: 'Montserrat', sans-serif;
     margin-left: 75%; /* Margem ajustada com unidade relativa */
     text-align: center; /* Centraliza o texto */
@@ -154,14 +154,14 @@ input[type="number"]::placeholder{
 }
 @media (max-width: 768px) {
     .qualquer {
-        font-size: 8.4px; /* Fonte maior em telas menores */
+        font-size: 7.4px; /* Fonte maior em telas menores */
         margin-left: -5%; /* Margem adaptada para telas menores */
     }
 }
 
 @media (max-width: 480px) {
     .qualquer {
-        font-size: 8.4px; /* Ajuste para telas muito pequenas */
+        font-size: 7.4px; /* Ajuste para telas muito pequenas */
         margin-left: 5%; /* Margem mais compacta */
     }
 }
