@@ -1,11 +1,19 @@
-body{
-    background-color: rgb(100,131,136);
-    background: radial-gradient(circle, rgb(133, 133, 133) 44%, rgba(58,54,54,1) 100%);
-    padding-top: 110px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-
+body {
+    background: rgb(100,131,136);
+    background: radial-gradient(circle, rgb(133, 133, 133) 44%, rgba(58,54,54,1) 100%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 110px;
+}
 form [type="number" ] {
     background-color: #6a6969a5;
     color: #FFFFFF;
@@ -22,12 +30,6 @@ form [type="number" ] {
     background: rgba(27, 27, 27, 0.619);
     padding: 30px;
 }
-.btn-primary{
-    background-color: #f7cc0b;
-    border: none;
-    color: #000000;
-}
-
 h4{
     margin-bottom: 25px;
 }
@@ -36,8 +38,14 @@ h2{
 }
 tr.cabeca{
     border: none;
-    background-color: #f7cc0b;
+    background-color:  #f7cc0b;
     color: #000000;
+}
+tr.cabeca2{
+    border: none;
+    background-color:  #f7cc0b;
+    color: #000000;
+    padding-bottom: 100px;
 }
 
 td{
@@ -51,14 +59,11 @@ td{
     padding: 3px;
     margin-bottom: 5px;
 }
-.AH{
-    font-size: 20px;
-}
 
 .custo{
     border: none;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-size: 12px;
 }
 
 .acumulo{
@@ -71,10 +76,7 @@ td{
     display: flex;
     justify-content: center;
     margin-top: 5px;
-}
-
-.butao{
-    font-weight: bold;
+    font-size: 14px;
 }
 
 input{
@@ -103,4 +105,78 @@ input[type="number"]::placeholder{
 
 .input-group input:focus {
     box-shadow: none;
+}
+
+.input-group input.error {
+    border-color: red;
+}
+
+.input-group input.valid {
+    border-color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.700em;
+    margin-top: 0.25rem;
+}
+.titulo-completo {
+    width: 100%;
+    text-align: center; /* Alinha o texto no centro */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+    background-color: #f8f9fa; /* Adicione uma cor de fundo se desejar */
+    font-weight: bold; /* Deixa o título em negrito */
+    padding: 10px 0; /* Espaçamento interno para maior visibilidade */
+}
+.largura-total {
+    width: 100%; /* Faz com que o input ocupe toda a largura da célula */
+}
+
+.titulo-completo {
+    text-align: center;
+    font-size: 24px;
+    background-color: #f8f9fa;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.error-message {
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Oculto inicialmente */
+}
+.negrito{
+    font-weight: bold;
+    font-size: 12px;
+}
+.logo-vmm {
+    max-width: 80px; /* Tamanho padrão */
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 46%;
+}
+.hotel {
+    max-width: 300px; /* Tamanho padrão */
+    height: 180px;
+    top: 50%;
+    transform: translateY(-42%);
+    margin-left: 72%;
+
+}
+.qualquer {
+   
+    font-size: 1.5rem; /* Tamanho da fonte consistente */
+    /* Mantém o deslocamento vertical */
+    max-width: 280px; /* Define um limite para o tamanho do texto */
+    transform: translateY(30%);
+    margin-left: 55%;
+}
+
+
+.nova{
+    font-size: 16px;
+}
+.menu{
+    background-color:#b6e200;
 }
