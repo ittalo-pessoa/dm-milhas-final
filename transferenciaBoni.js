@@ -1,24 +1,54 @@
+function mostrarErro(campoId, mensagem) {
+    const elementoErro = document.getElementById(campoId);
+    elementoErro.textContent = mensagem;
+    elementoErro.style.display = "block";
+    setTimeout(() => {
+        elementoErro.style.display = "none";
+    }, 3000);
+}
 document.getElementById('calculate').addEventListener('click',function(){
-    const pontosCar = document.getElementById('pontos-cartao').value;
-    const promo = document.getElementById('promocao').value;
-
-    const quantBonus = (promo * pontosCar) / 100;
 
 
-    const totAcu = parseInt(quantBonus) + parseInt(pontosCar);
+
+    let pontosCar = parseFloat(document.getElementById('pontos-cartao').value);
+    let promo = parseFloat(document.getElementById('promocao').value);
+
+    if (
+        isNaN(pontosCar) || isNaN(promo) ||
+        pontosCar <= 0 || promo <= 0 
+    ) {
+        mostrarErro("errorPrecoPagante", "Todos os valores numéricos válidos devem ser preenchidos.");
+        return;
+    }
+
+    let quantBonus = (promo * pontosCar) / 100;
+
+
+    let totAcu = parseInt(quantBonus) + parseInt(pontosCar);
 
     
-    document.getElementById('total1').innerHTML = (quantBonus.toFixed(0));
-    document.getElementById('total2').innerHTML = (totAcu.toFixed(0));
+    document.getElementById('total1').innerHTML = (quantBonus.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
+    document.getElementById('total2').innerHTML = (totAcu.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
     
 
-    const milhasDesej = document.getElementById('milhas-desej').value;
-    const promo2 = document.getElementById('promo2').value;
+    let milhasDesej = parseFloat(document.getElementById('milhas-desej').value);
+    let promo2 = parseFloat(document.getElementById('promo2').value);
 
-    const quantBonus2 = (milhasDesej * ((promo2 / 100) * 100)) / (100 + ((promo2 / 100) * 100));
+    if (
+        isNaN(milhasDesej) || isNaN(promo2) ||
+        milhasDesej <= 0 || promo2 <= 0 
+    ) {
+        mostrarErro("errorPrecoPagante", "Todos os valores numéricos válidos devem ser preenchidos.");
+        return;
+    }
 
-    const pontosTrans = parseInt(milhasDesej) - parseInt(quantBonus2);
+    let quantBonus2 = (milhasDesej * ((promo2 / 100) * 100)) / (100 + ((promo2 / 100) * 100));
+
+    let pontosTrans = parseInt(milhasDesej) - parseInt(quantBonus2);
     
-    document.getElementById('total3').innerHTML = (quantBonus2.toFixed(0));
-    document.getElementById('total4').innerHTML = (pontosTrans.toFixed(0));
+    document.getElementById('total3').innerHTML = (quantBonus2.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
+    document.getElementById('total4').innerHTML = (pontosTrans.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
 });
+
+
+
