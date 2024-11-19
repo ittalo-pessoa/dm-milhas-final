@@ -1,137 +1,300 @@
 <!DOCTYPE html>
-
-<html lang="PT-BR">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DM-milhas</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/vmm-removebg-preview.png" type="image/x-icon">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>Menu Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="hotel.js"></script>  
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="img/vmm-removebg-preview.png">
 </head>
 
 <body>
-  <main>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <h1 style="vertical-align: inherit; font-size: 30px; font-family: 'Montserrat', sans-serif;">Mentoria sobre
-            Milhas</h1>
-        </a>
-        <img src="img/vmm-removebg-preview.png" class="img-thumbnail imagis"
-          style="height: 60px; width: 80px; background: transparent;">
-      </div>
-    </nav>
-
-    <div class="container baba" style="display: flex; align-items: center; justify-content: center;">
-      <div class="card" style="border: none; background: #192b43; width: 1100px;">
-        <div class="card-body" style=>
-          <div class="container menus">
-            <div class="row">
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="calculo-milheiro.html">Cálculo do milheiro</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="transferenciaBoni.html">Bumerangue (transferencias Bonificadas)</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="acumuloSmiles.html">Acúmulo Geral - Smiles</a>
-              </div>
+    <main>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" style="font-size: 0.5rem; font-family: 'Montserrat', sans-serif;">
+                    <p class="qualquer"> <strong>MENU</strong></p>
+                </a>
+                <img src="img/vmm-removebg-preview.png" class="logo-vmm position-absolute" alt="Logo VMM Turbo">
+                <img src="img/hotelaria-removebg-preview (1).png" class="invisivel hotel position-absolute" alt="Logo VMM Turbo">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p style="vertical-align: inherit;">
+                                    <p style="vertical-align: inherit;"></p>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="vertical-align: inherit;">
+                                <p style="vertical-align: inherit;">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">
+                                <p style="vertical-align: inherit;">
+                                    <p style="vertical-align: inherit;"></p>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
 
-            <div class="row">
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="pontosCartao.html"
-                  style="background: #ffc107; color: black;">Pontos no cartão</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="calculando.html"
-                  style="background: #ffc107; color: black;">Compra de pontos</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="acumuloAzul.html"
-                  style="background: #ffc107; color: black;">Acúmulo Geral - Azul</a>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="calculando.html">Anuidade de cartões</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="ALLAccor/AllA.html">ALL Accor</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="acumuloLatam.html">Acúmulo Geral - Latam Pass</a>
-              </div>
-              
+        <div class="container my-4 p-4 rounded">
+            <h2 class="text-center"></h2>
+            <div class="card">
+                <form id="formTabela">
+                    <div class="row">
+                        <!-- Primeira Coluna (Janeiro - Junho) -->
+                        <div class="col-md-12">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="cabeca invisivel">
+                                      <p style="font-size: 24px;"><strong>HOME</strong></p>
+                
+                                        <th colspan="4" class="nova titulo-completo">ACUMULANDO MILHAS SFSADADAAsAASasaSAsaSAsaSDSDFSADSDSADASDASDSAFDSADFASDFSAFASFSDAFASDF</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="birda">
+                                    <td colspan="2" class="text-center">
+                                        <!-- Botão 1 -->
+                                        <a href="calculo-milheiro.html" target="_blank" rel="noopener noreferrer">
+                                            <button type="button" class="menu btn btn-warning" id="MENU1">
+                                                <strong>Cálculo do Milheiro<br></strong>
+                                            </button>
+                                        </a>
+                                    </td>
+                                    <td colspan="2" class="text-center">
+                                        <!-- Botão 2 -->
+                                        <a href="acumuloSmiles.html" target="_blank" rel="noopener noreferrer">
+                                            <button type="button" class="menu2 btn btn-warning" id="MENU2">
+                                                <strong>Acúmulo Geral - Smiles</strong>
+                                            </button>
+                                        </a>
+                                    </td>
+                                    <td colspan="2" class="text-center">
+                                      <!-- Novo Botão -->
+                                      <a href="" target="_blank" rel="noopener noreferrer">
+                                          <button type="button" class="menu3 btn btn-warning" id="MENU3">
+                                              <strong>Bumerangue</strong>
+                                          </button>
+                                      </a>
+                                  </td>
+                                </tr>
+                                  <tr class="birda">
+                                    <td colspan="2" class="text-center">
+                                        <!-- Botão 1 -->
+                                        <a href="pontosCartao.html" target="_blank" rel="noopener noreferrer">
+                                            <button type="button" class="amarelando menu btn btn-warning" id="MENU1">
+                                                <strong>Pontos no Cartão<br></strong>
+                                            </button>
+                                        </a>
+                                    </td>
+                                    <td colspan="2" class="text-center">
+                                        <!-- Botão 2 -->
+                                        <a href="acumuloAzul.html" target="_blank" rel="noopener noreferrer">
+                                            <button type="button" class="menu2 amarelando btn btn-warning" id="MENU2">
+                                                <strong>Acúmulo Geral - Azul</strong>
+                                            </button>
+                                        </a>
+                                    </td>
+                                    <td colspan="2" class="text-center">
+                                      <!-- Novo Botão -->
+                                      <a href="compras-bonificadas.html" target="_blank" rel="noopener noreferrer">
+                                          <button type="button" class="menu3 amarelando btn btn-warning" id="MENU3">
+                                              <strong>Compra de Pontos</strong>
+                                          </button>
+                                      </a>
+                                  </td>
+                                    
+                                </tr>
+                                
+                                <tr class="birda">
+                                  <td colspan="2" class="text-center">
+                                      <!-- Botão 1 -->
+                                      <a href="calculando.html" target="_blank" rel="noopener noreferrer">
+                                          <button type="button" class="menu btn btn-warning" id="MENU1">
+                                              <strong>Anuidade de Cartões </strong>
+                                          </button>
+                                      </a>
+                                  </td>
+                                  <td colspan="2" class="text-center">
+                                      <!-- Botão 2 -->
+                                      <a href="acumuloLatam.html" target="_blank" rel="noopener noreferrer">
+                                          <button type="button" class="menu2 btn btn-warning" id="MENU2">
+                                              <strong>Acúmulo Geral - Latam-Pass</strong>
+                                          </button>
+                                      </a>
+                                  </td>
+                                  <td colspan="2" class="text-center">
+                                    <!-- Novo Botão -->
+                                    <a href="ALLAccor/AllA.html" target="_blank" rel="noopener noreferrer">
+                                        <button type="button" class="menu3 btn btn-warning" id="MENU3">
+                                            <strong>All Accor</strong>
+                                        </button>
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr class="birda">
+                                <td colspan="2" class="text-center">
+                                    <!-- Botão 1 -->
+                                    <a href="aplicativos.html" target="_blank" rel="noopener noreferrer">
+                                        <button type="button" class="menu amarelando btn btn-warning" id="MENU1">
+                                            <strong>Aplicativos de Pagamento<br></strong>
+                                        </button>
+                                    </a>
+                                </td>
+                                <td colspan="2" class="text-center">
+                                    <!-- Botão 2 -->
+                                    <a href="acumuloIberiaPlus.html" target="_blank" rel="noopener noreferrer">
+                                        <button type="button" class="menu2 amarelando btn btn-warning" id="MENU2">
+                                            <strong>Acúmulo Geral - Iberia - Plus</strong>
+                                        </button>
+                                    </a>
+                                </td>
+                                <td colspan="2" class="text-center">
+                                  <!-- Novo Botão -->
+                                  <a href="hotel.html" target="_blank" rel="noopener noreferrer">
+                                      <button type="button" class="menu3 amarelando btn btn-warning" id="MENU3">
+                                          <strong>Hotelaria</strong>
+                                      </button>
+                                  </a>
+                              </td>
+                            </tr>
+                            <tr class="birda">
+                              <td colspan="2" class="text-center">
+                                  <!-- Botão 1 -->
+                                  <a href="clube.html" target="_blank" rel="noopener noreferrer">
+                                      <button type="button" class="menu btn btn-warning" id="MENU1">
+                                          <strong>Clubes de Milhas<br></strong>
+                                      </button>
+                                  </a>
+                              </td>
+                              <td colspan="2" class="text-center">
+                                  <!-- Botão 2 -->
+                                  <a href="acumuloTapMiles.html" target="_blank" rel="noopener noreferrer">
+                                      <button type="button" class="menu2 btn btn-warning" id="MENU2">
+                                          <strong>Acúmulo Geral - TapMiles&Go</strong>
+                                      </button>
+                                  </a>
+                              </td>
+                              <td colspan="2" class="text-center">
+                                <!-- Novo Botão -->
+                                <a href="passagem.html" target="_blank" rel="noopener noreferrer">
+                                    <button type="button" class="menu3 btn btn-warning" id="MENU3">
+                                        <strong>Passagem Aérea</strong>
+                                    </button>
+                                </a>
+                            </td>
+                          </tr>
+                          <tr class="birda">
+                            <td colspan="2" class="text-center">
+                                <!-- Botão 1 -->
+                                <a href="downgrade.html" target="_blank" rel="noopener noreferrer">
+                                    <button type="button" class="menu amarelando btn btn-warning" id="MENU1">
+                                        <strong>Uograde/Downgrade<br></strong>
+                                    </button>
+                                </a>
+                            </td>
+                            <td colspan="2" class="text-center">
+                                <!-- Botão 2 -->
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <button type="button" class="menu2 amarelando btn btn-warning" id="MENU2">
+                                        <strong>Milhas Milhas</strong>
+                                    </button>
+                                </a>
+                            </td>
+                            <td colspan="2" class="text-center">
+                              <!-- Novo Botão -->
+                              <a href="acumuloLivelo.html" target="_blank" rel="noopener noreferrer">
+                                  <button type="button" class="menu3 amarelando btn btn-warning" id="MENU3">
+                                      <strong>Acúmulo Geral - Livelo</strong>
+                                  </button>
+                              </a>
+                          </td>
+                        </tr><tr class="birda">
+                          <td colspan="2" class="text-center">
+                              <!-- Botão 1 -->
+                              <a href="" target="_blank" rel="noopener noreferrer">
+                                  <button type="button" class="menu btn btn-warning" id="MENU1">
+                                      <strong>Compras Online Bonificadas<br></strong>
+                                  </button>
+                              </a>
+                          </td>
+                          <td colspan="2" class="text-center">
+                              <!-- Botão 2 -->
+                              <a href="" target="_blank" rel="noopener noreferrer">
+                                  <button type="button" class="invisivel menu2 btn btn-warning" id="MENU2">
+                                      <strong>IR PARA YOUTUBE 2</strong>
+                                  </button>
+                              </a>
+                          </td>
+                          <td colspan="2" class="text-center">
+                            <!-- Novo Botão -->
+                            <a href="acumuloEsfera.html" target="_blank" rel="noopener noreferrer">
+                                <button type="button" class="menu3 btn btn-warning" id="MENU3">
+                                    <strong>Acúmulo Geral - Esfera</strong>
+                                </button>
+                            </a>
+                        </td>
+                      </tr>
+                      <tr class="birda">
+                        <td colspan="2" class="text-center">
+                            <!-- Botão 1 -->
+                            <a href="transferenciaBoni.html" target="_blank" rel="noopener noreferrer">
+                                <button type="button" class="menu amarelando btn btn-warning" id="MENU1">
+                                    <strong>Transferêcias Bonificadas<br></strong>
+                                </button>
+                            </a>
+                        </td>
+                        <td colspan="2" class="text-center">
+                            <!-- Botão 2 -->
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                                <button type="button" class="invisivel menu2 btn btn-warning" id="MENU2">
+                                    <strong>IR PARA YOUTUBE 2</strong>
+                                </button>
+                            </a>
+                        </td>
+                        <td colspan="2" class="text-center">
+                          <!-- Novo Botão -->
+                          <a href="acumuloGeralOutros.html" target="_blank" rel="noopener noreferrer">
+                              <button type="button" class="menu3 amarelando btn btn-warning" id="MENU3">
+                                  <strong>Acúmulo Geral - OUTROS Programas</strong>
+                              </button>
+                          </a>
+                      </td>
+                    </tr>
+                                </tbody>
+                            </table>
+                           
+                        </div>
+                        <!-- Segunda Coluna (Julho - Dezembro) -->
+                    
+                        <!-- Exibição dos resultados -->
+                    </div>
+                </form>
+                
             </div>
-
-            <div class="row">
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="aplicativos.html"
-                  style="background: #ffc107; color: black;">Apps de pagamento</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="hotel.html"
-                  style="background: #ffc107; color: black;">Hotelaria</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="acumuloIberiaPlus.html"
-                  style="background: #ffc107; color: black;">Acúmulo Geral - Iberia Plus</a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="clube.html">Clubes de milhas</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="passagem.html">Passagem Aérea</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="acumuloTapMiles.html">Acúmulo Geral - Tap Miles&GO</a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="downgrade.html"
-                  style="background: #ffc107; color: black;">Upgrade | Downgrade</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="acumuloLivelo.html"
-                  style="background: #ffc107; color: black;">Acúmulo Geral - Livelo</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn btn-primary babar" href="acumuloEsfera.html"
-                  style="background: #ffc107; color: black;">Minhas milhas</a>
-              </div>
-              
-            </div>
-            <div class="col-md-4">
-              <a class="btn btn-primary babar" href="acumuloGeralOutros.html">Acúmulo Geral - OUTROS</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-</html>
+    <script src="hotel.js"></script>        
+</body>     
+</html>       
