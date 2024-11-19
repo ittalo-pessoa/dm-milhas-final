@@ -1,20 +1,39 @@
+function mostrarErro(campoId, mensagem) {
+    const elementoErro = document.getElementById(campoId);
+    elementoErro.textContent = mensagem;
+    elementoErro.style.display = "block";
+    setTimeout(() => {
+        elementoErro.style.display = "none";
+    }, 3000);
+}
 document.getElementById('calculate').addEventListener('click',function(){
-    const valorFat = document.getElementById('valor-fatura').value;
-    const cartao = document.getElementById('cartao').value;
-    const dolar = document.getElementById('dolar').value;
+
+    let valorFat = parseFloat(document.getElementById('valor-fatura').value);
+    let cartao = parseFloat(document.getElementById('cartao').value);
+    let dolar = parseFloat(document.getElementById('dolar').value);
+    let totalMilhas = parseFloat(document.getElementById('tot-milhas').value);
+    let cartao2 = parseFloat(document.getElementById('cartao2').value);
+    let dolar2 = parseFloat(document.getElementById('dolar2').value);
+    let bonus = parseFloat(document.getElementById('bonus').value);
 
     const creditados = valorFat / dolar * cartao;
 
-    document.getElementById('total').innerHTML = (creditados.toFixed(2));
-
-    const totalMilhas = document.getElementById('tot-milhas').value;
-    const cartao2 = document.getElementById('cartao2').value;
-    const dolar2 = document.getElementById('dolar2').value;
-    const bonus = document.getElementById('bonus').value;
+    document.getElementById('total').innerHTML = (creditados.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
 
     const totPontos = totalMilhas / ( 1 + bonus);
     const gastoCartao = (totPontos / cartao2) * dolar2
 
-    document.getElementById('total2').innerHTML = (totPontos.toFixed(2));
-    document.getElementById('total3').innerHTML = (gastoCartao.toFixed(2));
+    if (
+        isNaN(valorFat) || isNaN(cartao) || isNaN(dolar) || isNaN(totalMilhas) || isNaN(cartao2) || isNaN(dolar2) || isNaN(bonus) ||
+        valorFat <= 0 || cartao <= 0 || dolar <= 0 || totalMilhas <= 0 || cartao2 <= 0 || dolar2 <= 0 || bonus < 0
+    ) {
+        mostrarErro("errorPrecoPagante", "Todos os valores numéricos válidos devem ser preenchidos.");
+        mostrarErro("errorPrecoPagante2", "Todos os valores numéricos válidos devem ser preenchidos.");
+        return;
+    }
+
+    document.getElementById('total2').innerHTML = (totPontos.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
+    document.getElementById('total3').innerHTML = "R$ " + (gastoCartao.toLocaleString("pt-BR", { minimumFractionDigits: 2 }));
 });
+
+
