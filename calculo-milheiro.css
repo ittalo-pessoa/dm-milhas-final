@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: rgb(100,131,136);
+    background: rgb(100, 131, 136);
     background: radial-gradient(circle, rgb(53, 55, 59) 44%, rgb(23, 27, 31) 100%);
     width: 100%;
     min-height: 100vh;
@@ -14,10 +14,12 @@ body {
     align-items: center; 
     padding-top: 110px;
 }
-form [type="number" ] {
+
+form [type="number"] {
     background-color: #2e2e2e;
     color: #FFFFFF;
 }
+
 .container {
     color: aliceblue;
     margin-top: 200px;
@@ -25,123 +27,58 @@ form [type="number" ] {
     padding: 20px;
     background-color: #131518;
 }
-.card{
+
+.card {
     text-align: center;
     background: rgba(16, 19, 22, 0.619);
     padding: 30px;
 }
-h4{
+
+h4 {
     margin-bottom: 25px;
 }
-h2{
+
+h2 {
     margin: 15px;
 }
-tr.cabeca{
+
+/* Estilo para tabelas e inputs */
+tr.cabeca {
     border: none;
-    background-color:  #cfa122;
+    background-color: #cfa122;
     color: #000000;
 }
-td{
+
+td {
     border: none;
     color: #ffffff;
     font-weight: bold;
 }
-.borda{
+
+.borda {
     border: none;
     border-radius: 5px;
     padding: 3px;
     margin-bottom: 5px;
 }
 
-.custo{
-    border: none;
-    margin-bottom: 5px;
-}
-
-.acumulo{
-    border: none;
-    margin-bottom: 5px;
-}
-
-.corToda{
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-input{
+input {
     text-align: center;
     color: aliceblue;
     background: #16161600;
 }
+
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none; 
 }
+
 input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
 }
-input[type="number"]::placeholder{
+
+input[type="number"]::placeholder {
     color: rgb(255, 255, 255);
-}
-::placeholder{ 
-    text-align: center;
-}
-
-.input-group input {
-    background-color: transparent;
-    border: 0px solid #ccc;
-}
-
-.input-group input:focus {
-    box-shadow: none;
-}
-
-.input-group input.error {
-    border-color: red;
-}
-
-.input-group input.valid {
-    border-color: white;
-}
-
-.error-message {
-    color: red;
-    font-size: 0.875rem;
-    margin-top: 0.25rem;
-}
-.titulo-completo {
-    width: 100%;
-    text-align: center; 
-    font-size: 24px; 
-    background-color: #f8f9fa; 
-    font-weight: bold; 
-    padding: 10px 0; 
-}
-.largura-total {
-    width: 100%; 
-}
-
-.titulo-completo {
-    text-align: center;
-    font-size: 24px;
-    background-color: #f8f9fa;
-    font-weight: bold;
-    padding: 10px 0;
-}
-.error-message {
-    color: #ff4c4c;
-    font-size: 14px;
-    margin-top: 5px;
-    display: none; 
-}
-.negrito{
-    font-weight: bold;
-}
-
-td {
-    min-width: 300px;
 }
 
 span.resultado {
@@ -156,4 +93,144 @@ span.resultado {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Navbar Estilizada */
+.navbar {
+    background-color: #131518;
+    border-bottom: 2px solid #cfa122;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #cfa122;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand:hover {
+    color: #f0c26b;
+    text-decoration: none;
+}
+
+.navbar img {
+    height: 60px;
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #cfa122;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #cfa122;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #f0c26b;
+}
+
+.nav-link.disabled {
+    color: rgba(207, 161, 34, 0.5);
+}
+
+/* Responsividade para a navbar */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Reduz o tamanho do texto */
+    }
+
+    .navbar img {
+        height: 50px;
+        width: 70px;
+    }
+
+    .nav-link {
+        font-size: 0.9rem; /* Texto menor nos links */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.9rem; /* Texto ainda menor em telas bem pequenas */
+    }
+
+    .navbar img {
+        height: 40px;
+        width: 60px;
+    }
+
+    .nav-link {
+        font-size: 0.8rem; /* Links ainda menores */
+    }
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .titulo-completo {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    td {
+        min-width: auto;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    span.resultado {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo-completo {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    td {
+        font-size: 0.9rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
 }
