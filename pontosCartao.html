@@ -22,123 +22,158 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
-        
         <div class="container-fluid">
-                <span style="font-size: 30px; font-family: 'Montserrat', sans-serif; color:white">Pontos Cartão</span>
-            
-            <img src="vmm- turbo- 12.png" class="img-thumbnail" style="height: 60px; width: 80px; background: transparent;">
+            <a class="navbar-brand d-flex align-items-center" style="font-size: 0.5rem; font-family: 'Montserrat', sans-serif;">
+                <p class="qualquer"> <strong>PONTOS NO CARTÃO</strong></p>
+            </a>
+            <img src="img/vmm-removebg-preview.png" class="logo-vmm position-absolute" alt="Logo VMM Turbo">
+            <img src="img/hotelaria-removebg-preview (1).png" class="hotel position-absolute" alt="Logo VMM Turbo">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <p style="vertical-align: inherit;">
+                                <p style="vertical-align: inherit;"></p>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="vertical-align: inherit;">
+                            <p style="vertical-align: inherit;">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">
+                            <p style="vertical-align: inherit;">
+                                <p style="vertical-align: inherit;"></p>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
 
 
-    <div class="container my-4 p-4 rounded ">
-        <h2 class="text-center mb-4">Simulador de Pontos</h2>
+    <div class="container my-4 p-4 rounded">
+        <h2 class="text-center"></h2>
+        <div class="card">
             <form id="formTabela">
-                <div class="row g-4">
-                    <!-- Primeira Coluna (Creditação de Pontos) -->
-                    <div class="col-md-6">
+                <div class="row">
+                    <!-- Primeira Coluna (Janeiro - Junho) -->
+                    <div class="col-md-12">
                         <table class="table table-bordered">
                             <thead>
-                                <tr class="bg-warning text-white text-center">
-                                    <th colspan="2">Creditação de Pontos</th>
+                                <tr class="cabeca">
+                                    <th colspan="3" class="nova titulo-completo">Creditação de Pontos</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="fw-bold">Valor da Fatura</td>
-                                    <td>
-                                        <input type="number" class="form-control" id="valor-fatura" placeholder="Digite">
-                                        <span class="text-danger small" id="errorPrecoPagante"></span>
+                                <tr class="birda">
+                                    <td class="corToda">Valor da Fatura</td>
+                                    <td colspan="2">
+                                        <input type="number" class="form-control custo largura-total" id="valor-fatura"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="fw-bold">Conversor do Cartão</td>
+                                <tr class="birda">
+                                    <td class="corToda">Conversor do Cartão</td>
                                     <td>
-                                        <input type="number" class="form-control" id="cartao" placeholder="Digite">
+                                        <input type="number" class="form-control custo" id="cartao"
+                                            placeholder="Digite">
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="fw-bold">Dólar da Fatura</td>
+                                <tr class="birda">
+                                    <td class="corToda">Dólar da Fatura</td>
                                     <td>
-                                        <input type="number" class="form-control" id="dolar" placeholder="Digite">
+                                        <input type="number" class="form-control custo" id="dolar"
+                                            placeholder="Digite">
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="fw-bold">Pontos a serem Creditados</td>
+                                <tr class="birda">
+                                    <td class="corToda">Pontos a serem Creditados</td>
                                     <td>
-                                        <span class="form-control" id="total">...</span>
+                                        <span class="form-control custo" id="total">...</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!-- Segunda Coluna (Julho - Dezembro) -->
+                    <div class="col-md-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="cabeca">
+                                    <th colspan="3" class="nova titulo-completo">Total e Gastos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="birda">
+                                    <td class="corToda">Total de Milhas</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="tot-milhas"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante2"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Conversor do Cartão</td>
+                                    <td>
+                                        <input type="number" class="form-control custo" id="cartao2"
+                                            placeholder="Digite">
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Dólar da Fatura</td>
+                                    <td>
+                                        <input type="number" class="form-control custo" id="dolar2"
+                                            placeholder="Digite">
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Bônus de Transferência</td>
+                                    <td>
+                                        <input type="number" class="form-control custo" id="bonus"
+                                            placeholder="Digite">
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Total de Pontos</td>
+                                    <td>
+                                        <span class="form-control custo" id="total2">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Gasto no Cartão</td>
+                                    <td>
+                                        <span class="form-control custo" id="total3">...</span>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <!-- Segunda Coluna (Total e Gastos) -->
-                    <div class="col-md-6">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr class="bg-warning text-white text-center">
-                                    <th colspan="2">Total e Gastos</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="fw-bold">Total de Milhas</td>
-                                    <td>
-                                        <input type="number" class="form-control" id="tot-milhas" placeholder="Digite">
-                                        <span class="text-danger small" id="errorPrecoPagante2"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="fw-bold">Conversor do Cartão</td>
-                                    <td>
-                                        <input type="number" class="form-control" id="cartao2" placeholder="Digite">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="fw-bold">Dólar da Fatura</td>
-                                    <td>
-                                        <input type="number" class="form-control" id="dolar2" placeholder="Digite">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="fw-bold">Bônus de Transferência</td>
-                                    <td>
-                                        <input type="number" class="form-control" id="bonus" placeholder="Digite">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="fw-bold">Total de Pontos</td>
-                                    <td>
-                                        <span class="form-control" id="total2">...</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="fw-bold">Gasto no Cartão</td>
-                                    <td>
-                                        <span class="form-control" id="total3">...</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <!-- Botão para calcular -->
+                    <div class="text-center">
+                        <button type="button" class="btn btn-warning butao" id="calculate"
+                            style="margin-top: 15px;">Calcular</button>
                     </div>
-                </div>
-                <!-- Botão para calcular -->
-                <div class="text-center mt-4">
-                    <button type="button" class="btn btn-warning px-5" id="calculate">Calcular</button>
-                </div>
-                <!-- Botão para menu principal -->
-                <div class="text-center mt-3">
-                    <a href="https://ittalo-pessoa.github.io/dm-milhas-final/" target="_blank" rel="noopener noreferrer">
-                        <button type="button" class="btn btn-warning" style="border: none;">
-                            <strong>MENU PRINCIPAL</strong>
-                        </button>
-                    </a>
+                    <br><br><br>
+                    <div class="text-center">
+                        <a href="https://ittalo-pessoa.github.io/dm-milhas-final/" target="_blank" rel="noopener noreferrer">
+                            <button type="button" class="menu btn btn-warning" id="MENU"
+                                    style="font-size: 65%; margin-top: 15px; margin-right: 4px; border: none;">
+                                <strong>MENU PRINCIPAL</strong>
+                            </button>
+                        </a>  
+                    </div>
+                    <!-- Exibição dos resultados -->
                 </div>
             </form>
-    
+        </div>
     </div>
-    
   
     <script type="text/javascript" src="pontosCartao.js"></script>
 </body>
