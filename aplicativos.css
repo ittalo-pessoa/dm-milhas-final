@@ -38,7 +38,7 @@ h2{
 }
 tr.cabeca{
     border: none;
-    background-color: #f7cc0b;
+    background-color: #cfa122;
     color: #1d1414;
 }
 td{
@@ -148,30 +148,12 @@ input[type="number"]::placeholder{
     white-space: nowrap;
     transform: translateY(46%);
 }
-
 .logo-vmm {
     max-width: 80px; /* Tamanho padrão */
     height: 50px;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 46%;
-}
-@media (max-width: 768px) {
-    .navbar-brand .qualquer {
-        font-size: 12.5px;
-        margin-left: 50px;
-        transform: translateY(30%);
-    }
-}
-
-/* Ajuste para telas muito pequenas (abaixo de 576px) */
-@media (max-width: 576px) {
-    .navbar-brand .qualquer {
-        font-size: 12.5px;
-        margin-left: 20px;
-        transform: translateY(20%);
-        text-align: left; /* Ajusta alinhamento para melhor legibilidade */
-    }
 }
 .menu{
     background-color:#b6e200;
@@ -184,10 +166,25 @@ input[type="number"]::placeholder{
     margin-left: 800px; /* Centraliza o elemento */
     transform: translateY(6%);
 }
-@media (max-width: 1200px) {
-    .doc {
-        max-width: 250px; /* Reduz o tamanho */
-        transform: translateY(4%);
-    }
+.nerv {
+    width: 100%; /* Garante que ocupa 100% da largura */
+    position: fixed; /* Fixa no topo da página */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha na esquerda */
+   
+    pointer-events: auto;
+
+    height: 13%;
+  }
+  .menu-icon {
+    visibility: hidden;
+  }
+  .navbar img {
+    height: 60px; /* Tamanho padrão */
+    width: 80px;
+    position: absolute;
+    left: 50%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
 }
 
