@@ -186,7 +186,7 @@ input[type="number"]::placeholder{
     height: 60px; /* Tamanho padrão */
     width: 80px;
     position: absolute;
-    left: 5.5%; /* Centraliza horizontalmente */
+    left: 4.3%; /* Centraliza horizontalmente */
     top: 50%; /* Centraliza verticalmente */
     transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
 }
