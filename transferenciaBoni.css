@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(100,131,136);
-    background: radial-gradient(circle, rgb(133, 133, 133) 44%, rgba(58,54,54,1) 100%);
+    background: rgb(36, 40, 41);
+    background: radial-gradient(circle, #000000);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -38,7 +38,7 @@ h2{
 }
 tr.cabeca{
     border: none;
-    background-color:  #f7cc0b;
+    background-color:  #cfa122;
     color: #000000;
 }
 tr.cabeca2{
@@ -180,3 +180,35 @@ input[type="number"]::placeholder{
 .menu{
     background-color:#b6e200;
 }
+.invisivel{
+    visibility:hidden ;
+}
+.navbar img {
+    height: 60px; /* Tamanho padrão */
+    width: 80px;
+    position: absolute;
+    left: 5.3%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
+}
+.navbar {
+    background-color: rgba(15, 19, 22, 0.619) !important;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    min-height: 80px; /* Altura mínima ajustada para manter o visual proporcional */
+}
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -290px; /* Expande 20px para o lado direito */
+    width: 290px; /* Largura da "extensão" */
+    height: 100%; /* Altura total */
+    background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
+}
+
