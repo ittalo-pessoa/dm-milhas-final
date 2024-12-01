@@ -26,6 +26,7 @@ form [type="number"] {
     border-radius: 15px;
     padding: 20px;
     background-color: #131518;
+    
 }
 
 .card {
@@ -181,4 +182,12 @@ span.resultado {
     input {
         font-size: 0.9rem;
     }
+}
+#valPointMil::placeholder {
+    color: white; /* Cor desejada para o texto do placeholder (ex: laranja/vermelho) */
+    border: none;
+}
+#quantiPointMil::placeholder {
+    color: white; /* Cor desejada para o texto do placeholder (ex: laranja/vermelho) */
+    border: none;
 }
