@@ -44,7 +44,7 @@ h2{
 }
 tr.cabeca{
     border: none;
-    background-color: #f7cc0b;
+    background-color:#cfa122;
     color: #000000;
 }
 td{
@@ -157,4 +157,5 @@ input[type="number"]::placeholder{
 }
 .amarelinho{
     background-color: #cfa122;
+    font-size: 13px;
 }
