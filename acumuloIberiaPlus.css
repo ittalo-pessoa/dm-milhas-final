@@ -124,3 +124,37 @@ input[type="number"]::placeholder{
     font-weight: bold;
    
 }
+.invisivel{
+    visibility:hidden ;
+}
+.navbar img {
+    height: 60px; /* Tamanho padrão */
+    width: 80px;
+    position: absolute;
+    left: 51%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
+}
+.navbar {
+    background-color: rgba(15, 19, 22, 0.619) !important;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    min-height: 80px; /* Altura mínima ajustada para manter o visual proporcional */
+}
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -290px; /* Expande 20px para o lado direito */
+    width: 290px; /* Largura da "extensão" */
+    height: 100%; /* Altura total */
+    background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
+}
+.amarelinho{
+    background-color: #cfa122;
+}
