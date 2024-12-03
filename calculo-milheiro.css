@@ -65,8 +65,9 @@ td {
 
 input {
     text-align: center;
-    color: aliceblue;
+    color: aliceblue !important;
     background: #16161600;
+    border: none !important;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
