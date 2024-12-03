@@ -12,206 +12,237 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="AllA.css">
+    <link rel="icon" type="image/x-icon" href="vmm- turbo- 12.png">
 </head>
 
 <body>
     <main style="padding-top: 100px;">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
             <div class="container-fluid">
+                <a class="navbar-brand">
+                    <p class="invisivel">
+                        <strong>ANALISANDO AS ASSINATURAS<br>DOS CLUBES DE MILHAS</strong>
+
+                    </p>
+                    
+                </a>
+                <a href="https://ittalo-pessoa.github.io/dm-milhas-final/">
                 
-                    <span style="font-size: 30px; font-family: 'Montserrat', sans-serif;">All Accor</span>
-                
-                <img src="vmm- turbo- 12.png" class="img-thumbnail" style="height: 60px; width: 80px; background: transparent;">
+                <img src="vmm- turbo- 12.png" class="logo-vmm position-absolute" alt="Logo VMM Turbo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p style="vertical-align: inherit;">
+                                    <p style="vertical-align: inherit;"></p>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="vertical-align: inherit;">
+                                <p style="vertical-align: inherit;">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">
+                                <p style="vertical-align: inherit;">
+                                    <p style="vertical-align: inherit;"></p>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <div class="container mt-5 pt-5" style="border-radius: 30px; margin-bottom:50px;">
             <!-- Section: Livelo/Esfera/Curtaí -->
             <div class="container">
+                <p class="text-center" style="color:white;font-size: 20px;"><strong>ALL ACCOR</strong></p>
                 <section >
-                    <p style="background: #cfa122; font-size:24px; color:black;">Livelo/Esfera/Curtaí</p>
+                    <p style="background: #cfa122; font-size:24px; color:black;"><strong>LIVELO/ESFERA/CURTAÍ</strong></p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr>
-                                <td><label for="lec1">Quantidade de pontos:</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white" id="lec1" placeholder="custo"></td>
+                                <td><label for="lec1">Quantidade de Pontos:</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec1" placeholder="Digite"></td>
                             </tr>
                             <tr>
-                                <td><label for="lec2">Valor dos pontos</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white" id="lec2" placeholder="custo"></td>
+                                <td><label for="lec2">Valor dos Pontos</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec2" placeholder="Digite"></td>
                             </tr>
                             <tr>
                                 <td><label for="lec3">Conversor</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white" id="lec3" placeholder="custo"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec3" placeholder="Digite"></td>
                             </tr>
-                            <tr>
                                 <td><label>Pontos ALL</label></td>
-                                <td id="res1"><div class="text-center bg-white text-body" style="height: 30px;">00</div></td>
+                                <td id="res1"><div class="text-center bg-white text-body" style="height: 30px;">...</div></td>
                             </tr>
                             <tr>
                                 <td><label>Valor ALL (Euro)</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white" id="lec4" placeholder="custo"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec4" placeholder="Digite"></td>
                             </tr>
                             <tr>
                                 <td><label>Valor total ALL (Euro)</label></td>
-                                <td id="res2"><div class="text-center bg-white text-body" style="height: 30px;">€ 00,0</div></td>
+                                <td id="res2"><div class="text-center bg-white text-body" style="height: 30px;">...</div></td>
                             </tr>
                             <tr>
-                                <td><label>Valor Euro mercado</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white" id="lec5" placeholder="custo"></td>
+                                <td><label>Valor Euro Mercado</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec5" placeholder="Digite"></td>
                             </tr>
                             <tr>
-                                <td><label>Valor do Euro gerado</label></td>
-                                <td id="res3"><div class="text-center bg-white text-body" style="height: 30px;">00,0</div></td>
+                                <td><label>Valor do Euro Gerado</label></td>
+                                <td id="res3"><div class="text-center bg-white text-body" style="height: 30px;">...</div></td>
                             </tr>
                             <tr>
-                                <td><label>Percentual de desconto</label></td>
-                                <td id="res4"><div class="text-center bg-white text-body" style="height: 30px;">0%</div></td>
+                                <td><label>Percentual de Desconto</label></td>
+                                <td id="res4"><div class="text-center bg-white text-body" style="height: 30px;">...</div></td>
                             </tr>
                         </table>
                     </div>
-                    <button class="btn btn-warning" style=" background: #cfa122; font-size:24px;" onclick="total()">Calcular</button>
+                    <button class="btn btn-warning" style=" background: #cfa122; font-size:13px;" onclick="total()"><strong>CALCULAR TOTAIS</strong></button>
                 </section>
         
                 <!-- Section Smile -->
                 <section>
-                    <p style=" background: #cfa122;  font-size:24px; color:black;">Smile</p>
+                    <p style=" background: #cfa122;  font-size:24px; color:black;"><strong>SMILE</strong></p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr >
-                                <td><label for="sm1">Quantidade de milhas</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"  id="sm1" placeholder="custo"></td>
+                                <td><label for="sm1">Quantidade de Milhas</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="sm1" placeholder="Digite"></td>
                             </tr>
                             <tr >
-                                <td><label for="sm2">Valor do milheiro</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white" id="sm2" placeholder=" custo"></td>
+                                <td><label for="sm2">Valor do Milheiro</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="sm2" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label for="sm3">Conversor</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"  id="sm3" placeholder="custo"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="sm3" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Pontos ALL</label></td>
-                                <td id="res5" > <div style="height: 30px;"" class="text-center bg-white text-body "> 00</div></td>
+                                <td id="res5" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
                             <tr >
                                 <td><label>Valor ALL (Euro)</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"  id="sm4" placeholder=" custo"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="sm4" placeholder="Digite"></td>
                             </tr>
                             <tr >
-                                <td><label>Valor total ALL (Euro)</label></td>
-                                <td id="res6" > <div style="height: 30px;"" class="text-center bg-white text-body "> € 00,0</div></td>
+                                <td><label>Valor Total ALL (Euro)</label></td>
+                                <td id="res6" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
                             <tr >
                                 <td><label>Valor Euro mercado</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white" id="sm5" placeholder="custo"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="sm5" placeholder="Digite"></td>
                             </tr>
                             <tr >
-                                <td><label>Valor do Euro gerado</label></td>
-                                <td id="res7" > <div style="height: 30px;"" class="text-center bg-white text-body "> € 00,0</div></td>
+                                <td><label>Valor do Euro Gerado</label></td>
+                                <td id="res7" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
                             <tr >
-                                <td><label>Percentual de desconto</label></td>
-                                <td id="res8" > <div style="height: 30px;"" class="text-center bg-white text-body "> 0%</div></td>
+                                <td><label>Percentual de Desconto</label></td>
+                                <td id="res8" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
 
                         </table>
                     </div>
-                    <button class="btn btn-warning" style="background: #cfa122;" onclick="smile()">Calcular</button>
+                    <button class="btn btn-warning" style="background: #cfa122;font-size: 13px;" onclick="latam()"><strong>CALCULAR TOTAIS</strong></button>
                 </section>
         
                 <!-- Section Azul Fidelidade -->
                 <section>
-                    <p style="background: #cfa122; font-size:24px; color:black;">Azul Fidelidade</p>
+                    <p style="background: #cfa122; font-size:24px; color:black;"><strong>AZUL FIDELIDADE</strong></p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr >
-                                <td><label for="azul1">Quantidade de milhas</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"   id="azul1" placeholder="custo"></td>
+                                <td><label for="azul1">Quantidade de Milhas</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="azul1" placeholder="Digite"></td>
                             </tr>
                             <tr >
-                                <td><label for="azul2">Valor do milheiro</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"  id="azul2" placeholder=" custo"></td>
+                                <td><label for="azul2">Valor do Milheiro</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="azul2" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label for="azul3">Conversor</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"   id="azul3" placeholder="custo"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="azul3" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Pontos ALL</label></td>
-                                <td id="res9" > <div style="height: 30px;"" class="text-center bg-white text-body "> 00</div></td>
+                                <td id="res9" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
                             <tr >
                                 <td><label>Valor ALL (Euro)</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"   id="azul4" placeholder=" custo"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="azul4" placeholder="Digite"></td>
                             </tr>
                             <tr >
-                                <td><label>Valor total ALL (Euro)</label></td>
-                                <td id="res10" > <div style="height: 30px;"" class="text-center bg-white text-body "> € 00,0</div></td>
+                                <td><label>Valor Total ALL (Euro)</label></td>
+                                <td id="res10" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
                             <tr >
-                                <td><label>Valor Euro mercado</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"   id="azul5" placeholder=" custo"></td>
+                                <td><label>Valor Euro Mercado</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="azul5" placeholder="Digite"></td>
                             </tr>
                             <tr >
-                                <td><label>Valor do Euro gerado</label></td>
-                                <td id="res11" > <div style="height: 30px;"" class="text-center bg-white text-body "> € 00,0 </div></td>
+                                <td><label>Valor do Euro Gerado</label></td>
+                                <td id="res11" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
                             <tr >
-                                <td><label>Percentual de desconto</label></td>
-                                <td id="res12" > <div style="height: 30px;"" class="text-center bg-white text-body "> 0%</div></td>
+                                <td><label>Percentual de Desconto</label></td>
+                                <td id="res12" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
 
                         </table>
                     </div>
-                    <button class="btn btn-warning" style="background: #cfa122;" onclick="azulFidelidade()">Calcular</button>
+                    <button class="btn btn-warning" style="background: #cfa122;font-size: 13px;" onclick="latam()"><strong>CALCULAR TOTAIS</strong></button>
                 </section>
         
                 <!-- Section Latam -->
                 <section>
-                    <p style="background: #cfa122; font-size:24px; color:black;">Latam</p>
+                    <p style="background: #cfa122; font-size:24px; color:black;"><strong>LATAM</strong></p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr >
-                                <td><label for="latam1">Quantidade de milhas</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"  id="latam1" placeholder="00"></td>
+                                <td><label for="latam1">Quantidade de Milhas</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="latam1" placeholder="Digite"></td>
                             </tr>
                             <tr >
-                                <td><label for="latam2">Valor do milheiro</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"   id="latam2" placeholder="R$ 00,0"></td>
+                                <td><label for="latam2">Valor do Milheiro</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="latam2" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label for="latam3">Conversor</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"   id="latam3" placeholder="00,0"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="latam3" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Pontos ALL</label></td>
-                                <td id="res13" > <div style="height: 30px;"" class="text-center bg-white text-body "> 00</div></td>
+                                <td id="res13" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
                             <tr >
                                 <td><label>Valor ALL (Euro)</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"   id="latam4" placeholder="R$ 00,0"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="latam4" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Valor total ALL (Euro)</label></td>
-                                <td id="res14" > <div style="height: 30px;"" style="height: 30px;" class="text-center bg-white text-body "> € 00,0</div></td>
+                                <td id="res14" > <div style="height: 30px;"" style="height: 30px;" class="text-center bg-white text-body ">...</div></td>
                             </tr>
                             <tr >
-                                <td><label>Valor Euro mercado</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white"   id="latam5" placeholder="R$ 00,0"></td>
+                                <td><label>Valor Euro Mercado</label></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="latam5" placeholder="Digite"></td>
                             </tr>
                             <tr >
-                                <td><label>Valor do Euro gerado</label></td>
-                                <td id="res15" > <div style="height: 30px;"" class="text-center bg-white text-body "> € 00,0 </div></td>
+                                <td><label>Valor do Euro Gerado</label></td>
+                                <td id="res15" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
                             <tr >
-                                <td><label>Percentual de desconto</label></td>
-                                <td id="res16" > <div style="height: 30px;"" class="text-center bg-white text-body "> 0%</div></td>
+                                <td><label>Percentual de Desconto</label></td>
+                                <td id="res16" > <div style="height: 30px;"" class="text-center bg-white text-body ">...</div></td>
                             </tr>
 
                         </table>
                     </div>
-                    <button class="btn btn-warning" style="background: #cfa122;" onclick="latam()">Calcular</button>
+                    <button class="btn btn-warning" style="background: #cfa122;font-size: 13px;" onclick="latam()"><strong>CALCULAR TOTAIS</strong></button>
                 </section>
             </div>
         </div>
