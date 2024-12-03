@@ -65,8 +65,9 @@ td {
 
 input {
     text-align: center;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     background: #16161600;
+    border: none !important;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
@@ -79,7 +80,7 @@ input[type=number] {
 }
 
 input[type="number"]::placeholder {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)
 }
 
 span.resultado {

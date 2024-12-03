@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(36, 40, 41);
-    background: radial-gradient(circle, #000000);
+    background: rgb(100,131,136);
+    background: radial-gradient(circle, rgb(53, 55, 59) 44%, rgb(23, 27, 31) 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -15,19 +15,19 @@ body {
     padding-top: 110px;
 }
 form [type="number" ] {
-    background-color: #6a6969a5;
-    color: #FFFFFF;
+    background-color: #48494da5;
+    color: #FFFFFF; 
 }
 .container {
     color: aliceblue;
     margin-top: 200px;
     border-radius: 15px;
     padding: 20px;
-    background-color: #000000;
+    background-color: #131518;
 }
 .card{
     text-align: center;
-    background: rgba(27, 27, 27, 0.619);
+    background: rgba(16, 19, 22, 0.619);
     padding: 30px;
 }
 h4{
@@ -82,7 +82,7 @@ td{
 input{
     text-align: center;
     color: aliceblue;
-    background: #57575726;
+    background: #16161600;
 }
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none; 
@@ -148,6 +148,9 @@ input[type="number"]::placeholder{
 .negrito{
     font-weight: bold;
     font-size: 12px;
+    color: #ffffff;
+    background-color: #778eac5b;
+    border: none;
 }
 .logo-vmm {
     max-width: 80px; /* Tamanho padrão */
