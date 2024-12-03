@@ -65,7 +65,7 @@ td {
 
 input {
     text-align: center;
-    color: aliceblue !important;
+    color: rgb(0, 0, 0) !important;
     background: #16161600;
     border: none !important;
 }
