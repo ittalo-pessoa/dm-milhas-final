@@ -15,7 +15,7 @@ body {
     padding-top: 110px;
 }
 form [type="number" ] {
-    background-color: #6a6969a5;
+    background-color: #2e2e2e;
     color: #FFFFFF;
 }
 .container {
@@ -73,7 +73,7 @@ td{
 input{
     text-align: center;
     color: aliceblue;
-    background: #57575726;
+    background: #16161600;
 }
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none; 
@@ -87,6 +87,9 @@ input[type="number"]::placeholder{
 }
 ::placeholder{ 
     text-align: center;
+    color: aliceblue;
+    background: #16161600;
+    border: none !important;
 }
 
 .input-group input {
@@ -140,7 +143,7 @@ input[type="number"]::placeholder{
     visibility: hidden;
 }
 .vantagem{
-    background-color: #0d6423;
+    background-color: #3e945377;
 }
 .invisivel{
     visibility:hidden ;

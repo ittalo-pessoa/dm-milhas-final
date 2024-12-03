@@ -65,7 +65,7 @@ td {
 
 input {
     text-align: center;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0);
     background: #16161600;
     border: none !important;
 }
@@ -80,7 +80,7 @@ input[type=number] {
 }
 
 input[type="number"]::placeholder {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)
 }
 
 span.resultado {
