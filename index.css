@@ -273,10 +273,12 @@ input[type="number"]::placeholder{
     .container {
         margin-top: 50px;
         padding: 15px;
+        text-align: center; /* Centraliza o conteúdo */
     }
 
     .titulo-completo {
         font-size: 1.2rem;
+        text-align: center; /* Centraliza o título */
     }
 
     .card {
@@ -284,7 +286,9 @@ input[type="number"]::placeholder{
     }
 
     td {
-        min-width: auto;
+        min-width: 100%; /* Faz os botões ocuparem a largura total */
+        display: flex;
+        justify-content: center; /* Centraliza os botões na tabela */
     }
 
     input {
@@ -293,6 +297,8 @@ input[type="number"]::placeholder{
 
     .btn {
         font-size: 0.9rem;
+        width: 90%; /* Ajusta o tamanho dos botões */
+        margin: 5px auto; /* Adiciona espaço entre os botões */
     }
 
     span.resultado {
@@ -307,15 +313,25 @@ input[type="number"]::placeholder{
 
     .container {
         padding: 10px;
+        text-align: center; /* Centraliza o conteúdo */
     }
 
     td {
         font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; /* Empilha os botões */
     }
 
     input {
         font-size: 0.9rem;
     }
+
+    .btn {
+        width: 100%; /* Ocupa toda a largura disponível */
+        font-size: 0.8rem;
+    }
 }
+
 
 
