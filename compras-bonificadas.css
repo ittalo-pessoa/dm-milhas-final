@@ -188,4 +188,67 @@ span.resultado {
     height: 100%; /* Altura total */
     background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
 }
+@media (max-width: 768px) {
+    .navbar img {
+        height: 50px; /* Ajusta o tamanho da imagem */
+        width: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar img {
+        height: 40px; /* Reduz ainda mais o tamanho em telas muito pequenas */
+        width: 60px;
+    }
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .titulo-completo {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    td {
+        min-width: auto;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    span.resultado {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo-completo {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    td {
+        font-size: 0.9rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+}
 
