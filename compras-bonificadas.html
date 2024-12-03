@@ -19,39 +19,43 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="compras-bonificadas.js"></script>  
     <link rel="stylesheet" href="compras-bonificadas.css">
+    <link rel="icon" type="image/x-icon" href="img/vmm-removebg-preview.png">
 </head>
 
 <body>
     <main>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
             <div class="container-fluid">
-                <a class="navbar-brand" >
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit; font-size: 30px; font-family: 'Montserrat', sans-serif;">
-                           <strong>Compras Bonificadas</strong></font>
-                    </font>
+                <a class="navbar-brand">
+                    <p class="invisivel">
+                        <strong>ANALISANDO AS ASSINATURAS<br>DOS CLUBES DE MILHAS</strong>
+    
+                    </p>
+                    
                 </a>
-                <img src="vmm-removebg-preview.png" class=" position-absolute start-50 translate-middle-x" 
-                style="height: 60px; width: 80px; top: 15%; transform: translate(-50%, -50%); background: transparent;">
+                <a href="https://ittalo-pessoa.github.io/dm-milhas-final/">
+                
+                <img src="img/vmm-removebg-preview.png" class="logo-vmm position-absolute" alt="Logo VMM Turbo">
+                </a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;"></font>
-                                </font>
+                                <p style="vertical-align: inherit;">
+                                    <p style="vertical-align: inherit;"></p>
+                                </p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">
+                                <p style="vertical-align: inherit;">
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;"></font>
-                                </font>
+                                <p style="vertical-align: inherit;">
+                                    <p style="vertical-align: inherit;"></p>
+                                </p>
                             </a>
                         </li>
                     </ul>
@@ -69,9 +73,10 @@
                         <div class="col-md-12">
                             <table class="table table-bordered">
                                 <thead>
+                                    <p class="font-size:26px"><strong>COMPRAS BONIFICADAS<br></strong></p>
                                     <tr class="cabeca">
                                         
-                                        <th colspan="3" class="titulo-completo">Programas Bancários ou Aéreos</th>
+                                        <th colspan="3" style="font-size: 20px;" class="titulo-completo">PROGRAMAS BANCÁRIOS OU AÉREOS</th>
             
                                     </tr>
                                 </thead>
@@ -79,7 +84,7 @@
                                     <tr class="birda">
                                         <td class="corToda">Valor da compra</td>
                                         <td colspan="2">
-                                            <input type="number" class="form-control custo largura-total" id="CompraValor" placeholder="Insira Aqui">
+                                            <input type="number" class="form-control custo largura-total" id="CompraValor" placeholder="Digite">
                                             <span class="error-message" id="errorCustoJan"></span>
                                         </td>
             
@@ -87,7 +92,7 @@
                                     <tr class="birda">
                                         <td class="corToda">Pontos por real</td>
                                         <td colspan="2">
-                                            <input type="number" class="form-control custo largura-total" id="PontosToReal" placeholder="Insira Aqui">
+                                            <input type="number" class="form-control custo largura-total" id="PontosToReal" placeholder="Digite">
                                             <span class="error-message" id="errorCustoJan"></span>
                                         </td>
             
@@ -96,7 +101,7 @@
                                         <td class="corToda">Valor do Dólar</td>
                                         <td>
                                             <input type="number" class="form-control custo"  id="DolarValor"
-                                                placeholder="Insira Aqui">
+                                                placeholder="Digite">
                                             <span class="error-message" id="errorCustoFev"></span>
                                         </td>
                                     
@@ -105,7 +110,7 @@
                                         <td class="corToda"> Fator de Pontuação do Cartão</td>
                                         <td>
                                             <input type="number" class="form-control custo" id="FatorPointCartao"
-                                                placeholder="Insira Aqui">
+                                                placeholder="Digite">
                                             <span class="error-message" id="errorCustoMar"></span>
                                         </td>
                                     </tr>
@@ -131,18 +136,18 @@
                                     </td>
                                    </tr>
                                    <tr class="birda">
-                                    <td class="corToda">Transferência Bonificadas: Compra</td>
+                                    <td class="corToda">Transferência Bonificadas: Compra<br>(Para Compras no Programa Aéreo Deixe Vazio)</td>
                                     <td>
                                         <input type="number" class="form-control custo" id="TransfBoniCo"
-                                            placeholder="Em compras no programa aéreo deixe este vazio">
+                                            placeholder="Digite">
                                         <span class="error-message" id="errorCustoMar"></span>
                                      </td>
                                     </tr>
                                     <tr class="birda">
-                                        <td class="corToda">Transferência Bonificadas: Cartão</td>
+                                        <td class="corToda">Transferência Bonificadas: Cartão<br>(Para Compras em Cartões Co-Branded Deixe Vazio)</td>
                                         <td>
                                             <input type="number" class="form-control custo" id="TransfBoniCar"
-                                                placeholder="Para cartões co-branded deixe este vazio">
+                                                placeholder="Digite">
                                             <span class="error-message" id="errorCustoMar"></span>
                                         </td>
                                     </tr>
@@ -171,7 +176,7 @@
                                         <td class="corToda">Valor do custo médio do milheiro</td>
                                         <td>
                                             <input type="number" class="form-control custo" id="ValorCusMedMil"
-                                                placeholder="Insira Aqui">
+                                                placeholder="Digite">
                                             <span class="error-message" id="errorCustoMar"></span>
                                         </td>
                                     </tr>
@@ -194,7 +199,7 @@
                         </div>
                         <div class="text-center">
                             <button type="button" class="btn btn-primary" onclick="calcularTotais()"
-                                style="margin-top: 15px;background-color: #cfa122;color: black;border:none;"><strong>CALCULAR TOTAIS</strong></button>
+                                style="margin-top: 15px;background-color: #cfa122;color: black;border:none;font-size: 13px;"><strong>CALCULAR TOTAIS</strong></button>
                         </div>
                     </div>
                 </form>
