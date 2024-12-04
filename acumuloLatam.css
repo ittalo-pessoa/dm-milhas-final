@@ -278,3 +278,12 @@ input[type="number"]::placeholder{
 .amarelinho{
     background-color: #cfa122;
 }
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 150px; /* Adaptação relativa */
+    height: 120px; /* Mantém a proporção */
+    position: relative;
+    margin-left: 30px; /* Espaçamento entre as imagens */
+    transform: translateY(-20%);
+
+}

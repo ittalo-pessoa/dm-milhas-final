@@ -163,3 +163,30 @@ input[type="number"]::placeholder{
     background-color: #cfa122;
     font-size: 13px;
 }
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 280px; /* Adaptação relativa */
+    height: 200px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -30px; /* Espaçamento entre as imagens */
+    transform: translateY(-30%);
+
+}
+.livelo3{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 280px; /* Adaptação relativa */
+    height: 200px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -70px; /* Espaçamento entre as imagens */
+    transform: translateY(-40%);
+
+}
+.livelo4{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 280px; /* Adaptação relativa */
+    height: 200px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -70px; /* Espaçamento entre as imagens */
+    transform: translateY(-42%);
+
+}

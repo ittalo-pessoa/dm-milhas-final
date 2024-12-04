@@ -130,4 +130,14 @@ input{
    font-weight: bold;
    font-size: 15px;
 }
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 270px; /* Adaptação relativa */
+    height: 170px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -58px; /* Espaçamento entre as imagens */
+    transform: translateY(-41%);
+
+}
+
 
