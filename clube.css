@@ -230,7 +230,7 @@ input[type="number"]::placeholder{
     width: 250px; /* Adaptação relativa */
     height: 200px; /* Mantém a proporção */
     position: relative;
-    margin-left: 20px; /* Espaçamento entre as imagens */
-    transform: translateY(-50%);
+    margin-left: -125px; /* Espaçamento entre as imagens */
+    transform: translateY(-30%);
 
 }

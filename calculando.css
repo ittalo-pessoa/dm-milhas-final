@@ -179,10 +179,10 @@ input[type="number"]::placeholder{
   }
   .livelo2{
     max-width: 300px; /* Tamanho máximo para telas maiores */
-    width: 260px; /* Adaptação relativa */
-    height: 260px; /* Mantém a proporção */
+    width: 300px; /* Adaptação relativa */
+    height: 200px; /* Mantém a proporção */
     position: relative;
-    margin-left: -30px; /* Espaçamento entre as imagens */
-    transform: translateY(-48%);
+    margin-left: -140px; /* Espaçamento entre as imagens */
+    transform: translateY(-25%);
 
 }  

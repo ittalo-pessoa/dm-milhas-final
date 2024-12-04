@@ -126,12 +126,30 @@ span.resultado {
         height: 50px; /* Ajusta o tamanho da imagem */
         width: 70px;
     }
+    .livelo2{
+        max-width: 300px; /* Tamanho máximo para telas maiores */
+        width: 50px; /* Adaptação relativa */
+        height: 50px; /* Mantém a proporção */
+        position: relative;
+        margin-left: -20px; /* Espaçamento entre as imagens */
+        transform: translateY(-40%);
+    
+    }
 }
 
 @media (max-width: 576px) {
     .navbar img {
         height: 40px; /* Reduz ainda mais o tamanho em telas muito pequenas */
         width: 60px;
+    }
+    .livelo2{
+        max-width: 300px; /* Tamanho máximo para telas maiores */
+        width: 50px; /* Adaptação relativa */
+        height: 50px; /* Mantém a proporção */
+        position: relative;
+        margin-left: -20px; /* Espaçamento entre as imagens */
+        transform: translateY(-40%);
+    
     }
 }
 
@@ -165,6 +183,15 @@ span.resultado {
     span.resultado {
         font-size: 1rem;
     }
+    .livelo2{
+        max-width: 300px; /* Tamanho máximo para telas maiores */
+        width: 50px; /* Adaptação relativa */
+        height: 50px; /* Mantém a proporção */
+        position: relative;
+        margin-left: -20px; /* Espaçamento entre as imagens */
+        transform: translateY(-40%);
+    
+    }
 }
 
 @media (max-width: 576px) {
@@ -183,7 +210,95 @@ span.resultado {
     input {
         font-size: 0.9rem;
     }
+    .livelo2{
+        max-width: 300px; /* Tamanho máximo para telas maiores */
+        width: 30px; /* Adaptação relativa */
+        height: 30px; /* Mantém a proporção */
+        position: relative;
+        margin-left: -10px; /* Espaçamento entre as imagens */
+        transform: translateY(-40%);
+    
+    }
 }
+@media (max-width: 110px) {
+    .navbar img {
+        height: 30px; /* Reduz o tamanho para caber */
+        width: 40px;
+    }
+
+    .livelo2 {
+        max-width: 100px; /* Ajusta o tamanho máximo para largura estreita */
+        width: -480px; /* Adaptação proporcional */
+        height: -480px;
+        position: relative;
+        margin-left: -10px; /* Ajusta o espaçamento entre as imagens */
+        transform: translateY(-30%); /* Ajusta a posição vertical */
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 5px; /* Menor padding em telas muito pequenas */
+    }
+
+    .titulo-completo {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        text-align: center; /* Mantém centralizado */
+    }
+
+    .card {
+        padding: 10px; /* Ajusta o espaçamento */
+    }
+
+    input, .btn, span.resultado {
+        font-size: 0.8rem; /* Reduz o tamanho do texto */
+        width: 100%; /* Elementos preenchem toda a largura disponível */
+    }
+
+    td {
+        font-size: 0.7rem;
+        word-wrap: break-word; /* Previne estouro de texto */
+    }
+}
+@media (max-width: 100px) {
+    .navbar img {
+        height: 30px; /* Reduz o tamanho para caber */
+        width: 40px;
+    }
+
+    .livelo2 {
+        max-width: 100px; /* Ajusta o tamanho máximo para largura estreita */
+        width: -480px; /* Adaptação proporcional */
+        height: -480px;
+        position: relative;
+        margin-left: -40px; /* Ajusta o espaçamento entre as imagens */
+        transform: translateY(-30%); /* Ajusta a posição vertical */
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 5px; /* Menor padding em telas muito pequenas */
+    }
+
+    .titulo-completo {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        text-align: center; /* Mantém centralizado */
+    }
+
+    .card {
+        padding: 10px; /* Ajusta o espaçamento */
+    }
+
+    input, .btn, span.resultado {
+        font-size: 0.8rem; /* Reduz o tamanho do texto */
+        width: 100%; /* Elementos preenchem toda a largura disponível */
+    }
+
+    td {
+        font-size: 0.7rem;
+        word-wrap: break-word; /* Previne estouro de texto */
+    }
+}
+
 #valPointMil::placeholder {
     color: white; /* Cor desejada para o texto do placeholder (ex: laranja/vermelho) */
     border: none;
@@ -225,10 +340,10 @@ span.resultado {
 }
 .livelo2{
     max-width: 300px; /* Tamanho máximo para telas maiores */
-    width: 200px; /* Adaptação relativa */
-    height: 200px; /* Mantém a proporção */
+    width: 170px; /* Adaptação relativa */
+    height: 190px; /* Mantém a proporção */
     position: relative;
-    margin-left: -34px; /* Espaçamento entre as imagens */
-    transform: translateY(-42%);
+    margin-left: -30px; /* Espaçamento entre as imagens */
+    transform: translateY(-40%);
 
 }
