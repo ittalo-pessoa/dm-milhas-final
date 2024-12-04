@@ -210,5 +210,14 @@ input[type="number"]::placeholder{
     height: 100%; /* Altura total */
     background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
 }
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 220px; /* Adaptação relativa */
+    height: 160px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -80px; /* Espaçamento entre as imagens */
+    transform: translateY(-41%);
+
+}  
 
 
