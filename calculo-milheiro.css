@@ -343,7 +343,7 @@ span.resultado {
     width: 170px; /* Adaptação relativa */
     height: 190px; /* Mantém a proporção */
     position: relative;
-    margin-left: -30px; /* Espaçamento entre as imagens */
-    transform: translateY(-40%);
+    margin-left: -80px; /* Espaçamento entre as imagens */
+    transform: translateY(-33%);
 
 }
