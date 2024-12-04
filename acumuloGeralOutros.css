@@ -272,3 +272,12 @@ tr.diminuicao{
     background-color: #cfa122;
     font-size: 13px;
 }
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 250px; /* Adaptação relativa */
+    height: 170px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -98px; /* Espaçamento entre as imagens */
+    transform: translateY(-35%);
+
+}
