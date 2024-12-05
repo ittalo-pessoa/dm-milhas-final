@@ -215,8 +215,8 @@ input[type="number"]::placeholder{
     width: 220px; /* Adaptação relativa */
     height: 160px; /* Mantém a proporção */
     position: relative;
-    margin-left: -80px; /* Espaçamento entre as imagens */
-    transform: translateY(-41%);
+    margin-left: -104px; /* Espaçamento entre as imagens */
+    transform: translateY(-26%);
 
 }  
 

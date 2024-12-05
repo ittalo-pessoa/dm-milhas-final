@@ -135,8 +135,8 @@ input{
     width: 270px; /* Adaptação relativa */
     height: 170px; /* Mantém a proporção */
     position: relative;
-    margin-left: -58px; /* Espaçamento entre as imagens */
-    transform: translateY(-41%);
+    margin-left: -190px; /* Espaçamento entre as imagens */
+    transform: translateY(-11%);
 
 }
 
