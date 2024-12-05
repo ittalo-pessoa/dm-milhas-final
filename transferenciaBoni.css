@@ -219,7 +219,7 @@ input[type="number"]::placeholder{
     width: 45px; /* Adaptação relativa */
     height: 45px; /* Mantém a proporção */
     position: relative;
-    margin-left: -203px; /* Espaçamento entre as imagens */
-    transform: translateY(90%);
+    margin-left: -156px; /* Espaçamento entre as imagens */
+    transform: translateY(60%);
 
 }
