@@ -231,17 +231,19 @@ input[type="number"]::placeholder{
 }
 @media (max-width: 360px) {
     body {
-      font-size: 14px;
-      background-color: #e0e0e0;
-      margin: 10px;
+        font-size: 14px;
+        background: rgb(100,131,136);
+        background: radial-gradient(circle, rgb(53, 55, 59) 44%, rgb(23, 27, 31) 100%);
+        margin: 0; /* Remove margens extras */
     }
   
     .container {
-      width: 100%;
-      padding: 10px;
-      background-color: #ffffff;
-      border: none;
+        width: 100%;
+        padding: 10px;
+        background-color: #131518; /* Cor de fundo consistente */
+        border: none;
     }
+
     .estiloso{
         font-size: 8px;
         font-weight: bold; 
