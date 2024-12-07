@@ -17,7 +17,14 @@ document.getElementById("calculate").addEventListener("click", function () {
         transfBonificada <= 0 || valorMedioMilheiro <= 0 
         || precoPagante <= 0 ||  pontAcumulo <= 0 
     ) {
-        mostrarErro("errorPrecoPagante", "Todos os valores numéricos válidos devem ser preenchidos.");
+            document.getElementById('resultadoDesconto').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoDesconto2').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoDesconto3').innerHTML ="Digite todos os valores válidos!";
+            document.getElementById('resultadoHospedagemMilhas1').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoMelhorOpcao').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoVantajoso').innerHTML ="Digite todos os valores válidos!";
+            document.getElementById('hospedagemMilhasAll').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('percentEconomia').innerHTML ="Digite todos os valores válidos!";
         return;
     }
 

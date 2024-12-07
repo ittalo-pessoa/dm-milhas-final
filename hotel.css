@@ -147,7 +147,7 @@ input[type="number"]::placeholder{
 }
 .negrito{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
 }
 .logo-vmm {
     max-width: 80px; /* Tamanho padrão */

@@ -25,9 +25,12 @@ document.getElementById("calculate").addEventListener("click", function () {
         || cotacaoDolar <= 0 || conversorDoCartao <= 0 ||isNaN(transfBonificada )  || isNaN(valorCustoMedioMilheiro)||
         isNaN(anuidadeDoCartao)
         || valorCustoMedioMilheiro <= 0 ||anuidadeDoCartao<=0  ) {
-        mostrarErro("errorgastoMensalCartao", "Todos os valores numéricos válidos devem ser preenchidos.");
-        mostrarErro("errortransfBonificada", "Todos os valores numéricos válidos devem ser preenchidos.");
-        mostrarErro("erroranuidadeDoCartao","Todos os valores numéricos válidos devem ser preenchidos.");
+            document.getElementById('resultadoGastoAnual').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoValorEmDolar').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoTotalDePontos').innerHTML ="Digite todos os valores válidos!";
+            document.getElementById('resultadoMilhasNoAno').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadovalorMilhasNoAno').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoLucro').innerHTML ="Digite todos os valores válidos!";
         return;
     }
     const gastoAnual= gastoMensalCartao*quantMeses

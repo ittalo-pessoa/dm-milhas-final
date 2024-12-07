@@ -30,8 +30,10 @@ document.getElementById('calculate').addEventListener('click',function(){
         isNaN(pontosCar) || isNaN(promo) || isNaN(milhasDesej) || isNaN(promo2) ||
         pontosCar <= 0 || promo <= 0 || milhasDesej <= 0 || promo2 <= 0 
     ) {
-        mostrarErro("errorPrecoPagante", "Todos os valores numéricos válidos devem ser preenchidos.");
-        mostrarErro("errorPrecoPagante2", "Todos os valores numéricos válidos devem ser preenchidos.");
+        document.getElementById('total1').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('total2').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('total3').innerHTML ="Digite todos os valores válidos!";
+        document.getElementById('total4').innerHTML ="Digite todos os valores válidos!";
         return;
     }
 
