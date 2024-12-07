@@ -25,8 +25,12 @@ document.getElementById('calculate').addEventListener('click',function(){
         quantPontCom < 0 || valComMil < 0 || percenBonus < 0 || valTotPontCom < 0 || valComMil2 < 0 || percenBonus2 < 0 ||
         quantPontCom == 0 || valComMil == 0 || percenBonus == 0 || valTotPontCom == 0 || valComMil2 == 0 || percenBonus2 == 0 
     ){
-        mostrarErro("errorquantPontCom", "Todos os valores numéricos válidos devem ser preenchidos .");
-        mostrarErro("errorvalTotPontCom", "Todos os valores numéricos válidos devem ser preenchidos .");
+        document.getElementById('valTotCom').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('saldoTotMil').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('custoFinalMil').innerHTML ="Digite todos os valores válidos!";
+        document.getElementById('quantTotPont').innerHTML ="Digite todos os valores válidos!";
+        document.getElementById('saldoTotMil2').innerHTML ="Digite todos os valores válidos!";
+        document.getElementById('custoFinalMil2').innerHTML ="Digite todos os valores válidos!";
         return;
     }
 

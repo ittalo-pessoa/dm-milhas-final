@@ -24,7 +24,14 @@ document.getElementById("calculate").addEventListener("click", function () {
         || valorDoDolar <= 0 || fatorDeConversaoDoCartao <= 0||percentTransfBonificada<=0
         || valorDoCustoMedioDoMilheiro<=0
     ) {
-        mostrarErro("errorvalorDoBoleto", "Todos os valores numéricos válidos devem ser preenchidos.");
+        document.getElementById('resultadoTotalEmMilhasAposTransf').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadovalorDaTaxa').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoValorEmDolar').innerHTML ="Digite todos os valores válidos!";
+            document.getElementById('resultadoQuantidadeDePontos').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadovalorDasMilhas').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoresultadoFinal').innerHTML ="Digite todos os valores válidos!";
+            document.getElementById('resultadocustoDoMilheiroNaCompraIndiretaDasMilhas').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoanaliseFinalDaOperacao').innerHTML ="Digite todos os valores válidos!";
         return;
     }
     let percentTaxaCobradaPeloAplicativo=taxaCobradaPeloAplicativo/100

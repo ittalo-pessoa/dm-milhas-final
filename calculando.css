@@ -186,3 +186,7 @@ input[type="number"]::placeholder{
     transform: translateY(-25%);
 
 }  
+.negrito{
+    font-size: 16px;
+    font-weight: bold;
+}

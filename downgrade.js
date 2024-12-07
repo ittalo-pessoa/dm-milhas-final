@@ -25,7 +25,9 @@ document.getElementById("calculate").addEventListener("click", function () {
         mensalidade2Plano <= 0 || milhas2Plano <= 0 
         || quantMeses2plano <= 0 ||  bonus2Plano  < 0 
     ) {
-        mostrarErro("errorMensalidade1Plano", "Todos os valores numéricos válidos devem ser preenchidos.");
+        document.getElementById('resultadoAnuidade').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('resultadoPontosMilhasAno').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('resultadoCustoMilheiro').innerHTML ="Digite todos os valores válidos!";
         return;
     }
 

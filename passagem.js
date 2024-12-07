@@ -21,7 +21,9 @@ document.getElementById("calculate").addEventListener("click", function () {
         || custoMilheiroOuMedio <= 0 ||  
         valorPassagemDinheiro <= 0 
     ) {
-        mostrarErro("errorpassagemMilhas", "Todos os valores numéricos válidos devem ser preenchidos.");
+        document.getElementById('resultadoCustoReaisMilhas').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('resultadoEmitidoComMilhas').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('resultadoVantagem').innerHTML ="Digite todos os valores válidos!";
         return;
     }
 

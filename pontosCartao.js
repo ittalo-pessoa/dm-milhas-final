@@ -27,8 +27,10 @@ document.getElementById('calculate').addEventListener('click',function(){
         isNaN(valorFat) || isNaN(cartao) || isNaN(dolar) || isNaN(totalMilhas) || isNaN(cartao2) || isNaN(dolar2) || isNaN(bonus) ||
         valorFat <= 0 || cartao <= 0 || dolar <= 0 || totalMilhas <= 0 || cartao2 <= 0 || dolar2 <= 0 || bonus < 0
     ) {
-        mostrarErro("errorPrecoPagante", "Todos os valores numéricos válidos devem ser preenchidos.");
-        mostrarErro("errorPrecoPagante2", "Todos os valores numéricos válidos devem ser preenchidos.");
+        
+        document.getElementById('total').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('total2').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('total3').innerHTML ="Digite todos os valores válidos!";
         return;
     }
 
