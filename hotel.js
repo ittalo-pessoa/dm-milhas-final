@@ -20,11 +20,7 @@ document.getElementById("calculate").addEventListener("click", function () {
             document.getElementById('resultadoDesconto').innerHTML = "Digite todos os valores válidos!";
             document.getElementById('resultadoDesconto2').innerHTML = "Digite todos os valores válidos!";
             document.getElementById('resultadoDesconto3').innerHTML ="Digite todos os valores válidos!";
-            document.getElementById('resultadoHospedagemMilhas1').innerHTML = "Digite todos os valores válidos!";
-            document.getElementById('resultadoMelhorOpcao').innerHTML = "Digite todos os valores válidos!";
-            document.getElementById('resultadoVantajoso').innerHTML ="Digite todos os valores válidos!";
-            document.getElementById('hospedagemMilhasAll').innerHTML = "Digite todos os valores válidos!";
-            document.getElementById('percentEconomia').innerHTML ="Digite todos os valores válidos!";
+           
         return;
     }
 
@@ -49,7 +45,8 @@ document.getElementById("calculate2").addEventListener("click", function () {
         valorHospedagemMilhas <= 0 || custoMilheiro <= 0 
         || precoPagante2 <= 0
     ) {
-        mostrarErro("errorValorHospedagemMilhas", "Todos os valores numéricos válidos devem ser preenchidos.");
+        document.getElementById('resultadoHospedagemMilhas1').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoMelhorOpcao').innerHTML = "Digite todos os valores válidos!";
         return;
     }
 
@@ -76,7 +73,8 @@ document.getElementById("calculate3").addEventListener("click", function () {
         valorHospedagemReais <= 0 || quantPontosAll <= 0 
         || milhasGerarPontosAll <= 0 || valorMilheiro <= 0
     ) {
-        mostrarErro("errorValorHospedagemReaisAgain", "Todos os valores numéricos válidos devem ser preenchidos.");
+        document.getElementById('percentEconomia').innerHTML ="Digite todos os valores válidos!";
+            document.getElementById('hospedagemMilhasAll').innerHTML = "Digite todos os valores válidos!";
         return;
     }
 
@@ -109,7 +107,7 @@ document.getElementById("calculate4").addEventListener("click", function () {
         || paganteComAcumuloEsfera <= 0 || paganteComAcumuloSmiles <= 0||paganteComAcumuloAzul<=0||paganteComAcumuloLatamPass<=0|| pagandoComMilhasSmiles<=0
         || pagandoComMilhasAZUL<=0||paganteComPontosALL<=0
     ) {
-        mostrarErro("errorPaganteSemAcumulo", "Todos os valores numéricos válidos devem ser preenchidos.");
+        document.getElementById('resultadoVantajoso').innerHTML ="Digite todos os valores válidos!";
         return;
     }
     let menorValor = Math.min(
