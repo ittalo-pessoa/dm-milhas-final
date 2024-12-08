@@ -4,17 +4,27 @@ function getElementsById(ids) {
 }
 
 // Função para validar entradas e garantir que sejam positivas
-function validarEntradas(inputs) {
+function validarEntradas(inputs, results) {
     let valido = true;
+
     inputs.forEach(input => {
         if (Number(input.value) < 0 || input.value === "") {
-            input.value = ""; // Limpa campo se for inválido
-            input.style.border = "2px solid red"; // Adiciona borda vermelha para destacar
+            // Marca os campos de saída com bordas vermelhas para indicar erro
+            results.forEach(result => {
+                result.innerHTML = "Digite todos os valores válidos!";
+            });
+            
             valido = false;
         } else {
-            input.style.border = "1px solid #ccc"; // Mantém borda padrão
+           a=0
         }
     });
+
+    if (valido) {
+        // Remove bordas de erro dos campos de saída se as entradas forem válidas
+        a=1
+    }
+
     return valido;
 }
 
@@ -44,17 +54,20 @@ function calcularValores(n1, n2, n3, n5, results) {
     const s4 = (((s3 / n5) - 1) * (-1)) * 100;
     const decimal4 = s4.toFixed(2).replace('.', ',');
 
+    // Atualiza os resultados e garante que as bordas sejam padrão
     results[0].innerHTML = `${decimal}`;
     results[1].innerHTML = `${decimal2}`;
     results[2].innerHTML = `€ ${decimal3}`;
     results[3].innerHTML = `${decimal4} %`;
+
+    results.forEach(result => result.style.border = "1px solid #ccc");
 }
 
 // Função principal para inicializar os cálculos
 function inicializarCalculo(inputIds, resultIds) {
     const inputs = getElementsById(inputIds);
     const results = getElementsById(resultIds);
-    if (validarEntradas(inputs)) {
+    if (validarEntradas(inputs, results)) {
         const [n1, n2, n3, , n5] = inputs.map(input => Number(input.value));
         calcularValores(n1, n2, n3, n5, results);
     }
