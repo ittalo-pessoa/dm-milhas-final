@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(100,131,136);
-    background: radial-gradient(circle, rgb(133, 133, 133) 44%, rgba(58,54,54,1) 100%);
+    background: rgb(100, 131, 136);
+    background: radial-gradient(circle, rgb(53, 55, 59) 44%, rgb(23, 27, 31) 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -15,7 +15,7 @@ body {
     padding-top: 110px;
 }
 form [type="number" ] {
-    background-color: #6a6969a5;
+    background-color: #2e2e2e;
     color: #FFFFFF;
 }
 .container {
@@ -23,11 +23,11 @@ form [type="number" ] {
     margin-top: 200px;
     border-radius: 15px;
     padding: 20px;
-    background-color: #000000;
+    background-color: #131518;
 }
 .card{
     text-align: center;
-    background: rgba(27, 27, 27, 0.619);
+    background: rgba(16, 19, 22, 0.619);
     padding: 30px;
 }
 .btn-primary{
@@ -82,7 +82,7 @@ td{
 input{
     text-align: center;
     color: aliceblue;
-    background: #57575726;
+    background: #16161600;
 }
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none; 
@@ -122,6 +122,9 @@ input[type="number"]::placeholder{
 }
 .negrito{
     font-weight: bold;
+    background-color: #778eac5b;
+    border: none;
+    color: aliceblue
    
 }
 .invisivel{
