@@ -190,3 +190,76 @@ input[type="number"]::placeholder{
     transform: translateY(-42%);
 
 }
+.diminuicao{
+    font-size: 10px;
+    transform: translateY(-10%);
+}
+.diminuicao1{
+    font-size: 10px;
+    transform: translateY(-16%);
+}
+.diminuicao2{
+    font-size: 10px;
+    transform: translateY(-16%);
+}
+.cartoes{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 155px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-44%);
+}
+.clubes{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 185px; /* Adaptação relativa */
+    height: 130px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -95px; /* Espaçamento entre as imagens */
+    transform: translateY(-49%);
+}
+.compras{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 210px; /* Adaptação relativa */
+    height: 130px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -107px; /* Espaçamento entre as imagens */
+    transform: translateY(-47%);
+}
+.compras2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 120px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-50%);
+}
+.compra{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 140px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-47%);
+}
+.calendar{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 22px; /* Adaptação relativa */
+    height: -620px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -15px; /* Espaçamento entre as imagens */
+    transform: translateY(-55%);
+}
+.engrenagem{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 32px; /* Adaptação relativa */
+    height: -1220px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -53px; /* Espaçamento entre as imagens */
+    transform: translateY(55%);
+}
+
+input {
+    position: relative; /* ou absolute, se necessário */
+    z-index: 10; /* Deve ser maior que o do elemento sobreposto */
+}
