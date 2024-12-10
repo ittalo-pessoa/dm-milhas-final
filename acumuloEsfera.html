@@ -985,6 +985,7 @@
                                     </tr>
                                 </tbody>
                                 
+                                
                             </table>
 
                         </div>
@@ -994,25 +995,215 @@
                             <h5>TOTAL - custo ANUAL TODAS APLICAÇÕES: <span id="custoAnualTodasAplicacoes">0</span></h5>
                             <h5>TOTAL - acúmulo ANUAL TODAS APLICAÇÕES: <span id="acumuloAnualTodasAplicacoes">0</span></h5>
                             <h5>CUSTO MÉDIO DO MILHEIRO TODAS APLICAÇÕES: <span id="custoMedioDoMilheiroTodas">0</span></h5>
-                            <h5>SALDO APÓS USO DE MILHAS: <span id="saldoAposUsoDeMilhas">0</span></h5>
+                            <h5>SALDO APÓS USO DE MILHAS: <span id="saldoAposUsoDeMilhas">0</span></h5><br>
                             
                             
                         </div>
                        
                         <!-- Botão para calcular -->
-                        <div class="text-center">
-                            <button type="button" class="btn btn-warning amarelinho" id="calculate4"
-                                style="margin-top: 15px;"><strong>CALCULAR TOTAIS</strong></button>
-                                <script type="text/javascript" src="acumuloEsfera.js"></script>
-                                
-                        </div>
-                            </div>
+                       
+                        
                     
                         </form>
+                        
 
                 </div>
+                
             </div>
+            <table class="table table-bordered">
+                <tr class="cabeca"> 
+                    <th>ATRIBUTOS<img src="img/engranafem-removebg-preview.png" class="engrenagem position-absolute"></th>
+                               <th>TRANSFERÊNCIA COM BÔNUS PARA SMILES<br>
+                                CUSTO MÉDIO MAX:R$16,10</th>
+                               
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr class="birda">
+                               <td class="corToda">Quantidade de pontos transferidos</td>
+                               <td>
+                                   <input type="number" class="form-control custo" id="quantDePontosTransf2"
+                                       placeholder="Custo">
+                                   <span class="error-message" id="errorCustoJan3"></span>
+                               </td>
+                               
+                           </tr>
+                           <tr class="birda">
+                               <td class="corToda">Percentual da promoção</td>
+                               <td>
+                                   <input type="number" class="form-control custo" id="percentDaPromocao2" 
+                                       placeholder="Custo">
+                                   <span class="error-message" id="errorCustoFev"></span>
+                               </td>
+                               
+                           </tr>
+                           <tr class="birda">
+                               <td class="corToda">Total de acúmulo anual</td>
+                               <td>
+                                   <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual2">...</span>
+                                   <span class="error-message" id="errorDezembro"></span>
+                               </td>
+                               
+                           </tr>
+                           <tr class="birda">
+                               <td class="corToda">Custo medio do milheiro AZUL</td>
+                               <td>
+                                   <span class="form-control negrito" id="custoMedioDoMilheiroAzul">...</span>
+                                   <span class="error-message" id="errorDezembro"></span>
+                               </td>
+                              
+                           </tr>
+                          
+                          
+                         
+                           </table>
+                           <table class="table table-bordered">
+                            <tr class="cabeca">
+                                           <th>ATRIBUTOS<img src="img/engranafem-removebg-preview.png" class="engrenagem position-absolute"></th>
+                                           <th><h1 style="font-size: 15px;"><strong>TRANSFERÊNCIA COM BÔNUS PARA AZUL</strong></h1>
+                                            CUSTO MÉDIO MAX:R$17,50</th>
+                                           
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr class="birda">
+                                           <td class="corToda">Quantidade de pontos transferidos</td>
+                                           <td>
+                                               <input type="number" class="form-control custo" id="quantDePontosTransf3"
+                                                   placeholder="Custo">
+                                               <span class="error-message" id="errorCustoJan3"></span>
+                                           </td>
+                                           
+                                       </tr>
+                                       <tr class="birda">
+                                           <td class="corToda">Percentual da promoção</td>
+                                           <td>
+                                               <input type="number" class="form-control custo" id="percentDaPromocao3" 
+                                                   placeholder="Custo">
+                                               <span class="error-message" id="errorCustoFev"></span>
+                                           </td>
+                                           
+                                       </tr>
+                                       <tr class="birda">
+                                           <td class="corToda">Total de acúmulo anual</td>
+                                           <td>
+                                               <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual3">...</span>
+                                               <span class="error-message" id="errorDezembro"></span>
+                                           </td>
+                                           
+                                       </tr>
+                                       <tr class="birda">
+                                           <td class="corToda">Custo medio do milheiro LATAM-PASS</td>
+                                           <td>
+                                               <span class="form-control negrito" id="custoMedioDoMilheiroLatamPass">...</span>
+                                               <span class="error-message" id="errorDezembro"></span>
+                                           </td>
+                                          
+                                       </tr>
+                                       </table>
+                                       <table class="table table-bordered">
+                                        <tr class="cabeca">
+                                                       <th>ATRIBUTOS<img src="img/engranafem-removebg-preview.png" class="engrenagem position-absolute"></th>
+                                                       <th><h1 style="font-size: 11.8px;"><strong>TRANSFERÊNCIA COM BÔNUS PARA LATAM-PASS</strong></h1>
+                                                        CUSTO MÉDIO MAX:R$25,00</th>
+                                                       
+                                                   </tr>
+                                               </thead>
+                                               <tbody>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Quantidade de pontos transferidos</td>
+                                                       <td>
+                                                           <input type="number" class="form-control custo" id="quantDePontosTransf5"
+                                                               placeholder="Custo">
+                                                           <span class="error-message" id="errorCustoJan3"></span>
+                                                       </td>
+                                                       
+                                                   </tr>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Percentual da promoção</td>
+                                                       <td>
+                                                           <input type="number" class="form-control custo" id="percentDaPromocao5" 
+                                                               placeholder="Custo">
+                                                           <span class="error-message" id="errorCustoFev"></span>
+                                                       </td>
+                                                       
+                                                   </tr>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Total de acúmulo anual</td>
+                                                       <td>
+                                                           <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual5">...</span>
+                                                           <span class="error-message" id="errorDezembro"></span>
+                                                       </td>
+                                                       
+                                                   </tr>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Custo medio do milheiro MILES&GO</td>
+                                                       <td>
+                                                           <span class="form-control negrito" id="custoMedioDoMilheiroTapMilesGo">...</span>
+                                                           <span class="error-message" id="errorDezembro"></span>
+                                                       </td>
+                                                      
+                                                   </tr>
+                                                   </table>
+                                       <table>
+   
+                                 
+                                       </table>
+                                       <table class="table table-bordered">
+                                        <tr class="cabeca">
+                                            <th>ATRIBUTOS<img src="img/engranafem-removebg-preview.png" class="engrenagem position-absolute"></th>
+                                                       <th><h1 style="font-size: 10.5px;"><strong>TRANSFERÊNCIA COM BÔNUS PARA IBERIA-PLUS</strong></h1>CUSTO MÉDIO MAX:R$70,00</th>
+                                                       
+                                                   </tr>
+                                               </thead>
+                                               <tbody>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Quantidade de pontos transferidos</td>
+                                                       <td>
+                                                           <input type="number" class="form-control custo" id="quantDePontosTransf4"
+                                                               placeholder="Custo">
+                                                           <span class="error-message" id="errorCustoJan3"></span>
+                                                       </td>
+                                                       
+                                                   </tr>
+                                                   <tr class="birda">
+                                                       <td class="corToda">Percentual da promoção</td>
+                                                       <td>
+                                                           <input type="number" class="form-control custo" id="percentDaPromocao4" 
+                                                               placeholder="Custo">
+                                                           <span class="error-message" id="errorCustoFev"></span>
+                                                       </td>
+                                                       
+                                                   </tr>
+                                                  
+                                                   <tr class="birda">
+                                                       <td class="corToda">Total de acúmulo anual</td>
+                                                       <td>
+                                                           <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual4">...</span>
+                                                           <span class="error-message" id="errorDezembro"></span>
+                                                       </td>
+                                                       
+                                                   </tr>
+                                                   <td class="corToda">Custo médio do milheiro IBERIA-PLUS</td>
+                                           <td>
+                                               <span class="form-control negrito" id="custoMedioDoMilheiroIberia">...</span>
+                                               <span class="error-message" id="errorDezembro"></span>
+                                           </td>
+                                                
+                                                   </table>
+                                                   <table>
+               
+                                                   <div class="text-center">
+                                                       <button type="button" class="btn btn-warning calculo amarelinho" id="calculate4"
+                                                           style="margin-top: 15px;"><strong>CALCULAR TOTAIS</strong></button>
+                                                           <script type="text/javascript" src="acumuloGeralOutros.js"></script>
+                                                        
+                                                           
+                                                   </div>
+                                        
+                                                   </table>
         </div>
+        
     </main>
 </body>
 </html>
