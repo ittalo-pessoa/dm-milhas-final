@@ -84,7 +84,7 @@ document.getElementById("calculate3").addEventListener("click", function () {
 
     document.getElementById("hospedagemMilhasAll").innerHTML = "R$ " + custodaHospedagemEmMilhasAll.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
    
-    document.getElementById("percentEconomia").innerHTML = "R$ " + percentEconomiaUsandoPontosAll.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("percentEconomia").innerHTML = percentEconomiaUsandoPontosAll.toLocaleString("pt-BR", { minimumFractionDigits: 2 })+"%";
     
 
     
