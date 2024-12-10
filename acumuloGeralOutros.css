@@ -281,3 +281,7 @@ tr.diminuicao{
     transform: translateY(-35%);
 
 }
+input {
+    position: relative; /* ou absolute, se necessário */
+    z-index: 10; /* Deve ser maior que o do elemento sobreposto */
+}
