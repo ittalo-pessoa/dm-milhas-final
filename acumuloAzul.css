@@ -66,6 +66,14 @@ td{
     margin-bottom: 5px;
     font-size: 12px;
 }
+.custo2{
+    border: none;
+    margin-bottom: 5px;
+    font-size: 12px;
+    max-width: 150px;
+    max-height: 50px;
+    transform: translateX(260%);
+}
 
 .acumulo{
     border: none;
@@ -128,6 +136,12 @@ input[type="number"]::placeholder{
 }
 .negrito{
     font-weight: bold;
+    font-size: 9px;
+   
+}
+.negrito2{
+    font-weight: bold;
+    font-size: 8px;
    
 }
 .novaIdeia{
