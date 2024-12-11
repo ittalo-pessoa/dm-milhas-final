@@ -136,7 +136,19 @@ input[type="number"]::placeholder{
 }
 .negrito{
     font-weight: bold;
+    color: #ffffff;
+    background-color: #778eac5b;
+    border: none;
+    font-size: 10px;
    
+   
+}
+.negrito2{
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #778eac5b;
+    border: none;
+    font-size: 10px;
 }
 .novaIdeia{
     font-size: 12px;
