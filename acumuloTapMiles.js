@@ -35,18 +35,7 @@ const custoDez1 = isNaN(parseFloat(document.getElementById('custoDez1').value.re
 const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloDez1').value.replace(/\./g, ""));
 
     if (
-        custoJan1 == 0 && acumuloJan1 == 0 &&
-        custoFev1 == 0 && acumuloFev1 == 0 &&
-        custoMar1 == 0 && acumuloMar1 == 0 &&
-        custoAbr1 == 0 && acumuloAbr1 == 0 &&
-        custoMai1 == 0 && acumuloMai1 == 0 &&
-        custoJun1 == 0 && acumuloJun1 == 0 &&
-        custoJul1 == 0 && acumuloJul1 == 0 &&
-        custoAgo1 == 0 && acumuloAgo1 == 0 &&
-        custoSet1 == 0 && acumuloSet1 == 0 &&
-        custoOut1 == 0 && acumuloOut1 == 0 &&
-        custoNov1 == 0 && acumuloNov1 == 0 &&
-        custoDez1 == 0 && acumuloDez1 == 0||custoJan1 < 0 || acumuloJan1 < 0 ||
+        custoJan1 < 0 || acumuloJan1 < 0 ||
         custoFev1 < 0 || acumuloFev1 < 0 ||
         custoMar1 < 0 || acumuloMar1 < 0 ||
         custoAbr1 < 0 || acumuloAbr1 < 0 ||
@@ -71,11 +60,9 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
     const totalCusto1 = custoJan1 + custoFev1 + custoMar1 + custoAbr1 + custoMai1 + custoJun1 + custoJul1 + custoAgo1 + custoSet1 + custoOut1 + custoNov1 + custoDez1;
     const totalAcumulo1 = acumuloJan1 + acumuloFev1 + acumuloMar1 + acumuloAbr1 + acumuloMai1 + acumuloJun1 + acumuloJul1 + acumuloAgo1 + acumuloSet1 + acumuloOut1 +
      acumuloNov1 + acumuloDez1;
-    const acumuloAnual= totalCusto1/totalAcumulo1*1000;
 
     document.getElementById('totalCusto1').innerHTML = "R$ " + totalCusto1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   document.getElementById('totalAcumulo1').innerHTML = "R$ " + totalAcumulo1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    document.getElementById('acumuloAnual1').innerHTML = "R$ " + acumuloAnual.toLocaleString("pt-BR", {maximumFractionDigits:2, minimumFractionDigits: 2 });
 
    
 
@@ -112,19 +99,6 @@ const acumuloDez2 = isNaN(parseFloat(document.getElementById('acumuloDez2').valu
     
         if (
             
-                custoJan2 == 0 && acumuloJan2 == 0 &&
-                custoFev2 == 0 && acumuloFev2 == 0 &&
-                custoMar2 == 0 && acumuloMar2 == 0 &&
-                custoAbr2 == 0 && acumuloAbr2 == 0 &&
-                custoMai2 == 0 && acumuloMai2 == 0 &&
-                custoJun2 == 0 && acumuloJun2 == 0 &&
-                custoJul2 == 0 && acumuloJul2 == 0 &&
-                custoAgo2 == 0 && acumuloAgo2 == 0 &&
-                custoSet2 == 0 && acumuloSet2 == 0 &&
-                custoOut2 == 0 && acumuloOut2 == 0 &&
-                custoNov2 == 0 && acumuloNov2 == 0 &&
-                custoDez2 == 0 && acumuloDez2 == 0
-             || 
             custoJan2 < 0 || acumuloJan2 < 0 ||
             custoFev2 < 0 || acumuloFev2 < 0 ||
             custoMar2 < 0 || acumuloMar2 < 0 ||
@@ -178,19 +152,7 @@ const acumuloDez3 = isNaN(parseFloat(document.getElementById('acumuloDez3').valu
 
     
     if (
-        custoJan3 == 0 && acumuloJan3 == 0 &&
-        custoFev3 == 0 && acumuloFev3 == 0 &&
-        custoMar3 == 0 && acumuloMar3 == 0 &&
-        custoAbr3 == 0 && acumuloAbr3 == 0 &&
-        custoMai3 == 0 && acumuloMai3 == 0 &&
-        custoJun3 == 0 && acumuloJun3 == 0 &&
-        custoJul3 == 0 && acumuloJul3 == 0 &&
-        custoAgo3 == 0 && acumuloAgo3 == 0 &&
-        custoSet3 == 0 && acumuloSet3 == 0 &&
-        custoOut3 == 0 && acumuloOut3 == 0 &&
-        custoNov3 == 0 && acumuloNov3 == 0 &&
-        custoDez3 == 0 && acumuloDez3 == 0
-        || 
+
         custoJan3 < 0 || acumuloJan3 < 0 ||
         custoFev3 < 0 || acumuloFev3 < 0 ||
         custoMar3 < 0 || acumuloMar3 < 0 ||
@@ -264,21 +226,7 @@ const acumuloDez123 = isNaN(parseFloat(document.getElementById('acumuloDez123').
 
 const usoMilhas = isNaN(parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""));
 if (
-    custoOpera11 == 0 && acumuloOpera12 == 0 && acumuloOpera13 == 0 &&
-    custoJan21 == 0 && acumuloJan22 == 0 && acumuloJan23 == 0 &&
-    custoFev21 == 0 && acumuloFev22 == 0 && acumuloFev23 == 0 &&
-    custoMar31 == 0 && acumuloMar32 == 0 && acumuloMar33 == 0 &&
-    custoAbr41 == 0 && acumuloAbr42 == 0 && acumuloAbr43 == 0 &&
-    custoMai51 == 0 && acumuloMai52 == 0 && acumuloMai53 == 0 &&
-    custoJun61 == 0 && acumuloJun62 == 0 && acumuloJun63 == 0 &&
-    custoJul71 == 0 && acumuloJul72 == 0 && acumuloJul73 == 0 &&
-    custoAgo81 == 0 && acumuloAgo82 == 0 && acumuloAgo83 == 0 &&
-    custoSet91 == 0 && acumuloSet92 == 0 && acumuloSet93 == 0 &&
-    custoOut101 == 0 && acumuloOut102 == 0 && acumuloOut103 == 0 &&
-    custoNov111 == 0 && acumuloNov112 == 0 && acumuloNov113 == 0 &&
-    custoDez121 == 0 && acumuloDez122 == 0 && acumuloDez123 == 0 &&
-    usoMilhas == 0
-    ||
+
     custoOpera11 < 0 || acumuloOpera12 < 0 || acumuloOpera13 < 0 ||
     custoJan21 < 0 || acumuloJan22 < 0 || acumuloJan23 < 0 ||
     custoFev21 < 0 || acumuloFev22 < 0 || acumuloFev23 < 0 ||
