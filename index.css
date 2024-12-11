@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(36, 40, 41);
-    background: radial-gradient(circle, #000000);
+    background: rgb(100, 131, 136);
+    background: radial-gradient(circle, rgb(53, 55, 59) 44%, rgb(23, 27, 31) 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -23,11 +23,11 @@ form [type="number" ] {
     margin-top: 200px;
     border-radius: 15px;
     padding: 20px;
-    background-color: #000000;
+    background-color: #131518;
 }
 .card{
     text-align: center;
-    background: rgba(27, 27, 27, 0.619);
+    background: rgba(16, 19, 22, 0.619);
     padding: 30px;
 }
 h4{
@@ -216,54 +216,54 @@ input[type="number"]::placeholder{
     font-size: 13px;
 }
 #menu1{
-    background-color: #007F7F;
+    background-color: #457fa0b9;
     border: none;
     font-size: 14px;
     width: 200px;
 }
 #menu2{
-    background-color:#cfa122;
+    background-color:#b48c40;
     border: none;
     font-size: 13px;
     width:200px;
 }
 #menu3{
-    background-color:#007F7F;
+    background-color:#457fa0b9;
     border: none;
     font-size: 13px;
     width: 200px;
     transform: translateY(20%);
 }
 #menu4{
-    background-color:#007F7F;
+    background-color:#457fa0b9;
     border: none;
     font-size: 12px;
     width: 200px;
    
 }
 #menu5{
-    background-color:#cfa122;
+    background-color:#b48c40;
     border: none;
     font-size: 10px;
     width:200px;
     transform: translateY(20%);
 }
 #menu6{
-    background-color: #007F7F;
+    background-color: #457fa0b9;
     border: none;
     font-size: 14px;
     width: 200px;
     transform: translateY(15%);
 }
 #menu7{
-    background-color:#cfa122;
+    background-color:#b48c40;
     border: none;
     font-size: 13px;
     width:200px;
     transform: translateY(15%);
 }
 #menu8{
-    background-color: #007F7F;
+    background-color: #457fa0b9;
     border: none;
     font-size: 14px;
     width: 200px;
