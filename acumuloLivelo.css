@@ -136,6 +136,10 @@ input[type="number"]::placeholder{
 .novaIdeia{
     font-size: 12px;
     font-weight: bold;
+    background-color: #778eac5b;
+    border: none;
+    color: aliceblue;
+
    
 }
 #responsive{

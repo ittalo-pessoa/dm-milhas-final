@@ -260,7 +260,7 @@
                         <div class="mt-4 text-center">
                             <h5>CUSTO TOTAL(R$): <span id="totalCusto1">0</span></h5>
                             <h5>ACÚMULO TOTAL: <span id="totalAcumulo1">0</span></h5>
-                            <h5>ACÚMULO ANUAL: <span id="acumuloAnual1">0</span></h5>
+                            <h5>CUSTO MÉDIO POR PROGRAMA: <span id="acumuloAnual1">0</span></h5>
                             
                         </div>
                         <!-- Botão para calcular -->
@@ -467,6 +467,7 @@
                         <div class="mt-4 text-center">
                             <h5>TOTAL DE CUSTOS: <span id="totalCusto2">0</span></h5>
                             <h5>TOTAL DE ACÚMULO: <span id="totalAcumulo2">0</span></h5>
+                            <h5>CUSTO MÉDIO POR PROGRAMA: <span id="acumuloAnual2">0</span></h5>
                         </div>
                         <!-- Botão para calcular -->
                         <div class="text-center">
@@ -475,7 +476,7 @@
                                
                                 <br><br><br>
                         </div>
-                        <h2 class="text-center"style="font-size: 24px;">COMPRA DE MILHAS NO ESFERA<img src="img/Santander_Esfera-removebg-preview.png" class="livelo4 position-absolute"></h2>
+                        <h2 class="text-center"style="font-size: 24px;">COMPRA DE PONTOS NO ESFERA<img src="img/Santander_Esfera-removebg-preview.png" class="livelo4 position-absolute"></h2>
                             <form id="formTabela">
                                 <div class="row">
                         <div class="col-md-6">
@@ -667,6 +668,7 @@
                         <div class="mt-4 text-center">
                             <h5>TOTAL DE CUSTOS: <span id="totalCusto3">0</span></h5>
                             <h5>TOTAL DE ACÚMULO: <span id="totalAcumulo3">0</span></h5>
+                            <h5>CUSTO MÉDIO POR PROGRAMA: <span id="acumuloAnual3">0</span></h5>
                         </div>
                         <!-- Botão para calcular -->
                         <div class="text-center">
@@ -992,10 +994,10 @@
                         
                         <!-- Exibição dos resultados -->
                         <div class="mt-4 text-center">
-                            <h5>TOTAL - custo ANUAL TODAS APLICAÇÕES: <span id="custoAnualTodasAplicacoes">0</span></h5>
-                            <h5>TOTAL - acúmulo ANUAL TODAS APLICAÇÕES: <span id="acumuloAnualTodasAplicacoes">0</span></h5>
-                            <h5>CUSTO MÉDIO DO MILHEIRO TODAS APLICAÇÕES: <span id="custoMedioDoMilheiroTodas">0</span></h5>
-                            <h5>SALDO APÓS USO DE MILHAS: <span id="saldoAposUsoDeMilhas">0</span></h5><br>
+                            <h5>TOTAL - custo ANUAL TODOS OS PROGRAMAS: <span id="custoAnualTodasAplicacoes">0</span></h5>
+                            <h5>TOTAL - acúmulo ANUAL TODOS OS PROGRAMAS: <span id="acumuloAnualTodasAplicacoes">0</span></h5>
+                            <h5>CUSTO MÉDIO DO MILHEIRO TODOS OS PROGRAMAS: <span id="custoMedioDoMilheiroTodas">0</span></h5>
+                            <h5>SALDO APÓS TRANSFERÊNCIAS: <span id="saldoAposUsoDeMilhas">0</span></h5><br>
                             
                             
                         </div>
@@ -1022,7 +1024,7 @@
                            <tr class="birda">
                                <td class="corToda">Quantidade de pontos transferidos</td>
                                <td>
-                                   <input type="number" class="form-control custo" id="quantDePontosTransf2"
+                                   <input type="number" class="form-control custo" id="quantDePontosTransf"
                                        placeholder="Custo">
                                    <span class="error-message" id="errorCustoJan3"></span>
                                </td>
@@ -1031,7 +1033,7 @@
                            <tr class="birda">
                                <td class="corToda">Percentual da promoção</td>
                                <td>
-                                   <input type="number" class="form-control custo" id="percentDaPromocao2" 
+                                   <input type="number" class="form-control custo" id="percentDaPromocao" 
                                        placeholder="Custo">
                                    <span class="error-message" id="errorCustoFev"></span>
                                </td>
@@ -1040,15 +1042,15 @@
                            <tr class="birda">
                                <td class="corToda">Total de acúmulo anual</td>
                                <td>
-                                   <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual2">...</span>
+                                   <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual">...</span>
                                    <span class="error-message" id="errorDezembro"></span>
                                </td>
                                
                            </tr>
                            <tr class="birda">
-                               <td class="corToda">Custo medio do milheiro AZUL</td>
+                               <td class="corToda">Custo medio do milheiro SMILES</td>
                                <td>
-                                   <span class="form-control negrito" id="custoMedioDoMilheiroAzul">...</span>
+                                   <span class="form-control negrito" id="custoMedioDoMilheirosSmiles">...</span>
                                    <span class="error-message" id="errorDezembro"></span>
                                </td>
                               
@@ -1069,7 +1071,7 @@
                                        <tr class="birda">
                                            <td class="corToda">Quantidade de pontos transferidos</td>
                                            <td>
-                                               <input type="number" class="form-control custo" id="quantDePontosTransf3"
+                                               <input type="number" class="form-control custo" id="quantDePontosTransf2"
                                                    placeholder="Custo">
                                                <span class="error-message" id="errorCustoJan3"></span>
                                            </td>
@@ -1078,7 +1080,7 @@
                                        <tr class="birda">
                                            <td class="corToda">Percentual da promoção</td>
                                            <td>
-                                               <input type="number" class="form-control custo" id="percentDaPromocao3" 
+                                               <input type="number" class="form-control custo" id="percentDaPromocao2" 
                                                    placeholder="Custo">
                                                <span class="error-message" id="errorCustoFev"></span>
                                            </td>
@@ -1087,15 +1089,15 @@
                                        <tr class="birda">
                                            <td class="corToda">Total de acúmulo anual</td>
                                            <td>
-                                               <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual3">...</span>
+                                               <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual2">...</span>
                                                <span class="error-message" id="errorDezembro"></span>
                                            </td>
                                            
                                        </tr>
                                        <tr class="birda">
-                                           <td class="corToda">Custo medio do milheiro LATAM-PASS</td>
+                                           <td class="corToda">Custo medio do milheiro AZUL</td>
                                            <td>
-                                               <span class="form-control negrito" id="custoMedioDoMilheiroLatamPass">...</span>
+                                               <span class="form-control negrito" id="custoMedioDoMilheiroAzul">...</span>
                                                <span class="error-message" id="errorDezembro"></span>
                                            </td>
                                           
@@ -1113,7 +1115,7 @@
                                                    <tr class="birda">
                                                        <td class="corToda">Quantidade de pontos transferidos</td>
                                                        <td>
-                                                           <input type="number" class="form-control custo" id="quantDePontosTransf5"
+                                                           <input type="number" class="form-control custo" id="quantDePontosTransf3"
                                                                placeholder="Custo">
                                                            <span class="error-message" id="errorCustoJan3"></span>
                                                        </td>
@@ -1122,7 +1124,7 @@
                                                    <tr class="birda">
                                                        <td class="corToda">Percentual da promoção</td>
                                                        <td>
-                                                           <input type="number" class="form-control custo" id="percentDaPromocao5" 
+                                                           <input type="number" class="form-control custo" id="percentDaPromocao3" 
                                                                placeholder="Custo">
                                                            <span class="error-message" id="errorCustoFev"></span>
                                                        </td>
@@ -1131,15 +1133,15 @@
                                                    <tr class="birda">
                                                        <td class="corToda">Total de acúmulo anual</td>
                                                        <td>
-                                                           <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual5">...</span>
+                                                           <span class="form-control negrito" id="resultadoTotalDeAcumuloAnual3">...</span>
                                                            <span class="error-message" id="errorDezembro"></span>
                                                        </td>
                                                        
                                                    </tr>
                                                    <tr class="birda">
-                                                       <td class="corToda">Custo medio do milheiro MILES&GO</td>
+                                                       <td class="corToda">Custo medio do milheiro LATAM-PASS</td>
                                                        <td>
-                                                           <span class="form-control negrito" id="custoMedioDoMilheiroTapMilesGo">...</span>
+                                                           <span class="form-control negrito" id="custoMedioDoMilheiroLatamPass">...</span>
                                                            <span class="error-message" id="errorDezembro"></span>
                                                        </td>
                                                       
@@ -1175,6 +1177,15 @@
                                                        </td>
                                                        
                                                    </tr>
+                                                   <tr class="birda">
+                                                    <td class="corToda">Conversor de Transferência</td>
+                                                    <td>
+                                                        <input type="number" class="form-control custo" id="conversor"
+                                                            placeholder="Custo">
+                                                        <span class="error-message" id="errorCustoJan3"></span>
+                                                    </td>
+                                                    
+                                                </tr>
                                                   
                                                    <tr class="birda">
                                                        <td class="corToda">Total de acúmulo anual</td>
@@ -1196,7 +1207,7 @@
                                                    <div class="text-center">
                                                        <button type="button" class="btn btn-warning calculo amarelinho" id="calculate4"
                                                            style="margin-top: 15px;"><strong>CALCULAR TOTAIS</strong></button>
-                                                           <script type="text/javascript" src="acumuloGeralOutros.js"></script>
+                                                           <script type="text/javascript" src="acumuloEsfera.js"></script>
                                                         
                                                            
                                                    </div>
