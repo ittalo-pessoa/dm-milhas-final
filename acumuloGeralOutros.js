@@ -124,6 +124,7 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
     
     const custoDez2 = isNaN(parseFloat(document.getElementById('custoDez2').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoDez2').value);
     const acumuloDez2 = isNaN(parseFloat(document.getElementById('acumuloDez2').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloDez2').value);
+    const programaUtilizado2 = document.getElementById('programaUtilizado2').value;
     
 
     
@@ -167,7 +168,7 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
         document.getElementById('totalCusto2').innerHTML = "R$ " + totalCusto2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         document.getElementById('totalAcumulo2').innerHTML = "R$ " + totalAcumulo2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         document.getElementById('custoMedioPorPrograma2').innerHTML = "R$ " + custoMedioPorPrograma2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-        document.getElementById('programa2').innerHTML = programaUtilizado;
+        document.getElementById('programa2').innerHTML = programaUtilizado2;
 
 document.getElementById('calculate3').addEventListener('click',function(){
 
@@ -206,6 +207,8 @@ document.getElementById('calculate3').addEventListener('click',function(){
     
     const custoDez3 = isNaN(parseFloat(document.getElementById('custoDez3').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoDez3').value);
     const acumuloDez3 = isNaN(parseFloat(document.getElementById('acumuloDez3').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloDez3').value);
+    const programaUtilizado3 = document.getElementById('programaUtilizado3').value;
+    
     
 
     
@@ -250,7 +253,7 @@ document.getElementById('calculate3').addEventListener('click',function(){
             document.getElementById('totalAcumulo3').innerHTML = "R$ " + totalAcumulo3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             document.getElementById('custoMedioPorPrograma3').innerHTML = "R$ " + custoMedioPorPrograma3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             document.getElementById('programa3').innerHTML = programaUtilizado;
-            document.getElementById('programa4').innerHTML = programaUtilizado;
+            document.getElementById('programa3').innerHTML = programaUtilizado3;
 
             document.getElementById('calculate4').addEventListener('click',function(){
 
