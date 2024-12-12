@@ -262,7 +262,7 @@ const acumuloNov113 = isNaN(parseFloat(document.getElementById('acumuloNov113').
 const acumuloDez122 = isNaN(parseFloat(document.getElementById('acumuloDez122').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloDez122').value.replace(/\./g, ""));
 const acumuloDez123 = isNaN(parseFloat(document.getElementById('acumuloDez123').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloDez123').value.replace(/\./g, ""));
 
-const usoMilhas = isNaN(parseFloat(document.getElementById('usoDasMilhas2').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('usoDasMilhas2').value.replace(/\./g, ""));
+const usoMilhas = isNaN(parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""));
 if (
     custoOpera11 == 0 && acumuloOpera12 == 0 && acumuloOpera13 == 0 &&
     custoJan21 == 0 && acumuloJan22 == 0 && acumuloJan23 == 0 &&
