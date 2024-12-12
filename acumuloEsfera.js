@@ -145,9 +145,11 @@ const acumuloDez2 = isNaN(parseFloat(document.getElementById('acumuloDez2').valu
 
         const totalCusto2 = (custoJan2 + custoFev2 + custoMar2 + custoAbr2 + custoMai2 + custoJun2 + custoJul2 + custoAgo2 + custoSet2 + custoOut2 + custoNov2 + custoDez2);
         const totalAcumulo2 = (acumuloJan2 + acumuloFev2 + acumuloMar2 + acumuloAbr2 + acumuloMai2 + acumuloJun2 + acumuloJul2 + acumuloAgo2 + acumuloSet2 + acumuloOut2 + acumuloNov2 + acumuloDez2);
+        const acumuloAnual2= totalCusto2/totalAcumulo2*1000;
 
         document.getElementById('totalCusto2').innerHTML = "R$ " + totalCusto2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         document.getElementById('totalAcumulo2').innerHTML = "R$ " + totalAcumulo2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        document.getElementById('acumuloAnual2').innerHTML = "R$ " + acumuloAnual2.toLocaleString("pt-BR", {maximumFractionDigits:2, minimumFractionDigits: 2 });
 
 document.getElementById('calculate3').addEventListener('click',function(){
 
@@ -212,9 +214,11 @@ const acumuloDez3 = isNaN(parseFloat(document.getElementById('acumuloDez3').valu
 
             const totalCusto3 = (custoJan3 + custoFev3 + custoMar3 + custoAbr3 + custoMai3 + custoJun3 + custoJul3 + custoAgo3 + custoSet3 + custoOut3 + custoNov3 + custoDez3);
             const totalAcumulo3 = (acumuloJan3 + acumuloFev3 + acumuloMar3 + acumuloAbr3 + acumuloMai3 + acumuloJun3 + acumuloJul3 + acumuloAgo3 + acumuloSet3 + acumuloOut3 + acumuloNov3 + acumuloDez3);
+            const acumuloAnual3= totalCusto3/totalAcumulo3*1000;
 
             document.getElementById('totalCusto3').innerHTML = "R$ " + totalCusto3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             document.getElementById('totalAcumulo3').innerHTML = "R$ " + totalAcumulo3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            document.getElementById('acumuloAnual3').innerHTML = "R$ " + acumuloAnual3.toLocaleString("pt-BR", {maximumFractionDigits:2, minimumFractionDigits: 2 });
 
             document.getElementById('calculate4').addEventListener('click',function(){
 
@@ -233,74 +237,19 @@ const custoSet91 = isNaN(parseFloat(document.getElementById('custoSet91').value.
 const custoOut101 = isNaN(parseFloat(document.getElementById('custoOut101').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoOut101').value.replace(/\./g, ""));
 const custoNov111 = isNaN(parseFloat(document.getElementById('custoNov111').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoNov111').value.replace(/\./g, ""));
 const custoDez121 = isNaN(parseFloat(document.getElementById('custoDez121').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoDez121').value.replace(/\./g, ""));
-
+const quantDePontosTransf = isNaN(parseFloat(document.getElementById('quantDePontosTransf').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('quantDePontosTransf').value.replace(/\./g, ""));
+const quantDePontosTransf2 = isNaN(parseFloat(document.getElementById('quantDePontosTransf2').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('quantDePontosTransf2').value.replace(/\./g, ""));
+const quantDePontosTransf3 = isNaN(parseFloat(document.getElementById('quantDePontosTransf3').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('quantDePontosTransf3').value.replace(/\./g, ""));
+const quantDePontosTransf4 = isNaN(parseFloat(document.getElementById('quantDePontosTransf4').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('quantDePontosTransf4').value.replace(/\./g, ""));
+const percentDaPromocao = isNaN(parseFloat(document.getElementById('percentDaPromocao').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('percentDaPromocao').value.replace(/\./g, ""));
+const percentDaPromocao2 = isNaN(parseFloat(document.getElementById('percentDaPromocao2').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('percentDaPromocao2').value.replace(/\./g, ""));
+const percentDaPromocao3 = isNaN(parseFloat(document.getElementById('percentDaPromocao3').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('percentDaPromocao3').value.replace(/\./g, ""));
+const percentDaPromocao4 = isNaN(parseFloat(document.getElementById('percentDaPromocao4').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('percentDaPromocao4').value.replace(/\./g, ""));
+const conversor = isNaN(parseFloat(document.getElementById('conversor').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('conversor').value.replace(/\./g, ""));
 // IDs dos campos de acúmulo
-const acumuloOpera12 = isNaN(parseFloat(document.getElementById('acumuloOpera12').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloOpera12').value.replace(/\./g, ""));
-const acumuloOpera13 = isNaN(parseFloat(document.getElementById('acumuloOpera13').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloOpera13').value.replace(/\./g, ""));
-const acumuloJan22 = isNaN(parseFloat(document.getElementById('acumuloJan22').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloJan22').value.replace(/\./g, ""));
-const acumuloJan23 = isNaN(parseFloat(document.getElementById('acumuloJan23').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloJan23').value.replace(/\./g, ""));
-const acumuloFev22 = isNaN(parseFloat(document.getElementById('acumuloFev22').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloFev22').value.replace(/\./g, ""));
-const acumuloFev23 = isNaN(parseFloat(document.getElementById('acumuloFev23').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloFev23').value.replace(/\./g, ""));
-const acumuloMar32 = isNaN(parseFloat(document.getElementById('acumuloMar32').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloMar32').value.replace(/\./g, ""));
-const acumuloMar33 = isNaN(parseFloat(document.getElementById('acumuloMar33').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloMar33').value.replace(/\./g, ""));
-const acumuloAbr42 = isNaN(parseFloat(document.getElementById('acumuloAbr42').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloAbr42').value.replace(/\./g, ""));
-const acumuloAbr43 = isNaN(parseFloat(document.getElementById('acumuloAbr43').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloAbr43').value.replace(/\./g, ""));
-const acumuloMai52 = isNaN(parseFloat(document.getElementById('acumuloMai52').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloMai52').value.replace(/\./g, ""));
-const acumuloMai53 = isNaN(parseFloat(document.getElementById('acumuloMai53').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloMai53').value.replace(/\./g, ""));
-const acumuloJun62 = isNaN(parseFloat(document.getElementById('acumuloJun62').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloJun62').value.replace(/\./g, ""));
-const acumuloJun63 = isNaN(parseFloat(document.getElementById('acumuloMai63').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloMai63').value.replace(/\./g, ""));
-const acumuloJul72 = isNaN(parseFloat(document.getElementById('acumuloJul72').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloJul72').value.replace(/\./g, ""));
-const acumuloJul73 = isNaN(parseFloat(document.getElementById('acumuloJul73').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloJul73').value.replace(/\./g, ""));
-const acumuloAgo82 = isNaN(parseFloat(document.getElementById('acumuloAgo82').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloAgo82').value.replace(/\./g, ""));
-const acumuloAgo83 = isNaN(parseFloat(document.getElementById('acumuloAgo83').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloAgo83').value.replace(/\./g, ""));
-const acumuloSet92 = isNaN(parseFloat(document.getElementById('acumuloSet92').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloSet92').value.replace(/\./g, ""));
-const acumuloSet93 = isNaN(parseFloat(document.getElementById('acumuloSet93').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloSet93').value.replace(/\./g, ""));
-const acumuloOut102 = isNaN(parseFloat(document.getElementById('acumuloOut102').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloOut102').value.replace(/\./g, ""));
-const acumuloOut103 = isNaN(parseFloat(document.getElementById('acumuloOut103').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloOut103').value.replace(/\./g, ""));
-const acumuloNov112 = isNaN(parseFloat(document.getElementById('acumuloNov112').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloNov112').value.replace(/\./g, ""));
-const acumuloNov113 = isNaN(parseFloat(document.getElementById('acumuloNov113').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloNov113').value.replace(/\./g, ""));
-const acumuloDez122 = isNaN(parseFloat(document.getElementById('acumuloDez122').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloDez122').value.replace(/\./g, ""));
-const acumuloDez123 = isNaN(parseFloat(document.getElementById('acumuloDez123').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloDez123').value.replace(/\./g, ""));
 
 const usoMilhas = isNaN(parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""));
-if (
-    custoOpera11 == 0 && acumuloOpera12 == 0 && acumuloOpera13 == 0 &&
-    custoJan21 == 0 && acumuloJan22 == 0 && acumuloJan23 == 0 &&
-    custoFev21 == 0 && acumuloFev22 == 0 && acumuloFev23 == 0 &&
-    custoMar31 == 0 && acumuloMar32 == 0 && acumuloMar33 == 0 &&
-    custoAbr41 == 0 && acumuloAbr42 == 0 && acumuloAbr43 == 0 &&
-    custoMai51 == 0 && acumuloMai52 == 0 && acumuloMai53 == 0 &&
-    custoJun61 == 0 && acumuloJun62 == 0 && acumuloJun63 == 0 &&
-    custoJul71 == 0 && acumuloJul72 == 0 && acumuloJul73 == 0 &&
-    custoAgo81 == 0 && acumuloAgo82 == 0 && acumuloAgo83 == 0 &&
-    custoSet91 == 0 && acumuloSet92 == 0 && acumuloSet93 == 0 &&
-    custoOut101 == 0 && acumuloOut102 == 0 && acumuloOut103 == 0 &&
-    custoNov111 == 0 && acumuloNov112 == 0 && acumuloNov113 == 0 &&
-    custoDez121 == 0 && acumuloDez122 == 0 && acumuloDez123 == 0 &&
-    usoMilhas == 0
-    ||
-    custoOpera11 < 0 || acumuloOpera12 < 0 || acumuloOpera13 < 0 ||
-    custoJan21 < 0 || acumuloJan22 < 0 || acumuloJan23 < 0 ||
-    custoFev21 < 0 || acumuloFev22 < 0 || acumuloFev23 < 0 ||
-    custoMar31 < 0 || acumuloMar32 < 0 || acumuloMar33 < 0 ||
-    custoAbr41 < 0 || acumuloAbr42 < 0 || acumuloAbr43 < 0 ||
-    custoMai51 < 0 || acumuloMai52 < 0 || acumuloMai53 < 0 ||
-    custoJun61 < 0 || acumuloJun62 < 0 || acumuloJun63 < 0 ||
-    custoJul71 < 0 || acumuloJul72 < 0 || acumuloJul73 < 0 ||
-    custoAgo81 < 0 || acumuloAgo82 < 0 || acumuloAgo83 < 0 ||
-    custoSet91 < 0 || acumuloSet92 < 0 || acumuloSet93 < 0 ||
-    custoOut101 < 0 || acumuloOut102 < 0 || acumuloOut103 < 0 ||
-    custoNov111 < 0 || acumuloNov112 < 0 || acumuloNov113 < 0 ||
-    custoDez121 < 0 || acumuloDez122 < 0 || acumuloDez123 < 0 ||
-    usoMilhas < 0
-) 
-            {
-   
 
-    mostrarErro("errorUsoMilhas4", "Todos os valores numéricos válidos devem ser preenchidos .");
-    return;
-
- }
             
  let clubesDeMilhas1= totalCusto1+0
  let clubesDeMilhas2= acumuloJan1+0
@@ -345,9 +294,9 @@ if (
  let comprasDeMilhas13= acumuloDez3+0
  
 // Clubes de Milhas
-document.getElementById('resultadoacumuloOpera1').innerHTML = "R$ " + clubesDeMilhas1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoacumuloOpera12').innerHTML = "R$ " + comprasBonificadas1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-document.getElementById('resultadoacumuloOpera13').innerHTML = "R$ " + comprasDeMilhas1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoacumuloOpera1').innerHTML = "R$ " + totalCusto1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoacumuloOpera12').innerHTML = "R$ " + totalCusto2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoacumuloOpera13').innerHTML = "R$ " + totalCusto3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoJan1').innerHTML = "R$ " + acumuloJan1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoJan12').innerHTML = "R$ " + acumuloJan2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoJan13').innerHTML = "R$ " + acumuloJan3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -390,19 +339,19 @@ document.getElementById('resultadoDez2').innerHTML = "R$ " + acumuloDez2.toLocal
 document.getElementById('resultadoDez3').innerHTML = "R$ " + acumuloDez3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoDez2').innerHTML = "R$ " + comprasDeMilhas12.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoDez3').innerHTML = "R$ " + comprasDeMilhas13.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const custoAnualTodasAplicacoes= custoOpera11+acumuloOpera12+acumuloOpera13+clubesDeMilhas1+comprasBonificadas1+comprasDeMilhas1
-const acumuloAnualTodasAplicacoes=  custoJan21 + acumuloJan22 + acumuloJan23 + acumuloJan1 + acumuloJan2 + acumuloJan3 +
-custoFev21 + acumuloFev22 + acumuloFev23 + acumuloFev1 + acumuloFev2 + acumuloFev3 +
-custoMar31 + acumuloMar32 + acumuloMar33 + acumuloMar1 + acumuloMar2 + acumuloMar3 +
-custoAbr41 + acumuloAbr42 + acumuloAbr43 + acumuloAbr1 + acumuloAbr2 + acumuloAbr3 +
-custoMai51 + acumuloMai52 + acumuloMai53 + acumuloMai1 + acumuloMai2 + acumuloMai3 +
-custoJun61 + acumuloJun62 + acumuloJun63 + acumuloJun1 + acumuloJun2 + acumuloJun3 +
-custoJul71 + acumuloJul72 + acumuloJul73 + acumuloJul1 + acumuloJul2 + acumuloJul3 +
-custoAgo81 + acumuloAgo82 + acumuloAgo83 + acumuloAgo1 + acumuloAgo2 + acumuloAgo3 +
-custoSet91 + acumuloSet92 + acumuloSet93 + acumuloSet1 + acumuloSet2 + acumuloSet3 +
-custoOut101 + acumuloOut102 + acumuloOut103 + acumuloOut1 + acumuloOut2 + acumuloOut3 +
-custoNov111 + acumuloNov112 + acumuloNov113 + acumuloNov1 + acumuloNov2 + acumuloNov3 +
-custoDez121 + acumuloDez122 + acumuloDez123 + acumuloDez1 + acumuloDez2 + acumuloDez3
+const custoAnualTodasAplicacoes= totalCusto1+totalCusto2+totalCusto3+custoOpera11
+const acumuloAnualTodasAplicacoes=  custoJan21 + acumuloJan1 + acumuloJan2 + acumuloJan3 +
+custoFev21 + acumuloFev1 + acumuloFev2 + acumuloFev3 +
+custoMar31 + acumuloMar1 + acumuloMar2 + acumuloMar3 +
+custoAbr41 + acumuloAbr1 + acumuloAbr2 + acumuloAbr3 +
+custoMai51 + acumuloMai1 + acumuloMai2 + acumuloMai3 +
+custoJun61 + acumuloJun1 + acumuloJun2 + acumuloJun3 +
+custoJul71 + acumuloJul1 + acumuloJul2 + acumuloJul3 +
+custoAgo81 + acumuloAgo1 + acumuloAgo2 + acumuloAgo3 +
+custoSet91 + acumuloSet1 + acumuloSet2 + acumuloSet3 +
+custoOut101 + acumuloOut1 + acumuloOut2 + acumuloOut3 +
+custoNov111 + acumuloNov1 + acumuloNov2 + acumuloNov3 +
+custoDez121 + acumuloDez1 + acumuloDez2 + acumuloDez3
 
 document.getElementById('custoAnualTodasAplicacoes').innerHTML = "R$ " + custoAnualTodasAplicacoes.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('acumuloAnualTodasAplicacoes').innerHTML = "R$ " + acumuloAnualTodasAplicacoes.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -416,8 +365,50 @@ if (acumuloAnualTodasAplicacoes === 0) {
     document.getElementById('custoMedioDoMilheiroTodas').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
-const saldoAposUsoDeMilhas=acumuloAnualTodasAplicacoes-usoMilhas
+const saldoAposUsoDeMilhas=acumuloAnualTodasAplicacoes-quantDePontosTransf-quantDePontosTransf2-quantDePontosTransf3-quantDePontosTransf4
 document.getElementById('saldoAposUsoDeMilhas').innerHTML = "R$ " + saldoAposUsoDeMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const percentSmiles=percentDaPromocao/100
+const totalAcumuloAnualSmiles=quantDePontosTransf+(quantDePontosTransf*percentSmiles)
+document.getElementById('resultadoTotalDeAcumuloAnual').innerHTML = "R$ " + totalAcumuloAnualSmiles.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+if (quantDePontosTransf === 0 || quantDePontosTransf === "") {
+    document.getElementById("custoMedioDoMilheirosSmiles").innerHTML = "0";
+}
+ else {
+    const calc2=((((custoAnualTodasAplicacoes/acumuloAnualTodasAplicacoes*1000)*quantDePontosTransf)/1000)/totalAcumuloAnualSmiles*1000)
+    document.getElementById('custoMedioDoMilheirosSmiles').innerHTML = "R$ " + calc2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+const percentAzul=percentDaPromocao2/100
+const totalAcumuloAnualAzul=quantDePontosTransf2+(quantDePontosTransf2*percentAzul)
+document.getElementById('resultadoTotalDeAcumuloAnual2').innerHTML = "R$ " + totalAcumuloAnualAzul.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+if (quantDePontosTransf2 === 0 || quantDePontosTransf2 === "") {
+    document.getElementById("custoMedioDoMilheiroAzul").innerHTML = "0";
+}
+ else {
+    const calc3=((((custoAnualTodasAplicacoes/acumuloAnualTodasAplicacoes*1000)*quantDePontosTransf2)/1000)/totalAcumuloAnualAzul*1000)
+    document.getElementById('custoMedioDoMilheiroAzul').innerHTML = "R$ " + calc3.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+const percentLatamPass=percentDaPromocao3/100
+const totalAcumuloAnualLatamPass=quantDePontosTransf3+(quantDePontosTransf3*percentLatamPass)
+document.getElementById('resultadoTotalDeAcumuloAnual3').innerHTML = "R$ " + totalAcumuloAnualLatamPass.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+if (quantDePontosTransf3 === 0 || quantDePontosTransf3 === "") {
+    document.getElementById("custoMedioDoMilheiroLatamPass").innerHTML = "0";
+}
+ else {
+    const calc4=((((custoAnualTodasAplicacoes/acumuloAnualTodasAplicacoes*1000)*quantDePontosTransf3)/1000)/totalAcumuloAnualLatamPass*1000)
+    document.getElementById('custoMedioDoMilheiroLatamPass').innerHTML = "R$ " + calc4.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+const percentIberiaPlus=percentDaPromocao4/100
+const totalAcumuloAnualIberiaPlus=((quantDePontosTransf4/conversor)+(quantDePontosTransf4/conversor)*percentIberiaPlus)
+
+document.getElementById('resultadoTotalDeAcumuloAnual4').innerHTML = "R$ " + totalAcumuloAnualIberiaPlus.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+if (quantDePontosTransf4 === 0 || quantDePontosTransf4 === "") {
+    document.getElementById("custoMedioDoMilheiroIberia").innerHTML = "0";
+}
+ else {
+    const calc5=((((custoAnualTodasAplicacoes/acumuloAnualTodasAplicacoes*1000)*quantDePontosTransf4)/1000)/totalAcumuloAnualIberiaPlus*1000)
+    document.getElementById('custoMedioDoMilheiroIberia').innerHTML = "R$ " + calc5.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
 
 });
 
