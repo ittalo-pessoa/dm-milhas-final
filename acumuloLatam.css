@@ -166,13 +166,14 @@ input[type="number"]::placeholder{
     transform: translateY(1%);
 
 }
-.livelo2{
-    max-width: 300px; /* Tamanho máximo para telas maiores */
-    width: 110px; /* Adaptação relativa */
-    height: 55px; /* Mantém a proporção */
-    position: relative;
+
+.jorge{
+
+    width: 150px; /* Adaptação relativa */
+    height: 85px; /* Mantém a proporção */
     margin-left: -30px; /* Espaçamento entre as imagens */
-    transform: translateY(-30%);
+    transform: translateX(70%);
+ 
 
 }
 .cartoes{
