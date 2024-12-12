@@ -56,12 +56,12 @@ document.getElementById("calculate").addEventListener("click", function () {
     document.getElementById("resultadoresultadoFinal").innerHTML = "R$ " + resultadoFinal.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     document.getElementById("resultadocustoDoMilheiroNaCompraIndiretaDasMilhas").innerHTML = "R$ " + custoDoMilheiroNaCompraIndiretaDeMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     if (calculador < valorDaTaxa) {
-        document.getElementById("resultadoanaliseFinalDaOperacao").style.backgroundColor = "rgb(185, 255, 23)";
+        document.getElementById("resultadoanaliseFinalDaOperacao").style.backgroundColor = "rgb(62, 148, 83)";
         
         document.getElementById("resultadoanaliseFinalDaOperacao").innerHTML = "<strong>LUCRO</strong>";
         
     }else{
-        document.getElementById("resultadoanaliseFinalDaOperacao").style.backgroundColor = "rgb(255, 111, 67)";
+        document.getElementById("resultadoanaliseFinalDaOperacao").style.backgroundColor = "rgb(148, 62, 62)";
         document.getElementById("resultadoanaliseFinalDaOperacao").innerHTML = "<strong>PREJUÍZO</strong>";
     }
 });
