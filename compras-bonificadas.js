@@ -1,36 +1,34 @@
 function calcularTotais() {
-    // Captura os valores dos inputs
-    let CompraValor = parseFloat(document.getElementById('CompraValor').value);
-    let PontosToReal = parseFloat(document.getElementById('PontosToReal').value);
-    let DolarValor = parseFloat(document.getElementById('DolarValor').value);
-    let FatorPointCartao = parseFloat(document.getElementById('FatorPointCartao').value);
-    let TransfBoniCo = parseFloat(document.getElementById('TransfBoniCo').value);
-    let TransfBoniCar = parseFloat(document.getElementById('TransfBoniCar').value);
-    let ValorCusMedMil = parseFloat(document.getElementById('ValorCusMedMil').value);
+    // Captura e converte os valores dos inputs para números
+    let CompraValor = parseFloat(document.getElementById('CompraValor').value) || 0;
+    let PontosToReal = parseFloat(document.getElementById('PontosToReal').value) || 0;
+    let DolarValor = parseFloat(document.getElementById('DolarValor').value) || 0;
+    let FatorPointCartao = parseFloat(document.getElementById('FatorPointCartao').value) || 0;
+    let TransfBoniCo = parseFloat(document.getElementById('TransfBoniCo').value) || 0;
+    let TransfBoniCar = parseFloat(document.getElementById('TransfBoniCar').value) || 0;
+    let ValorCusMedMil = parseFloat(document.getElementById('ValorCusMedMil').value) || 0;
+
+    // Validação dos valores
     if (
-        isNaN(CompraValor) || CompraValor <= 0 || 
-    isNaN(PontosToReal) || PontosToReal <= 0 || 
-    isNaN(DolarValor) || DolarValor <= 0 || 
-    isNaN(FatorPointCartao) || FatorPointCartao <= 0 || 
-    isNaN(TransfBoniCo) || TransfBoniCo <= 0 || 
-    isNaN(TransfBoniCar) || TransfBoniCar <= 0 || 
-    isNaN(ValorCusMedMil) || ValorCusMedMil <= 0 
+        CompraValor <= 0 || 
+        PontosToReal <= 0 || 
+        DolarValor <= 0 || 
+        FatorPointCartao <= 0 ||    
+        ValorCusMedMil <= 0
     ) {
-            document.getElementById('resultadoPontosCredi').innerHTML = "Digite todos os valores válidos!";
-            document.getElementById('resultadoPontosCard').innerHTML = "Digite todos os valores válidos!";
-            document.getElementById('resultadoTotGPontos').innerHTML ="Digite todos os valores válidos!";
-            document.getElementById('resultadoTotMilBuy').innerHTML = "Digite todos os valores válidos!";
-            document.getElementById('resultadoTotalMilCard').innerHTML = "Digite todos os valores válidos!";
-            document.getElementById('resultadoTotGerMil').innerHTML ="Digite todos os valores válidos!";
-            document.getElementById('resultadoValorMilAcu').innerHTML = "Digite todos os valores válidos!";
-            document.getElementById('resultadoPercentDesconto').innerHTML = "Digite todos os valores válidos!";
-            
-           
+        // Exibe mensagens de erro se os valores forem inválidos
+        document.getElementById('resultadoPontosCredi').innerText = "Digite todos os valores válidos!";
+        document.getElementById('resultadoPontosCard').innerText = "Digite todos os valores válidos!";
+        document.getElementById('resultadoTotGPontos').innerText = "Digite todos os valores válidos!";
+        document.getElementById('resultadoTotMilBuy').innerText = "Digite todos os valores válidos!";
+        document.getElementById('resultadoTotalMilCard').innerText = "Digite todos os valores válidos!";
+        document.getElementById('resultadoTotGerMil').innerText = "Digite todos os valores válidos!";
+        document.getElementById('resultadoValorMilAcu').innerText = "Digite todos os valores válidos!";
+        document.getElementById('resultadoPercentDesconto').innerText = "Digite todos os valores válidos!";
         return;
     }
 
-
-    // Cálculos dos resultados
+    // Cálculos (todas as variáveis já estão convertidas para números)
     let resultadoPontosCredi = PontosToReal * CompraValor;
     let resultadoPontosCard = (CompraValor / DolarValor) * FatorPointCartao;
 
@@ -43,7 +41,7 @@ function calcularTotais() {
 
     let resultadoPercentDesconto = (resultadoValorMilAcu / CompraValor) * 100;
 
-    // Exibe os resultados nos spans correspondentes
+    // Exibe os resultados nos spans correspondentes (já formatados)
     document.getElementById('resultadoPontosCredi').innerText = resultadoPontosCredi.toFixed(2);
     document.getElementById('resultadoPontosCard').innerText = resultadoPontosCard.toFixed(2);
     document.getElementById('resultadoTotGPontos').innerText = resultadoTotGPontos.toFixed(2);
@@ -52,4 +50,4 @@ function calcularTotais() {
     document.getElementById('resultadoTotGerMil').innerText = resultadoTotGerMil.toFixed(2);
     document.getElementById('resultadoValorMilAcu').innerText = resultadoValorMilAcu.toFixed(2);
     document.getElementById('resultadoPercentDesconto').innerText = resultadoPercentDesconto.toFixed(2);
-}
+}   

@@ -143,6 +143,16 @@ input[type="number"]::placeholder{
     text-align: center; /* Centraliza o texto dentro do elemento */
     margin: 0 auto; /* Centraliza o elemento na página */
 }
+.programa2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; /* Diminui o tamanho da fonte */
+    font-weight: bold;
+    color: #ffffff;
+    width: 50%; /* Define a largura do elemento */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    margin: 0 auto; /* Centraliza o elemento na página */
+    transform: translateY(50%);
+}
 .qualquer {
     font-size: 24px; /* Tamanho de fonte dinâmico */
     font-family: 'Montserrat', sans-serif;
