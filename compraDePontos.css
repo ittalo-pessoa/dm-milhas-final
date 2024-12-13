@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(100, 131, 136);
+    background: radial-gradient(circle, rgb(53, 55, 59) 44%, rgb(23, 27, 31) 100%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 110px;
+}
+form [type="number" ] {
+    background-color: #2e2e2e;
+    color: #FFFFFF;
+}
+.container {
+    color: aliceblue;
+    margin-top: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #131518;
+}
+.card{
+    text-align: center;
+    background: rgba(16, 19, 22, 0.619);
+    padding: 30px;
+}
+h4{
+    margin-bottom: 25px;
+}
+h2{
+    margin: 15px;
+}
+tr.cabeca{
+    border: none;
+    background-color:  #cfa122;
+    color: #000000;
+}
+tr.cabeca2{
+    border: none;
+    background-color:  #cfa122;
+    color: #000000;
+    padding-bottom: 100px;
+}
+
+td{
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.borda{
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.custo{
+    border: none;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.acumulo{
+    border: none;
+    margin-bottom: 5px;
+}
+
+.corToda{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+input{
+    text-align: center;
+    color: aliceblue;
+    background: #16161600;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none; 
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+input[type="number"]::placeholder{
+    color: rgb(255, 255, 255);
+}
+::placeholder{ 
+    text-align: center;
+}
+
+.input-group input {
+    background-color: transparent;
+    border: 0px solid #ccc;
+}
+
+.input-group input:focus {
+    box-shadow: none;
+}
+
+.input-group input.error {
+    border-color: red;
+}
+
+.input-group input.valid {
+    border-color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.700em;
+    margin-top: 0.25rem;
+}
+.titulo-completo {
+    width: 100%;
+    text-align: center; /* Alinha o texto no centro */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+    background-color: #f8f9fa; /* Adicione uma cor de fundo se desejar */
+    font-weight: bold; /* Deixa o título em negrito */
+    padding: 10px 0; /* Espaçamento interno para maior visibilidade */
+}
+.largura-total {
+    width: 100%; /* Faz com que o input ocupe toda a largura da célula */
+}
+
+.titulo-completo {
+    text-align: center;
+    font-size: 24px;
+    background-color: #f8f9fa;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.error-message {
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Oculto inicialmente */
+}
+.negrito{
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #778eac5b;
+    border: none;
+    color: aliceblue
+}
+.logo-vmm {
+    max-width: 80px; /* Tamanho padrão */
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 46%;
+}
+.hotel {
+    max-width: 300px; /* Tamanho padrão */
+    height: 180px;
+    top: 50%;
+    transform: translateY(-42%);
+    margin-left: 72%;
+
+}
+.qualquer {
+   
+    font-size: 1.5rem; /* Tamanho da fonte consistente */
+    /* Mantém o deslocamento vertical */
+    max-width: 280px; /* Define um limite para o tamanho do texto */
+    transform: translateY(30%);
+    margin-left: 55%;
+}
+
+
+.nova{
+    font-size: 16px;
+}
+.menu{
+    background-color:#b6e200;
+}
+.invisivel{
+    visibility:hidden ;
+}
+.navbar img {
+    height: 60px; /* Tamanho padrão */
+    width: 80px;
+    position: absolute;
+    left: 4.3%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
+}
+.navbar {
+    background-color: rgba(15, 19, 22, 0.619) !important;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    min-height: 80px; /* Altura mínima ajustada para manter o visual proporcional */
+}
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -290px; /* Expande 20px para o lado direito */
+    width: 290px; /* Largura da "extensão" */
+    height: 100%; /* Altura total */
+    background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
+}
+#total{
+    font-weight: bolder;
+    font-size: 13px;
+}
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 250px; /* Adaptação relativa */
+    height: 170px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -123px; /* Espaçamento entre as imagens */
+    transform: translateY(-35%);
+
+}
+.negrito{
+    font-size: 16px;
+    font-weight: bold;
+}

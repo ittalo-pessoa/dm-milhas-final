@@ -157,4 +157,116 @@ span.resultado {
     align-items: center;
     justify-content: center;
 }
+.invisivel{
+    visibility:hidden ;
+}
+.navbar img {
+    height: 60px; /* Tamanho padrão */
+    width: 80px;
+    position: absolute;
+    left: 50%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
+}
+.navbar {
+    background-color: rgba(15, 19, 22, 0.619) !important;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    min-height: 80px; /* Altura mínima ajustada para manter o visual proporcional */
+}
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -290px; /* Expande 20px para o lado direito */
+    width: 290px; /* Largura da "extensão" */
+    height: 100%; /* Altura total */
+    background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
+}
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 190px; /* Adaptação relativa */
+    height:110px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -94px; /* Espaçamento entre as imagens */
+    transform: translateY(-62%);
 
+}
+
+
+@media (max-width: 768px) {
+    .navbar img {
+        height: 50px; /* Ajusta o tamanho da imagem */
+        width: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar img {
+        height: 40px; /* Reduz ainda mais o tamanho em telas muito pequenas */
+        width: 60px;
+    }
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .titulo-completo {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    td {
+        min-width: auto;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    span.resultado {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo-completo {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    td {
+        font-size: 0.9rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+}
+
+.churras{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #35404C;
+   color: white;
+   border: none;
+}

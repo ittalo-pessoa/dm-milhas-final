@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(100,131,136);
-    background: radial-gradient(circle, rgb(133, 133, 133) 44%, rgba(58,54,54,1) 100%);
+    background: rgb(100, 131, 136);
+    background: radial-gradient(circle, rgb(53, 55, 59) 44%, rgb(23, 27, 31) 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -23,11 +23,11 @@ form [type="number" ] {
     margin-top: 200px;
     border-radius: 15px;
     padding: 20px;
-    background-color: #000000;
+    background-color: #131518;
 }
 .card{
     text-align: center;
-    background: rgba(27, 27, 27, 0.619);
+    background: rgba(16, 19, 22, 0.619);
     padding: 30px;
 }
 h4{
@@ -38,13 +38,12 @@ h2{
 }
 tr.cabeca{
     border: none;
-    background-color:  #f7cc0b;
+    background-color:  #cfa122;
     color: #000000;
-    width: 460%;
 }
 tr.cabeca2{
     border: none;
-    background-color:  #f7cc0b;
+    background-color:  #cfa122;
     color: #000000;
     padding-bottom: 100px;
 }
@@ -139,12 +138,6 @@ input[type="number"]::placeholder{
     background-color: #f8f9fa;
     font-weight: bold;
     padding: 10px 0;
-    width: 140%;
-    
-}
-.invisivel {
-    opacity: 0;                  /* Torna o elemento invisível */
-    pointer-events: none;        /* Impede que o elemento seja clicado */
 }
 .error-message {
     color: #ff4c4c;
@@ -177,66 +170,229 @@ input[type="number"]::placeholder{
     /* Mantém o deslocamento vertical */
     max-width: 280px; /* Define um limite para o tamanho do texto */
     transform: translateY(30%);
-    margin-left: 145%;
+    margin-left: 55%;
 }
 
 
 .nova{
     font-size: 16px;
-    width: 100%;
 }
 .menu{
-    background-color: #007F7F;
-    font-size: 80%;
-    width: 42%;  /* Ajuste para 100% ou o valor desejado */
-    min-height: -60px;  /* Altura mínima ajustada */
-    height: auto;  /* A altura será ajustada conforme o conteúdo */
-    padding: 10px;
-    margin-right: 0;  /* Removido o valor de 165% para ajustar a margem */
-    margin-left: auto; /* Se você quiser centralizar, use isso */
-    margin-right: auto;  /* Se você quiser centralizar, use isso */
-    transform: translateX(-35%);
-    border: none; 
-    box-sizing: border-box;
+    background-color:#b6e200;
 }
-.menu2 {
-    background-color: #007F7F;
-    font-size: 72%;
-    width: 42%;  /* Ajuste para 100% ou o valor desejado */
-    min-height: -60px;  /* Altura mínima ajustada */
-    height: auto;  /* A altura será ajustada conforme o conteúdo */
-    padding: 10px;
-    margin-right: 0;  /* Removido o valor de 165% para ajustar a margem */
-    margin-left: auto; /* Se você quiser centralizar, use isso */
-    margin-right: auto;  /* Se você quiser centralizar, use isso */
-    transform: translateX(100%);
-    border: none; 
-    box-sizing: border-box;
+.invisivel{
+    visibility:hidden ;
 }
-.menu3 {
-    background-color: #007F7F;
-    font-size: 72%;
-    width: 292%;  /* Ajuste para 100% ou o valor desejado */
-    min-height: -60px;  /* Altura mínima ajustada */
-    height: auto;  /* A altura será ajustada conforme o conteúdo */
-    padding: 10px;
-    margin-right: 0;  /* Removido o valor de 165% para ajustar a margem */
-    margin-left: auto; /* Se você quiser centralizar, use isso */
-    margin-right: auto;  /* Se você quiser centralizar, use isso */
-    transform: translateX(-205%);
-    border: none; 
-    box-sizing: border-box;
+.navbar img {
+    height: 60px; /* Tamanho padrão */
+    width: 80px;
+    position: absolute;
+    left: 6%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
 }
-.amarelando{
-    background-color: #FFD700;
+.navbar {
+    background-color: rgba(15, 19, 22, 0.619) !important;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    min-height: 80px; /* Altura mínima ajustada para manter o visual proporcional */
+}
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -290px; /* Expande 20px para o lado direito */
+    width: 290px; /* Largura da "extensão" */
+    height: 100%; /* Altura total */
+    background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
+}
+#total{
+    font-weight: bolder;
+    font-size: 13px;
+}
+#menu1{
+    background-color: #457fa0b9;
+    border: none;
+    font-size: 14px;
+    width: 200px;
+}
+#menu2{
+    background-color:#b48c40;
+    border: none;
+    font-size: 13px;
+    width:200px;
+}
+#menu3{
+    background-color:#457fa0b9;
+    border: none;
+    font-size: 13px;
+    width: 200px;
+    transform: translateY(20%);
+}
+#menu4{
+    background-color:#457fa0b9;
+    border: none;
+    font-size: 12px;
+    width: 200px;
+   
+}
+#menu5{
+    background-color:#b48c40;
+    border: none;
+    font-size: 10px;
+    width:200px;
+    transform: translateY(20%);
+}
+#menu6{
+    background-color: #457fa0b9;
+    border: none;
+    font-size: 14px;
+    width: 200px;
+    transform: translateY(15%);
+}
+#menu7{
+    background-color:#b48c40;
+    border: none;
+    font-size: 13px;
+    width:200px;
+    transform: translateY(15%);
+}
+#menu8{
+    background-color: #457fa0b9;
+    border: none;
+    font-size: 14px;
+    width: 200px;
+    transform: translateY(8%);
+}
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+        padding: 15px;
+        text-align: center; /* Centraliza o conteúdo */
+    }
 
+    .titulo-completo {
+        font-size: 1.2rem;
+        text-align: center; /* Centraliza o título */
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    td {
+        min-width: 100%; /* Faz os botões ocuparem a largura total */
+        display: flex;
+        justify-content: center; /* Centraliza os botões na tabela */
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        width: 90%; /* Ajusta o tamanho dos botões */
+        margin: 5px auto; /* Adiciona espaço entre os botões */
+    }
+
+    span.resultado {
+        font-size: 1rem;
+    }
 }
-.menu:hover{
-    background-color: #9ACD32;
+
+@media (max-width: 576px) {
+    .titulo-completo {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 10px;
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    td {
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; /* Empilha os botões */
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%; /* Ocupa toda a largura disponível */
+        font-size: 0.8rem;
+    }
 }
-.menu2:hover{
-    background-color: #9ACD32;
+@media (max-width: 720px) {
+    .container {
+        margin-top: 30px;
+        padding: 10px;
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .titulo-completo {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    td {
+        display: flex;
+        flex-direction: column; /* Empilha os botões */
+        align-items: center;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        width: 90%; /* Botões ocupam quase toda a largura */
+        margin: 5px 0; /* Espaçamento entre os botões */
+    }
+
+    input {
+        font-size: 1rem;
+        width: 100%; /* Ajusta inputs à largura do container */
+    }
+
+    span.resultado {
+        font-size: 1rem;
+    }
 }
-.menu3:hover{
-    background-color: #9ACD32;
+
+/* Para dispositivos ainda menores (até 480px de largura) */
+@media (max-width: 480px) {
+    .container {
+        padding: 8px;
+    }
+
+    .titulo-completo {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        width: 100%; /* Botões ocupam toda a largura disponível */
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    td {
+        font-size: 0.8rem;
+    }
 }
+
+
+

@@ -22,6 +22,6 @@ function calcularTotais() {
         document.getElementById('resultadoCusMil').textContent = formatado;
     } else {
         // Exibir mensagem de erro
-        document.getElementById('resultadoCusMil').textContent = "Digite valores válidos!";
+        document.getElementById('resultadoCusMil').textContent = "Digite todos os valores válidos!";
     }
 }

@@ -24,7 +24,14 @@ document.getElementById("calculate").addEventListener("click", function () {
         || valorDoDolar <= 0 || fatorDeConversaoDoCartao <= 0||percentTransfBonificada<=0
         || valorDoCustoMedioDoMilheiro<=0
     ) {
-        mostrarErro("errorvalorDoBoleto", "Todos os valores numéricos válidos devem ser preenchidos.");
+        document.getElementById('resultadoTotalEmMilhasAposTransf').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadovalorDaTaxa').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoValorEmDolar').innerHTML ="Digite todos os valores válidos!";
+            document.getElementById('resultadoQuantidadeDePontos').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadovalorDasMilhas').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoresultadoFinal').innerHTML ="Digite todos os valores válidos!";
+            document.getElementById('resultadocustoDoMilheiroNaCompraIndiretaDasMilhas').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('resultadoanaliseFinalDaOperacao').innerHTML ="Digite todos os valores válidos!";
         return;
     }
     let percentTaxaCobradaPeloAplicativo=taxaCobradaPeloAplicativo/100
@@ -49,12 +56,12 @@ document.getElementById("calculate").addEventListener("click", function () {
     document.getElementById("resultadoresultadoFinal").innerHTML = "R$ " + resultadoFinal.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     document.getElementById("resultadocustoDoMilheiroNaCompraIndiretaDasMilhas").innerHTML = "R$ " + custoDoMilheiroNaCompraIndiretaDeMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     if (calculador < valorDaTaxa) {
-        document.getElementById("resultadoanaliseFinalDaOperacao").style.backgroundColor = "rgb(185, 255, 23)";
+        document.getElementById("resultadoanaliseFinalDaOperacao").style.backgroundColor = "rgb(62, 148, 83)";
         
         document.getElementById("resultadoanaliseFinalDaOperacao").innerHTML = "<strong>LUCRO</strong>";
         
     }else{
-        document.getElementById("resultadoanaliseFinalDaOperacao").style.backgroundColor = "rgb(255, 111, 67)";
+        document.getElementById("resultadoanaliseFinalDaOperacao").style.backgroundColor = "rgb(148, 62, 62)";
         document.getElementById("resultadoanaliseFinalDaOperacao").innerHTML = "<strong>PREJUÍZO</strong>";
     }
 });

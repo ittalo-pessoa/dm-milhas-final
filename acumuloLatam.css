@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(100,131,136);
-    background: radial-gradient(circle, rgb(133, 133, 133) 44%, rgba(58,54,54,1) 100%);
+    background: rgb(100, 131, 136);
+    background: radial-gradient(circle, rgb(53, 55, 59) 44%, rgb(23, 27, 31) 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -15,7 +15,7 @@ body {
     padding-top: 110px;
 }
 form [type="number" ] {
-    background-color: #6a6969a5;
+    background-color: #2e2e2e;
     color: #FFFFFF;
 }
 .container {
@@ -23,11 +23,11 @@ form [type="number" ] {
     margin-top: 200px;
     border-radius: 15px;
     padding: 20px;
-    background-color: #000000;
+    background-color: #131518;
 }
 .card{
     text-align: center;
-    background: rgba(27, 27, 27, 0.619);
+    background: rgba(16, 19, 22, 0.619);
     padding: 30px;
 }
 .btn-primary{
@@ -128,6 +128,9 @@ input[type="number"]::placeholder{
 }
 .negrito{
     font-weight: bold;
+    background-color: #778eac5b;
+    border: none;
+    color: aliceblue
    
 }
 .novaIdeia{
@@ -163,13 +166,14 @@ input[type="number"]::placeholder{
     transform: translateY(1%);
 
 }
-.livelo2{
-    max-width: 300px; /* Tamanho máximo para telas maiores */
-    width: 110px; /* Adaptação relativa */
-    height: 55px; /* Mantém a proporção */
-    position: relative;
+
+.jorge{
+
+    width: 150px; /* Adaptação relativa */
+    height: 85px; /* Mantém a proporção */
     margin-left: -30px; /* Espaçamento entre as imagens */
-    transform: translateY(-30%);
+    transform: translateX(70%);
+ 
 
 }
 .cartoes{
@@ -277,4 +281,86 @@ input[type="number"]::placeholder{
 }
 .amarelinho{
     background-color: #cfa122;
+}
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 150px; /* Adaptação relativa */
+    height: 120px; /* Mantém a proporção */
+    position: relative;
+    margin-left: 30px; /* Espaçamento entre as imagens */
+    transform: translateY(-20%);
+
+}
+.diminuicao{
+    font-size: 10px;
+    transform: translateY(-10%);
+}
+.diminuicao1{
+    font-size: 10px;
+    transform: translateY(-16%);
+}
+.diminuicao2{
+    font-size: 10px;
+    transform: translateY(-16%);
+}
+.cartoes{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 155px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-44%);
+}
+.clubes{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 175px; /* Adaptação relativa */
+    height: 110px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -85px; /* Espaçamento entre as imagens */
+    transform: translateY(-49%);
+}
+.compras{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 210px; /* Adaptação relativa */
+    height: 130px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -107px; /* Espaçamento entre as imagens */
+    transform: translateY(-47%);
+}
+.compras2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 120px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-48%);
+}
+.compra{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 200px; /* Adaptação relativa */
+    height: 140px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -103px; /* Espaçamento entre as imagens */
+    transform: translateY(-47%);
+}
+.calendar{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 22px; /* Adaptação relativa */
+    height: -620px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -15px; /* Espaçamento entre as imagens */
+    transform: translateY(-55%);
+}
+.engrenagem{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 32px; /* Adaptação relativa */
+    height: -1220px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -53px; /* Espaçamento entre as imagens */
+    transform: translateY(55%);
+}
+
+input {
+    position: relative; /* ou absolute, se necessário */
+    z-index: 10; /* Deve ser maior que o do elemento sobreposto */
 }

@@ -49,3 +49,102 @@ tr{
 button{
     margin-bottom: 20px;
 }
+.invisivel{
+    visibility:hidden ;
+}
+.navbar img {
+    height: 60px; /* Tamanho padrão */
+    width: 80px;
+    position: absolute;
+    left: 49%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
+}
+.navbar {
+    background-color: rgba(15, 19, 22, 0.619) !important;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    min-height: 80px; /* Altura mínima ajustada para manter o visual proporcional */
+}
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -290px; /* Expande 20px para o lado direito */
+    width: 290px; /* Largura da "extensão" */
+    height: 100%; /* Altura total */
+    background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
+}
+.amarelinho{
+    background-color: #cfa122;
+}
+.borda{
+    border: none;
+}
+input{
+    color:white
+}
+#lec1::placeholder,
+#lec2::placeholder,
+#lec3::placeholder,
+#lec4::placeholder,
+#lec5::placeholder,
+#sm1::placeholder,
+#sm2::placeholder,
+#sm3::placeholder,
+#sm4::placeholder,
+#sm5::placeholder,
+#azul1::placeholder,
+#azul2::placeholder,
+#azul3::placeholder,
+#azul4::placeholder,
+#azul5::placeholder,
+#latam1::placeholder,
+#latam2::placeholder,
+#latam3::placeholder,
+#latam4::placeholder,
+#latam5::placeholder {
+    color: white; /* Cor para o placeholder */
+}
+#res1,
+#res2,
+#res3,
+#res4,
+#res5,
+#res6,
+#res7,
+#res8,
+#res9,
+#res10,
+#res11,
+#res12,
+#res13,
+#res14,
+#res15,
+#res16 {
+   font-weight: bold;
+   font-size: 15px;
+}
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 270px; /* Adaptação relativa */
+    height: 170px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -190px; /* Espaçamento entre as imagens */
+    transform: translateY(-11%);
+
+}
+.churras{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #35404C;
+   color: white;
+   border: none;
+}
+
+

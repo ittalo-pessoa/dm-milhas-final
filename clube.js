@@ -27,7 +27,10 @@ document.getElementById("calculate").addEventListener("click", function () {
         bonusAdocao <= 0 || 
         bonusTransfClubesBancarios <= 0
     ) {
-        mostrarErro("errormensalidade", "Todos os valores numéricos válidos devem ser preenchidos.");
+        document.getElementById('resultadoCustoDoMilheiro').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('resultadoTotalPontosAnoClube').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('resultadoTotalPontosPosTransfBonificada').innerHTML ="Digite todos os valores válidos!";
+        document.getElementById('custoFinalDoMilheiro').innerHTML = "Digite todos os valores válidos!";
         return;
     }
 

@@ -65,8 +65,9 @@ td {
 
 input {
     text-align: center;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     background: #16161600;
+    border: none !important;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
@@ -79,7 +80,7 @@ input[type=number] {
 }
 
 input[type="number"]::placeholder {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)
 }
 
 span.resultado {
@@ -118,12 +119,29 @@ span.resultado {
     top: 50%; /* Centraliza verticalmente */
     transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
 }
+.churras{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #35404C;
+   color: white;
+   border: none;
+}
+
 
 /* Responsividade para ajustar apenas o tamanho da imagem */
 @media (max-width: 768px) {
     .navbar img {
         height: 50px; /* Ajusta o tamanho da imagem */
         width: 70px;
+    }
+    .livelo2{
+        max-width: 300px; /* Tamanho máximo para telas maiores */
+        width: 50px; /* Adaptação relativa */
+        height: 50px; /* Mantém a proporção */
+        position: relative;
+        margin-left: -20px; /* Espaçamento entre as imagens */
+        transform: translateY(-40%);
+    
     }
 }
 
@@ -132,6 +150,7 @@ span.resultado {
         height: 40px; /* Reduz ainda mais o tamanho em telas muito pequenas */
         width: 60px;
     }
+   
 }
 
 /* Responsividade geral */
@@ -164,6 +183,7 @@ span.resultado {
     span.resultado {
         font-size: 1rem;
     }
+    
 }
 
 @media (max-width: 576px) {
@@ -182,7 +202,70 @@ span.resultado {
     input {
         font-size: 0.9rem;
     }
+  
 }
+@media (max-width: 110px) {
+    .navbar img {
+        height: 30px; /* Reduz o tamanho para caber */
+        width: 40px;
+    }
+
+
+    .container {
+        margin-top: 20px;
+        padding: 5px; /* Menor padding em telas muito pequenas */
+    }
+
+    .titulo-completo {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        text-align: center; /* Mantém centralizado */
+    }
+
+    .card {
+        padding: 10px; /* Ajusta o espaçamento */
+    }
+
+    input, .btn, span.resultado {
+        font-size: 0.8rem; /* Reduz o tamanho do texto */
+        width: 100%; /* Elementos preenchem toda a largura disponível */
+    }
+
+    td {
+        font-size: 0.7rem;
+        word-wrap: break-word; /* Previne estouro de texto */
+    }
+}
+@media (max-width: 100px) {
+    .navbar img {
+        height: 30px; /* Reduz o tamanho para caber */
+        width: 40px;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 5px; /* Menor padding em telas muito pequenas */
+    }
+
+    .titulo-completo {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        text-align: center; /* Mantém centralizado */
+    }
+
+    .card {
+        padding: 10px; /* Ajusta o espaçamento */
+    }
+
+    input, .btn, span.resultado {
+        font-size: 0.8rem; /* Reduz o tamanho do texto */
+        width: 100%; /* Elementos preenchem toda a largura disponível */
+    }
+
+    td {
+        font-size: 0.7rem;
+        word-wrap: break-word; /* Previne estouro de texto */
+    }
+}
+
 #valPointMil::placeholder {
     color: white; /* Cor desejada para o texto do placeholder (ex: laranja/vermelho) */
     border: none;
@@ -221,4 +304,13 @@ span.resultado {
     width: 290px; /* Largura da "extensão" */
     height: 100%; /* Altura total */
     background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
+}
+.livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 170px; /* Adaptação relativa */
+    height: 190px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -90px; /* Espaçamento entre as imagens */
+    transform: translateY(-30%);
+
 }

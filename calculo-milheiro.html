@@ -18,6 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="calculo-milheiro.js"></script>  
     <link rel="stylesheet" href="calculo-milheiro.css">
+    <link rel="icon" type="image/x-icon" href="img/vmm-removebg-preview.png">
 </head>
 <body>
     <main>
@@ -62,7 +63,8 @@
 
 
         <div class="container my-4 p-4 rounded">
-            <h2 class="text-center" style="font-size: 24px;">CÁLCULO DO MILHEIRO</h2>
+            <h2 class="text-center" style="font-size: 24px;">CÁLCULO DO MILHEIRO<br><img src="img/No_cartão2-removebg-preview.png" class="livelo2 position-absolute"> </h2>
+            <br><br>
             <div class="card">
                 <form id="formTabela">
                     <div class="row">
@@ -77,26 +79,27 @@
                                     <tr class="birda">
                                         <td class="corToda">Valor dos pontos/milhas</td>
                                         <td>
-                                            <input type="text" style="background: #2c2f38;" class="form-control custo" id="valPointMil" placeholder="Digite">
+                                            <input type="number" class="form-control custo" id="valPointMil" placeholder="Digite">
                                         </td>
                                     </tr>
                                     <tr class="birda">
                                         <td class="corToda">Quantidade de pontos/milhas</td>
                                         <td>
-                                            <input type="text" style="background:#2c2f38 ;" class="form-control custo" id="quantiPointMil" placeholder="Digite">
+                                            <input type="number" class="form-control custo" id="quantiPointMil" placeholder="Digite">
                                         </td>
                                     </tr>
                                     <tr class="birda">
                                         <td class="corToda">Custo do Milheiro</td>
-                                        <td>
-                                            <span style="background: white;color: black;" class="resultado" id="resultadoCusMil">...</span>
+                                        <td class="lucro">
+                                            <span class="form-control negrito churras" id="resultadoCusMil"><strong>...</strong></span>
+                                            <span class="error-message" id="errorDescontoIndireto"></span>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="text-center mt-3">
-                            <button type="button" class="btn btn-primary" onclick="calcularTotais()" style="background-color: #cfa122; color: black; border: none;">
+                            <button type="button" class="btn btn-primary" onclick="calcularTotais()" style="background-color: #cfa122; color: black; border: none;font-size: 13px;">
                                 <strong>CALCULAR TOTAIS</strong>
                             </button>
                         </div>

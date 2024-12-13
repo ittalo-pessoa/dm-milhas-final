@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(36, 40, 41);
-    background: radial-gradient(circle, #000000);
+    background: rgb(100, 131, 136);
+    background: radial-gradient(circle, rgb(53, 55, 59) 44%, rgb(23, 27, 31) 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -15,7 +15,7 @@ body {
     padding-top: 110px;
 }
 form [type="number" ] {
-    background-color: #6a6969a5;
+    background-color: #2e2e2e;
     color: #FFFFFF;
 }
 .container {
@@ -23,11 +23,11 @@ form [type="number" ] {
     margin-top: 200px;
     border-radius: 15px;
     padding: 20px;
-    background-color: #171515;
+    background-color: #131518;
 }
 .card{
     text-align: center;
-    background: rgba(30, 28, 28, 0.619);
+    background: rgba(16, 19, 22, 0.619);
     padding: 30px;
 }
 h4{
@@ -132,9 +132,12 @@ input[type="number"]::placeholder{
 .negrito{
     font-weight:bold ;
     font-size: 13px;
+    background-color: #778eac5b;
+    border: none;
+    color: aliceblue
 }
 .lucro{
-    background-color: #B2D600;
+    background-color: #3e945377;
 }
 .qualquer {
     font-size: 9.4px; /* Tamanho de fonte dinâmico */
@@ -177,3 +180,16 @@ input[type="number"]::placeholder{
 .menu-icon {
     visibility: hidden;
   }
+  .livelo2{
+    max-width: 300px; /* Tamanho máximo para telas maiores */
+    width: 300px; /* Adaptação relativa */
+    height: 200px; /* Mantém a proporção */
+    position: relative;
+    margin-left: -140px; /* Espaçamento entre as imagens */
+    transform: translateY(-25%);
+
+}  
+.negrito{
+    font-size: 16px;
+    font-weight: bold;
+}
