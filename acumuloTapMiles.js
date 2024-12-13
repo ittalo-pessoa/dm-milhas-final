@@ -7,8 +7,6 @@ function mostrarErro(campoId, mensagem) {
     }, 3000);
 }
 document.getElementById('calculate').addEventListener('click',function(){
-
-
     const custoJan1 = isNaN(parseFloat(document.getElementById('custoJan1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoJan1').value.replace(/\./g, ""));
 const acumuloJan1 = isNaN(parseFloat(document.getElementById('acumuloJan1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloJan1').value.replace(/\./g, ""));
 const custoFev1 = isNaN(parseFloat(document.getElementById('custoFev1').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoFev1').value.replace(/\./g, ""));
@@ -48,15 +46,11 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
         custoNov1 < 0 || acumuloNov1 < 0 ||
         custoDez1 < 0 || acumuloDez1 < 0
     ) 
-    
      {
         mostrarErro("errorCustoJan", "Todos os valores numéricos válidos devem ser preenchidos.");
         mostrarErro("errorCustoJul", "Todos os valores numéricos válidos devem ser preenchidos.");
         return;
     }
-    
-
-
     const totalCusto1 = custoJan1 + custoFev1 + custoMar1 + custoAbr1 + custoMai1 + custoJun1 + custoJul1 + custoAgo1 + custoSet1 + custoOut1 + custoNov1 + custoDez1;
     const totalAcumulo1 = acumuloJan1 + acumuloFev1 + acumuloMar1 + acumuloAbr1 + acumuloMai1 + acumuloJun1 + acumuloJul1 + acumuloAgo1 + acumuloSet1 + acumuloOut1 +
      acumuloNov1 + acumuloDez1;
@@ -64,11 +58,7 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
     document.getElementById('totalCusto1').innerHTML = "R$ " + totalCusto1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   document.getElementById('totalAcumulo1').innerHTML = "R$ " + totalAcumulo1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-   
-
-
-
-
+    document.getElementById('acumuloAnual1').innerHTML = "R$ " + acumuloAnual.toLocaleString("pt-BR", {maximumFractionDigits:2, minimumFractionDigits: 2 })
  document.getElementById('calculate2').addEventListener('click',function(){
 
     const custoJan2 = isNaN(parseFloat(document.getElementById('custoJan2').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoJan2').value.replace(/\./g, ""));
