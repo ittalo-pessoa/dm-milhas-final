@@ -67,15 +67,15 @@
                         <table class="table">
                             <tr>
                                 <td><label for="lec1">Quantidade de Pontos:</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec1" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="quantPontos" placeholder="Digite"></td>
                             </tr>
                             <tr>
                                 <td><label for="lec2">Valor dos Pontos</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec2" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="valPontos" placeholder="Digite"></td>
                             </tr>
                             <tr>
                                 <td><label for="lec3">Conversor</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec3" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="conversor" placeholder="Digite"></td>
                             </tr>
                                 <td><label>Pontos ALL</label></td>
                                 <td class="lucro">
@@ -85,7 +85,7 @@
                             </tr>
                             <tr>
                                 <td><label>Valor ALL (Euro)</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec4" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="valAllEuro" placeholder="Digite"></td>
                             </tr>
                             <tr>
                                 <td><label>Valor total ALL (Euro)</label></td>
@@ -96,7 +96,7 @@
                             </tr>
                             <tr>
                                 <td><label>Valor Euro Mercado</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="lec5" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="valEuroMer" placeholder="Digite"></td>
                             </tr>
                             <tr>
                                 <td><label>Valor do Euro Gerado</label></td>
@@ -114,7 +114,7 @@
                             </tr>
                         </table>
                     </div>
-                    <button class="btn btn-warning" style=" background: #cfa122; font-size:13px;" onclick="total()"><strong>CALCULAR TOTAIS</strong></button>
+                    <button class="btn btn-warning" style=" background: #cfa122; font-size:13px;" id="calculate"><strong>CALCULAR TOTAIS</strong></button>
                 </section>
         
                 <!-- Section Smile -->
@@ -124,15 +124,15 @@
                         <table class="table">
                             <tr >
                                 <td><label for="sm1">Quantidade de Milhas</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="sm1" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="quantPontos2" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label for="sm2">Valor do Milheiro</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="sm2" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="valPontos2" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label for="sm3">Conversor</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="sm3" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="conversor2" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Pontos ALL</label></td>
@@ -143,7 +143,7 @@
                             </tr>
                             <tr >
                                 <td><label>Valor ALL (Euro)</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="sm4" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="valAllEuro2" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Valor Total ALL (Euro)</label></td>
@@ -153,7 +153,7 @@
                                 </td>
                             <tr >
                                 <td><label>Valor Euro mercado</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="sm5" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda" id="valEuroMer2" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Valor do Euro Gerado</label></td>
@@ -172,7 +172,7 @@
 
                         </table>
                     </div>
-                    <button class="btn btn-warning" style="background: #cfa122;font-size: 13px;" onclick="latam()"><strong>CALCULAR TOTAIS</strong></button>
+                    <button class="btn btn-warning" style="background: #cfa122;font-size: 13px;" id="calculate2"><strong>CALCULAR TOTAIS</strong></button>
                 </section>
         
                 <!-- Section Azul Fidelidade -->
@@ -182,15 +182,15 @@
                         <table class="table">
                             <tr >
                                 <td><label for="azul1">Quantidade de Milhas</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="azul1" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="quantPontos3" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label for="azul2">Valor do Milheiro</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="azul2" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="valPontos3" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label for="azul3">Conversor</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="azul3" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="conversor3" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Pontos ALL</label></td>
@@ -201,7 +201,7 @@
                             </tr>
                             <tr >
                                 <td><label>Valor ALL (Euro)</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="azul4" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="valAllEuro3" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Valor Total ALL (Euro)</label></td>
@@ -212,7 +212,7 @@
                             </tr>
                             <tr >
                                 <td><label>Valor Euro Mercado</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="azul5" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="valEuroMer3" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Valor do Euro Gerado</label></td>
@@ -231,7 +231,7 @@
 
                         </table>
                     </div>
-                    <button class="btn btn-warning" style="background: #cfa122;font-size: 13px;" onclick="latam()"><strong>CALCULAR TOTAIS</strong></button>
+                    <button class="btn btn-warning" style="background: #cfa122;font-size: 13px;" id="calculate3"><strong>CALCULAR TOTAIS</strong></button>
                 </section>
         
                 <!-- Section Latam -->
@@ -241,15 +241,15 @@
                         <table class="table">
                             <tr >
                                 <td><label for="latam1">Quantidade de Milhas</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="latam1" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"  id="quantPontos4" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label for="latam2">Valor do Milheiro</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="latam2" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="valPontos4" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label for="latam3">Conversor</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="latam3" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="conversor4" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Pontos ALL</label></td>
@@ -260,7 +260,7 @@
                             </tr>
                             <tr >
                                 <td><label>Valor ALL (Euro)</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="latam4" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="valAllEuro4" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Valor total ALL (Euro)</label></td>
@@ -271,7 +271,7 @@
                             </tr>
                             <tr >
                                 <td><label>Valor Euro Mercado</label></td>
-                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="latam5" placeholder="Digite"></td>
+                                <td><input type="number" class="form-control mb-2 bg-dark text-white borda"   id="valEuroMer4" placeholder="Digite"></td>
                             </tr>
                             <tr >
                                 <td><label>Valor do Euro Gerado</label></td>
@@ -290,7 +290,7 @@
 
                         </table>
                     </div>
-                    <button class="btn btn-warning" style="background: #cfa122;font-size: 13px;" onclick="latam()"><strong>CALCULAR TOTAIS</strong></button>
+                    <button class="btn btn-warning" style="background: #cfa122;font-size: 13px;" id="calculate4"><strong>CALCULAR TOTAIS</strong></button>
                 </section>
             </div>
         </div>

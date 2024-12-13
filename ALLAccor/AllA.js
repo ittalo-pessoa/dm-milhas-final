@@ -1,109 +1,127 @@
-// Função para pegar elementos do DOM por ID
-function getElementsById(ids) {
-    return ids.map(id => document.getElementById(id));
+function mostrarErro(campoId, mensagem) {
+    const elementoErro = document.getElementById(campoId);
+    elementoErro.textContent = mensagem;
+    elementoErro.style.display = "block";
+    setTimeout(() => {
+        elementoErro.style.display = "none";
+    }, 3000);
 }
+document.getElementById('calculate').addEventListener('click',function(){
 
-// Função para validar entradas e garantir que sejam positivas
-function validarEntradas(inputs, results) {
-    let valido = true;
+    let quantPontos = parseFloat(document.getElementById('quantPontos').value);
+    let valPontos = parseFloat(document.getElementById('valPontos').value);
+    let conversor = parseFloat(document.getElementById('conversor').value);
+    let valAllEuro = parseFloat(document.getElementById('valAllEuro').value);
+    let valEuroMer = parseFloat(document.getElementById('valEuroMer').value);
 
-    inputs.forEach(input => {
-        if (Number(input.value) < 0 || input.value === "") {
-            // Marca os campos de saída com bordas vermelhas para indicar erro
-            results.forEach(result => {
-                result.innerHTML = "Digite todos os valores válidos!";
-            });
-            
-            valido = false;
-        } else {
-           a=0
+    if (
+        isNaN(quantPontos) || isNaN(valPontos) || isNaN(conversor) || isNaN(valAllEuro) || isNaN(valEuroMer) ||
+        quantPontos <= 0 || valPontos <= 0 || conversor <= 0 || valAllEuro <= 0 || valEuroMer <= 0
+    ) {
+        document.getElementById('res1').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('res2').innerHTML = "Digite todos os valores válidos!";
+        document.getElementById('res3').innerHTML ="Digite todos os valores válidos!";
+        document.getElementById('res4').innerHTML ="Digite todos os valores válidos!";
+        return;
+    }
+
+    let pontosAll = quantPontos / conversor;
+    let valTotAllEuro = (2 / 100) * pontosAll;
+    let valEuroGasto = ((quantPontos * valPontos) / 1000) / valTotAllEuro;
+    let percentualDesconto = (((valEuroGasto / valEuroMer) - 1) * (-1) * 100);
+
+    document.getElementById("res1").innerHTML =  pontosAll.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("res2").innerHTML =  valTotAllEuro.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("res3").innerHTML =  valEuroGasto.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("res4").innerHTML =  percentualDesconto.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";
+
+    document.getElementById('calculate2').addEventListener('click',function(){
+
+        let quantPontos2 = parseFloat(document.getElementById('quantPontos2').value);
+        let valPontos2 = parseFloat(document.getElementById('valPontos2').value);
+        let conversor2 = parseFloat(document.getElementById('conversor2').value);
+        let valAllEuro2 = parseFloat(document.getElementById('valAllEuro2').value);
+        let valEuroMer2 = parseFloat(document.getElementById('valEuroMer2').value);
+
+        if (
+            isNaN(quantPontos2) || isNaN(valPontos2) || isNaN(conversor2) || isNaN(valAllEuro2) || isNaN(valEuroMer2) ||
+            quantPontos2 <= 0 || valPontos2 <= 0 || conversor2 <= 0 || valAllEuro2 <= 0 || valEuroMer2 <= 0
+        ) {
+            document.getElementById('res5').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('res6').innerHTML = "Digite todos os valores válidos!";
+            document.getElementById('res7').innerHTML ="Digite todos os valores válidos!";
+            document.getElementById('res8').innerHTML ="Digite todos os valores válidos!";
+            return;
         }
-    });
+    
+        let pontosAll2 = quantPontos2 / conversor2;
+        let valTotAllEuro2 = (2 / 100) * pontosAll2;
+        let valEuroGasto2 = ((quantPontos2 * valPontos2) / 1000) / valTotAllEuro2;
+        let percentualDesconto2 = (((valEuroGasto2 / valEuroMer2) - 1) * (-1) * 100);
+    
+        document.getElementById("res5").innerHTML =  pontosAll2.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+        document.getElementById("res6").innerHTML =  valTotAllEuro2.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+        document.getElementById("res7").innerHTML =  valEuroGasto2.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+        document.getElementById("res8").innerHTML =  percentualDesconto2.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";
 
-    if (valido) {
-        // Remove bordas de erro dos campos de saída se as entradas forem válidas
-        a=1
-    }
+        document.getElementById('calculate3').addEventListener('click',function(){
 
-    return valido;
-}
+            let quantPontos3 = parseFloat(document.getElementById('quantPontos3').value);
+            let valPontos3 = parseFloat(document.getElementById('valPontos3').value);
+            let conversor3 = parseFloat(document.getElementById('conversor3').value);
+            let valAllEuro3 = parseFloat(document.getElementById('valAllEuro3').value);
+            let valEuroMer3 = parseFloat(document.getElementById('valEuroMer3').value);
 
-// Função para impedir a entrada de letras ou caracteres especiais
-function impedirLetras(input) {
-    input.value = input.value.replace(/[^0-9.]/g, ''); // Permite apenas números e pontos
-}
+            if (
+                isNaN(quantPontos3) || isNaN(valPontos3) || isNaN(conversor3) || isNaN(valAllEuro3) || isNaN(valEuroMer3) ||
+                quantPontos3 <= 0 || valPontos3 <= 0 || conversor3 <= 0 || valAllEuro3 <= 0 || valEuroMer3 <= 0
+            ) {
+                document.getElementById('res9').innerHTML = "Digite todos os valores válidos!";
+                document.getElementById('res10').innerHTML = "Digite todos os valores válidos!";
+                document.getElementById('res11').innerHTML ="Digite todos os valores válidos!";
+                document.getElementById('res12').innerHTML ="Digite todos os valores válidos!";
+                return;
+            }
+        
+            let pontosAll3 = quantPontos3 / conversor3;
+            let valTotAllEuro3 = (2 / 100) * pontosAll3;
+            let valEuroGasto3 = ((quantPontos3 * valPontos3) / 1000) / valTotAllEuro3;
+            let percentualDesconto3 = (((valEuroGasto3 / valEuroMer3) - 1) * (-1) * 100);
+        
+            document.getElementById("res9").innerHTML =  pontosAll3.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+            document.getElementById("res10").innerHTML =  valTotAllEuro3.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+            document.getElementById("res11").innerHTML =  valEuroGasto3.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+            document.getElementById("res12").innerHTML =  percentualDesconto3.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";
 
-// Função para vincular o evento de impedir letras aos campos de entrada
-function vincularEventosDeEntrada(ids) {
-    ids.forEach(id => {
-        const input = document.getElementById(id);
-        input.oninput = function() {
-            impedirLetras(this); // Chama a função para impedir a entrada de letras
-        };
-    });
-}
+            document.getElementById('calculate4').addEventListener('click',function(){
 
-// Função para realizar o cálculo genérico e exibir com vírgula
-function calcularValores(n1, n2, n3, n5, results) {
-    const s = n1 / n3;
-    const decimal = s.toFixed(2).replace('.', ',');
-    const s2 = 0.02 * s;
-    const decimal2 = s2.toFixed(2).replace('.', ',');
-    const s3 = ((n1 * n2) / 1000) / s2;
-    const decimal3 = s3.toFixed(2).replace('.', ',');
-    const s4 = (((s3 / n5) - 1) * (-1)) * 100;
-    const decimal4 = s4.toFixed(2).replace('.', ',');
+                let quantPontos4 = parseFloat(document.getElementById('quantPontos4').value);
+                let valPontos4 = parseFloat(document.getElementById('valPontos4').value);
+                let conversor4 = parseFloat(document.getElementById('conversor4').value);
+                let valAllEuro4 = parseFloat(document.getElementById('valAllEuro4').value);
+                let valEuroMer4 = parseFloat(document.getElementById('valEuroMer4').value);
 
-    // Atualiza os resultados e garante que as bordas sejam padrão
-    results[0].innerHTML = `${decimal}`;
-    results[1].innerHTML = `${decimal2}`;
-    results[2].innerHTML = `€ ${decimal3}`;
-    results[3].innerHTML = `${decimal4} %`;
-
-    results.forEach(result => result.style.border = "1px solid #ccc");
-}
-
-// Função principal para inicializar os cálculos
-function inicializarCalculo(inputIds, resultIds) {
-    const inputs = getElementsById(inputIds);
-    const results = getElementsById(resultIds);
-    if (validarEntradas(inputs, results)) {
-        const [n1, n2, n3, , n5] = inputs.map(input => Number(input.value));
-        calcularValores(n1, n2, n3, n5, results);
-    }
-}
-
-// Funções específicas para cada grupo de inputs
-function total() {
-    inicializarCalculo(
-        ['lec1', 'lec2', 'lec3', 'lec4', 'lec5'],
-        ['res1', 'res2', 'res3', 'res4']
-    );
-}
-
-function smile() {
-    inicializarCalculo(
-        ['sm1', 'sm2', 'sm3', 'sm4', 'sm5'],
-        ['res5', 'res6', 'res7', 'res8']
-    );
-}
-
-function azulFidelidade() {
-    inicializarCalculo(
-        ['azul1', 'azul2', 'azul3', 'azul4', 'azul5'],
-        ['res9', 'res10', 'res11', 'res12']
-    );
-}
-
-function latam() {
-    inicializarCalculo(
-        ['latam1', 'latam2', 'latam3', 'latam4', 'latam5'],
-        ['res13', 'res14', 'res15', 'res16']
-    );
-}
-
-// Vinculando a função impedirLetras aos inputs relevantes
-vincularEventosDeEntrada(['lec1', 'lec2', 'lec3', 'lec4', 'lec5']);
-vincularEventosDeEntrada(['sm1', 'sm2', 'sm3', 'sm4', 'sm5']);
-vincularEventosDeEntrada(['azul1', 'azul2', 'azul3', 'azul4', 'azul5']);
-vincularEventosDeEntrada(['latam1', 'latam2', 'latam3', 'latam4', 'latam5']);
+                if (
+                    isNaN(quantPontos4) || isNaN(valPontos4) || isNaN(conversor4) || isNaN(valAllEuro4) || isNaN(valEuroMer4) ||
+                    quantPontos4 <= 0 || valPontos4 <= 0 || conversor4 <= 0 || valAllEuro4 <= 0 || valEuroMer4 <= 0
+                ) {
+                    document.getElementById('res13').innerHTML = "Digite todos os valores válidos!";
+                    document.getElementById('res14').innerHTML = "Digite todos os valores válidos!";
+                    document.getElementById('res15').innerHTML ="Digite todos os valores válidos!";
+                    document.getElementById('res16').innerHTML ="Digite todos os valores válidos!";
+                    return;
+                }
+            
+                let pontosAll4 = quantPontos4 / conversor4;
+                let valTotAllEuro4 = (2 / 100) * pontosAll4;
+                let valEuroGasto4 = ((quantPontos4 * valPontos4) / 1000) / valTotAllEuro4;
+                let percentualDesconto4 = (((valEuroGasto4 / valEuroMer4) - 1) * (-1) * 100);
+            
+                document.getElementById("res13").innerHTML =  pontosAll4.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+                document.getElementById("res14").innerHTML =  valTotAllEuro4.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+                document.getElementById("res15").innerHTML =  valEuroGasto4.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+                document.getElementById("res16").innerHTML =  percentualDesconto4.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";
+            })
+        })
+    })
+})
