@@ -431,7 +431,8 @@ if (quantDePontosTransfTapMilesGo === 0) {
     let calc = ((custoMedioDoMilheiroTodosOsProgramas * quantDePontosTransfTapMilesGo) / 1000) / totalDeAcumuloAnual5 * 1000;
     document.getElementById('custoMedioDoMilheiroTapMilesGo').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
-
+localStorage.setItem('custoMedioDoMilheiroDoLivelo',custoMedioDoMilheiroTodosOsProgramas);
+localStorage.setItem('saldoAposTransf', saldoAposTransf);
 
 
  })})})})
