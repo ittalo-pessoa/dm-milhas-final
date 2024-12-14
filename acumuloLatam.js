@@ -413,10 +413,13 @@ if (acumuloAnualTodasAplicacoes === 0) {
  else {
     const calc=custoAnualTodasAplicacoes/acumuloAnualTodasAplicacoes*1000
     document.getElementById('custoMedioDoMilheiroTodas').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    localStorage.setItem('custoMedioDoMilheiroTodas', calc);
 }
 
 const saldoAposUsoDeMilhas=acumuloAnualTodasAplicacoes-usoMilhas
 document.getElementById('saldoAposUsoDeMilhas').innerHTML = "R$ " + saldoAposUsoDeMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+localStorage.setItem('saldoAposUsoDeMilhas', saldoAposUsoDeMilhas);
 
 });
 

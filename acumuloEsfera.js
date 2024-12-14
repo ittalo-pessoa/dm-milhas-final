@@ -363,7 +363,7 @@ if (acumuloAnualTodasAplicacoes === 0) {
  else {
     const calc=custoAnualTodasAplicacoes/acumuloAnualTodasAplicacoes*1000
     document.getElementById('custoMedioDoMilheiroTodas').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
+    localStorage.setItem('custoMedioDoMilheiroTodas', calc);
 
 const saldoAposUsoDeMilhas=acumuloAnualTodasAplicacoes-quantDePontosTransf-quantDePontosTransf2-quantDePontosTransf3-quantDePontosTransf4
 document.getElementById('saldoAposUsoDeMilhas').innerHTML = "R$ " + saldoAposUsoDeMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -409,11 +409,12 @@ if (quantDePontosTransf4 === 0 || quantDePontosTransf4 === "") {
     document.getElementById('custoMedioDoMilheiroIberia').innerHTML = "R$ " + calc5.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
+localStorage.setItem('saldoAposUsoDeMilhas', saldoAposUsoDeMilhas);
 
-});
+};
 
 })
 
 }) 
 
-})
+})})
