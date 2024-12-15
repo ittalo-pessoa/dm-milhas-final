@@ -275,14 +275,14 @@ input {
     transform: translateY(1940%);
     font-size: 13px;
 }
-/* Telas menores que 768px (tablets e celulares em modo retrato) */
-/* Ajustes para telas muito grandes */
-@media (min-width: 2000px) {
+@media (max-width: 768px) {
     body {
-        background-size: cover; /* Garante que o fundo preencha a tela */
+        min-height: auto; /* Remove a altura mínima */
+        padding: 0; /* Remove padding indesejado */
     }
     .container {
-        max-width: 1800px;
+        margin: 10px; /* Ajusta o conteúdo */
+        width: 100%;
+        max-width: 100%; /* Ajuste flexível */
     }
 }
-
