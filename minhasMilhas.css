@@ -271,3 +271,111 @@ input {
     transform: translateY(1935%);
     font-size: 13px;
 }
+/* Telas menores que 768px (tablets e celulares em modo retrato) */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 100px; /* Ajusta o espaçamento */
+        padding: 10px;
+    }
+    .navbar img {
+        width: 60px; /* Reduz tamanho da imagem */
+        height: 45px;
+    }
+    .navbar {
+        min-height: 60px; /* Reduz a altura da navbar */
+        padding: 5px 10px;
+    }
+    .navbar::after {
+        display: none; /* Remove o elemento extra */
+    }
+    .card {
+        padding: 15px; /* Reduz o padding para caber na tela */
+    }
+    .livelo2{
+        margin-left: -320px; /* Remove margens negativas */
+        width: 100%; /* Deixa as imagens responsivas */
+      
+    }
+    .diminuicao, .diminuicao1, .diminuicao2 {
+        font-size: 12px; /* Ajusta tamanho da fonte */
+        transform: none; /* Remove deslocamento */
+    }
+    .cartoes{
+        transform: translateY(-47%);
+    }
+    .clubes{
+        transform: translateY(-50%);
+    }
+    .calendar{
+        transform: translateY(-56%);
+    }
+    .jorge{
+        transform: translateY(1998%);
+        font-size: 13px;
+    }
+}
+
+/* Telas menores que 480px (celulares em modo retrato) */
+@media screen and (max-width: 480px) {
+    body {
+        padding-top: 60px; /* Ajusta o topo */
+    }
+    h4, h2 {
+        font-size: 16px; /* Reduz tamanho dos títulos */
+    }
+    .container {
+        margin-top: 50px; /* Diminui margem superior */
+        padding: 8px;
+    }
+    .btn-primary {
+        font-size: 12px; /* Reduz tamanho do botão */
+        padding: 8px;
+    }
+    input {
+        font-size: 14px; /* Ajusta tamanho dos inputs */
+    }
+    .navbar img {
+        width: 50px;
+        height: 40px;
+    }
+    .container {
+        margin-top: 100px; /* Ajusta o espaçamento */
+        padding: 10px;
+    }
+    .navbar img {
+        width: 60px; /* Reduz tamanho da imagem */
+        height: 45px;
+    }
+    .navbar {
+        min-height: 60px; /* Reduz a altura da navbar */
+        padding: 5px 10px;
+    }
+    .navbar::after {
+        display: none; /* Remove o elemento extra */
+    }
+    .card {
+        padding: 15px; /* Reduz o padding para caber na tela */
+    }
+    .livelo2{
+        margin-left: -320px; /* Remove margens negativas */
+        width: 100%; /* Deixa as imagens responsivas */
+      
+    }
+    .diminuicao, .diminuicao1, .diminuicao2 {
+        font-size: 12px; /* Ajusta tamanho da fonte */
+        transform: none; /* Remove deslocamento */
+    }
+    .cartoes{
+        transform: translateY(-47%);
+    }
+    .clubes{
+        transform: translateY(-50%);
+    }
+    .calendar{
+        transform: translateY(-56%);
+    }
+    .jorge{
+        transform: translateY(1998%);
+        font-size: 13px;
+    }
+}
