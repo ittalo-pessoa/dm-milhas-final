@@ -272,57 +272,38 @@ input {
     font-size: 13px;
 }
 .mude{
-    transform: translateY(2250%);
+    transform: translateY(2470%);
     font-size: 10px;
+
+ 
 }
 @media (max-width: 768px) {
-    body {
-        min-height: auto; /* Remove a altura mínima */
-        padding: 0; /* Remove padding indesejado */
+    .navbar img {
+        max-width: 80%; /* Ajusta para telas médias */
     }
-    .container {
-        margin: 10px; /* Ajusta o conteúdo */
-        width: 100%;
-        max-width: 100%; /* Ajuste flexível */
+    .img{
+        margin-top: auto;
     }
-    .mude{
-        font-size: 8px;
-        transform: translateY(2550%);
-    }
-    
-    
+   
 }
-@media (max-width: 410px) {
-    body {
-        min-height: auto; /* Remove a altura mínima */
-        padding: 0; /* Remove padding indesejado */
+
+@media (max-width: 480px) {
+    .navbar img {
+        max-width: 70%; /* Ajusta ainda mais para telas menores */
     }
-    .container {
-        margin: 10px; /* Ajusta o conteúdo */
-        width: 100%;
-        max-width: 100%; /* Ajuste flexível */
+    .img{
+        margin-top: auto;
     }
-    .mude{
-        font-size: 8px;
-        transform: translateY(2540%);
-    }
-    
-    
+ 
 }
+
 @media (max-width: 360px) {
-    body {
-        min-height: auto; /* Remove a altura mínima */
-        padding: 0; /* Remove padding indesejado */
+    .navbar img {
+        max-width: 60%; /* Ajuste final para dispositivos muito pequenos */
+      
     }
-    .container {
-        margin: 10px; /* Ajusta o conteúdo */
-        width: 100%;
-        max-width: 100%; /* Ajuste flexível */
+    .img{
+        margin-top: auto;
     }
-    .mude{
-        font-size: 8px;
-        transform: translateY(2530%);
-    }
-    
-    
+  
 }
