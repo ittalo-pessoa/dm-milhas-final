@@ -11,53 +11,58 @@ document.getElementById('calculate').addEventListener('click',function(){
 
     const acumuloLivelo = parseFloat(localStorage.getItem('saldoAposTransf'));
     const custoMedioLivelo = parseFloat(localStorage.getItem('custoMedioDoMilheiroDoLivelo'));
+    const acumuloEsfera = parseFloat(localStorage.getItem('saldoAposUsoDeMilhasEs'));
+    const custoMedioEsfera = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodasEs'));
+    const acumuloOu = parseFloat(localStorage.getItem('saldoAposUsoDeMilhasOu'));
+    const custoMedioOu = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodasOu'));
+    const acumuloSmiles = parseFloat(localStorage.getItem('saldoAposUsoDeMilhasSmiles'));
+    const custoMedioSmiles = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodasSmiles'));
     const acumuloAzul = parseFloat(localStorage.getItem('saldoAposUsoDeMilhas'));
     const custoMedioAzul = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodas'));
-    prompt(custoMedioLivelo)
+    const acumuloLatam = parseFloat(localStorage.getItem('saldoAposUsoDeMilhasLatam'));
+    const custoMedioLatam = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodasLatam'));
+    const acumuloTapMilesGo = parseFloat(localStorage.getItem('saldoAposUsoDeMilhasTapMilesGo'));
+    const custoMedioTapMilesGo = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodasTapMilesGo'));
+    const acumuloIberia = parseFloat(localStorage.getItem('saldoAposUsoDeMilhasIberia'));
+    const custoMedioIberia = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodasIberia'));
+    let acumuloOutrosProgramas = parseFloat(document.getElementById('custo1').value);
+    let custoMedioProgramas = parseFloat(document.getElementById('custo2').value);
+   
 
-    if (
-        custoJan1 == 0 && acumuloJan1 == 0 &&
-        custoFev1 == 0 && acumuloFev1 == 0 &&
-        custoMar1 == 0 && acumuloMar1 == 0 &&
-        custoAbr1 == 0 && acumuloAbr1 == 0 &&
-        custoMai1 == 0 && acumuloMai1 == 0 &&
-        custoJun1 == 0 && acumuloJun1 == 0 &&
-        custoJul1 == 0 && acumuloJul1 == 0 &&
-        custoAgo1 == 0 && acumuloAgo1 == 0 &&
-        custoSet1 == 0 && acumuloSet1 == 0 &&
-        custoOut1 == 0 && acumuloOut1 == 0 &&
-        custoNov1 == 0 && acumuloNov1 == 0 &&
-        custoDez1 == 0 && acumuloDez1 == 0||custoJan1 < 0 || acumuloJan1 < 0 ||
-        custoFev1 < 0 || acumuloFev1 < 0 ||
-        custoMar1 < 0 || acumuloMar1 < 0 ||
-        custoAbr1 < 0 || acumuloAbr1 < 0 ||
-        custoMai1 < 0 || acumuloMai1 < 0 ||
-        custoJun1 < 0 || acumuloJun1 < 0 ||
-        custoJul1 < 0 || acumuloJul1 < 0 ||
-        custoAgo1 < 0 || acumuloAgo1 < 0 ||
-        custoSet1 < 0 || acumuloSet1 < 0 ||
-        custoOut1 < 0 || acumuloOut1 < 0 ||
-        custoNov1 < 0 || acumuloNov1 < 0 ||
-        custoDez1 < 0 || acumuloDez1 < 0
-    ) 
-    
-     {
-        mostrarErro("errorCustoJan", "Todos os valores numéricos válidos devem ser preenchidos.");
-        mostrarErro("errorCustoJul", "Todos os valores numéricos válidos devem ser preenchidos.");
-        return;
-    }
-    
+   
+    document.getElementById('acumuloLivelo').innerHTML = "R$ " + acumuloLivelo.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('custoMedioLivelo').innerHTML = "R$ " + custoMedioLivelo.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 
-    const totalCusto1 = custoJan1 + custoFev1 + custoMar1 + custoAbr1 + custoMai1 + custoJun1 + custoJul1 + custoAgo1 + custoSet1 + custoOut1 + custoNov1 + custoDez1;
-    const totalAcumulo1 = acumuloJan1 + acumuloFev1 + acumuloMar1 + acumuloAbr1 + acumuloMai1 + acumuloJun1 + acumuloJul1 + acumuloAgo1 + acumuloSet1 + acumuloOut1 +
-     acumuloNov1 + acumuloDez1;
-    const acumuloAnual= totalCusto1/totalAcumulo1*1000;
+  document.getElementById('acumuloEsfera').innerHTML = "R$ " + acumuloEsfera.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('custoMedioEsfera').innerHTML = "R$ " + custoMedioEsfera.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-    document.getElementById('totalCusto1').innerHTML = "R$ " + totalCusto1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  document.getElementById('totalAcumulo1').innerHTML = "R$ " + totalAcumulo1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    document.getElementById('acumuloAnual1').innerHTML = "R$ " + acumuloAnual.toLocaleString("pt-BR", {maximumFractionDigits:2, minimumFractionDigits: 2 });
+  document.getElementById('acumuloOutros').innerHTML = "R$ " + acumuloOu.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('custoMedioOutros').innerHTML = "R$ " + custoMedioOu.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
+  document.getElementById('acumuloSmiles').innerHTML = "R$ " + acumuloSmiles.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('custoMedioSmiles').innerHTML = "R$ " + custoMedioSmiles.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+   
+  document.getElementById('acumuloAzul').innerHTML = "R$ " + acumuloAzul.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('custoMedioAzul').innerHTML = "R$ " + custoMedioAzul.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  document.getElementById('acumuloLatamPass').innerHTML = "R$ " + acumuloLatam.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('custoMedioLatamPass').innerHTML = "R$ " + custoMedioLatam.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  document.getElementById('acumuloLatamPass').innerHTML = "R$ " + acumuloLatam.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('custoMedioLatamPass').innerHTML = "R$ " + custoMedioLatam.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  document.getElementById('acumuloIberiaPlus').innerHTML = "R$ " + acumuloIberia.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('custoMedioIberiaPlus').innerHTML = "R$ " + custoMedioIberia.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  const calc1=acumuloLivelo+acumuloEsfera+acumuloOu+acumuloSmiles+acumuloAzul+acumuloLatam+acumuloIberia+acumuloTapMilesGo
+  +acumuloOutrosProgramas
+  const calc2=custoMedioLivelo+custoMedioEsfera+custoMedioOu+custoMedioSmiles+custoMedioAzul+custoMedioLatam+
+  custoMedioProgramas+custoMedioTapMilesGo
+
+  document.getElementById('resultadoAcumuloTotal').innerHTML = "R$ " + calc1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('resultadoCustoMedio').innerHTML = "R$ " + calc2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+   
    
 
 

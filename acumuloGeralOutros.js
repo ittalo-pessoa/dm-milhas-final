@@ -368,15 +368,15 @@ let custoMedioDoMilheiroTodosOsProgramas; // Declara uma única vez no escopo gl
 
 if (acumuloAnualTodasAplicacoes === 0) {
     custoMedioDoMilheiroTodosOsProgramas = 0;
-    document.getElementById("custoMedioDoMilheiroDoLivelo").innerHTML = "R$ " + custoMedioDoMilheiroTodosOsProgramas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    document.getElementById("custoMedioDoMilheiroDoLiveloOu").innerHTML = "R$ " + custoMedioDoMilheiroTodosOsProgramas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 } else {
     custoMedioDoMilheiroTodosOsProgramas = (custoAnualTodasAplicacoes / acumuloAnualTodasAplicacoes) * 1000;
-    document.getElementById("custoMedioDoMilheiroDoLivelo").innerHTML = "R$ " + custoMedioDoMilheiroTodosOsProgramas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    document.getElementById("custoMedioDoMilheiroDoLiveloOu").innerHTML = "R$ " + custoMedioDoMilheiroTodosOsProgramas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 // Restante do código usando custoMedioDoMilheiroTodosOsProgramas
 const saldoAposTransf = acumuloAnualTodasAplicacoes - quantDePontosTransfSmiles - quantDePontosTransfAzul - quantDePontosTransfLatamPass - quantDePontosTransfIberia - quantDePontosTransfTapMilesGo;
-document.getElementById('saldoAposTransf').innerHTML = "R$ " + saldoAposTransf.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('saldoAposTransfOu').innerHTML = "R$ " + saldoAposTransf.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 const totalDeAcumuloAnual1 = quantDePontosTransfSmiles + (quantDePontosTransfSmiles * (percentDaPromocao1 / 100));
 document.getElementById('resultadoTotalDeAcumuloAnual1').innerHTML = "R$ " + totalDeAcumuloAnual1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -431,8 +431,8 @@ if (quantDePontosTransfTapMilesGo === 0) {
     let calc = ((custoMedioDoMilheiroTodosOsProgramas * quantDePontosTransfTapMilesGo) / 1000) / totalDeAcumuloAnual5 * 1000;
     document.getElementById('custoMedioDoMilheiroTapMilesGo').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
-localStorage.setItem('custoMedioDoMilheiroDoLivelo',custoMedioDoMilheiroTodosOsProgramas);
-localStorage.setItem('saldoAposTransf', saldoAposTransf);
+localStorage.setItem('custoMedioDoMilheiroDoLiveloOu',custoMedioDoMilheiroTodosOsProgramas);
+localStorage.setItem('saldoAposTransfOu', saldoAposTransf);
 
 
  })})})})
