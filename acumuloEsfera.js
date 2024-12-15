@@ -248,48 +248,9 @@ const percentDaPromocao4 = isNaN(parseFloat(document.getElementById('percentDaPr
 const conversor = isNaN(parseFloat(document.getElementById('conversor').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('conversor').value.replace(/\./g, ""));
 // IDs dos campos de acúmulo
 
-const usoMilhas = isNaN(parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""));
 
-            
- let clubesDeMilhas1= totalCusto1+0
- let clubesDeMilhas2= acumuloJan1+0
- let clubesDeMilhas3= acumuloFev1+0
- let clubesDeMilhas4= acumuloMar1+0
- let clubesDeMilhas5= acumuloAbr1+0
- let clubesDeMilhas6= acumuloMai1+0
- let clubesDeMilhas7= acumuloJun1+0
- let clubesDeMilhas8= acumuloJul1+0
- let clubesDeMilhas9= acumuloAgo1+0
- let clubesDeMilhas10= acumuloSet1+0
- let clubesDeMilhas11= acumuloOut1+0
- let clubesDeMilhas12= acumuloNov1+0
- let clubesDeMilhas13= acumuloDez1+0
 
- let comprasBonificadas1= totalCusto2+0
- let comprasBonificadas2= acumuloJan2+0
- let comprasBonificadas3= acumuloFev2+0
- let comprasBonificadas4= acumuloMar2+0
- let comprasBonificadas5= acumuloAbr2+0
- let comprasBonificadas6= acumuloMai2+0
- let comprasBonificadas7= acumuloJun2+0
- let comprasBonificadas8= acumuloJul2+0
- let comprasBonificadas9= acumuloAgo2+0
- let comprasBonificadas10= acumuloSet2+0
- let comprasBonificadas11= acumuloOut2+0
- let comprasBonificadas12= acumuloNov2+0
- let comprasBonificadas13= acumuloDez2+0
- 
- let comprasDeMilhas1= totalCusto3+0
- let comprasDeMilhas2= acumuloJan3+0
- let comprasDeMilhas3= acumuloFev3+0
- let comprasDeMilhas4= acumuloMar3+0
- let comprasDeMilhas5= acumuloAbr3+0
- let comprasDeMilhas6= acumuloMai3+0
- let comprasDeMilhas7= acumuloJun3+0
- let comprasDeMilhas8= acumuloJul3+0
- let comprasDeMilhas9= acumuloAgo3+0
- let comprasDeMilhas10= acumuloSet3+0
- let comprasDeMilhas11= acumuloOut3+0
+
  let comprasDeMilhas12= acumuloNov3+0
  let comprasDeMilhas13= acumuloDez3+0
  
@@ -363,7 +324,7 @@ if (acumuloAnualTodasAplicacoes === 0) {
  else {
     const calc=custoAnualTodasAplicacoes/acumuloAnualTodasAplicacoes*1000
     document.getElementById('custoMedioDoMilheiroTodas').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    localStorage.setItem('custoMedioDoMilheiroTodas', calc);
+    localStorage.setItem('custoMedioDoMilheiroTodasEs', calc);
 
 const saldoAposUsoDeMilhas=acumuloAnualTodasAplicacoes-quantDePontosTransf-quantDePontosTransf2-quantDePontosTransf3-quantDePontosTransf4
 document.getElementById('saldoAposUsoDeMilhas').innerHTML = "R$ " + saldoAposUsoDeMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -409,7 +370,7 @@ if (quantDePontosTransf4 === 0 || quantDePontosTransf4 === "") {
     document.getElementById('custoMedioDoMilheiroIberia').innerHTML = "R$ " + calc5.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
-localStorage.setItem('saldoAposUsoDeMilhas', saldoAposUsoDeMilhas);
+localStorage.setItem('saldoAposUsoDeMilhasEs', saldoAposUsoDeMilhas);
 
 };
 
