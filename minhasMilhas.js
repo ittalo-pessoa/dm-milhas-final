@@ -17,6 +17,7 @@ document.getElementById('calculate').addEventListener('click',function(){
   const acumuloSmiles = parseFloat(localStorage.getItem('saldoAposUsoDeMilhasSmiles')) || 0;
   const custoMedioSmiles = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodasSmiles')) || 0;
   const acumuloAzul = parseFloat(localStorage.getItem('saldoAposUsoDeMilhasAzul')) || 0;
+  prompt(acumuloAzul)
   const custoMedioAzul = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodasAzul')) || 0;
   const acumuloLatam = parseFloat(localStorage.getItem('saldoAposUsoDeMilhasLatam')) || 0;
   const custoMedioLatam = parseFloat(localStorage.getItem('custoMedioDoMilheiroTodasLatam')) || 0;
