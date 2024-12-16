@@ -1,1 +1,0 @@
-let projetoGit = "Meu projeto Git";
