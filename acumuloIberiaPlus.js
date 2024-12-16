@@ -213,7 +213,9 @@ const acumuloNov113 = isNaN(parseFloat(document.getElementById('acumuloNov113').
 const acumuloDez122 = isNaN(parseFloat(document.getElementById('acumuloDez122').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloDez122').value.replace(/\./g, ""));
 const acumuloDez123 = isNaN(parseFloat(document.getElementById('acumuloDez123').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('acumuloDez123').value.replace(/\./g, ""));
 
+const conversacao = isNaN(parseFloat(document.getElementById('conversacao').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('conversacao').value.replace(/\./g, ""));
 const usoMilhas = isNaN(parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('usoDasMilhas').value.replace(/\./g, ""));
+
 if (
 
     custoOpera11 < 0 || acumuloOpera12 < 0 || acumuloOpera13 < 0 ||
@@ -328,18 +330,9 @@ document.getElementById('resultadoDez3').innerHTML = "R$ " + acumuloDez3.toLocal
 document.getElementById('resultadoDez2').innerHTML = "R$ " + comprasDeMilhas12.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoDez3').innerHTML = "R$ " + comprasDeMilhas13.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const custoAnualTodasAplicacoes= custoOpera11+acumuloOpera12+acumuloOpera13+clubesDeMilhas1+comprasBonificadas1+comprasDeMilhas1
-const acumuloAnualTodasAplicacoes=  custoJan21 + acumuloJan22 + acumuloJan23 + acumuloJan1 + acumuloJan2 + acumuloJan3 +
-custoFev21 + acumuloFev22 + acumuloFev23 + acumuloFev1 + acumuloFev2 + acumuloFev3 +
-custoMar31 + acumuloMar32 + acumuloMar33 + acumuloMar1 + acumuloMar2 + acumuloMar3 +
-custoAbr41 + acumuloAbr42 + acumuloAbr43 + acumuloAbr1 + acumuloAbr2 + acumuloAbr3 +
-custoMai51 + acumuloMai52 + acumuloMai53 + acumuloMai1 + acumuloMai2 + acumuloMai3 +
-custoJun61 + acumuloJun62 + acumuloJun63 + acumuloJun1 + acumuloJun2 + acumuloJun3 +
-custoJul71 + acumuloJul72 + acumuloJul73 + acumuloJul1 + acumuloJul2 + acumuloJul3 +
-custoAgo81 + acumuloAgo82 + acumuloAgo83 + acumuloAgo1 + acumuloAgo2 + acumuloAgo3 +
-custoSet91 + acumuloSet92 + acumuloSet93 + acumuloSet1 + acumuloSet2 + acumuloSet3 +
-custoOut101 + acumuloOut102 + acumuloOut103 + acumuloOut1 + acumuloOut2 + acumuloOut3 +
-custoNov111 + acumuloNov112 + acumuloNov113 + acumuloNov1 + acumuloNov2 + acumuloNov3 +
-custoDez121 + acumuloDez122 + acumuloDez123 + acumuloDez1 + acumuloDez2 + acumuloDez3
+const acumuloAnualTodasAplicacoes=  ((custoJan21 + custoFev21 + custoMar31 + custoAbr41 + custoMai51 + custoJun61 + custoJul71 + custoAgo81 + custoSet91 + custoOut101 + custoNov111 + custoDez121) + 
+(acumuloJan23 + acumuloFev23 + acumuloMar33 + acumuloAbr43 + acumuloMai53 + acumuloJun63 + acumuloJul73 + acumuloAgo83 + acumuloSet93 +acumuloOut103 + acumuloNov113 +acumuloDez123 + clubesDeMilhas1 + comprasBonificadas1 + comprasDeMilhas1 + acumuloJan1 + acumuloJan2 + acumuloJan3 + acumuloFev1 + acumuloFev2 + acumuloFev3 + acumuloMar1 + acumuloMar2 + acumuloMar3 + acumuloAbr1 + acumuloAbr2 + acumuloAbr3 + acumuloMai1 + acumuloMai2 + acumuloMai3 + acumuloJun1 + acumuloJun2 + acumuloJun3 + acumuloJul1 + acumuloJul2 + acumuloJul3 +  acumuloAgo1 + acumuloAgo2 + acumuloAgo3 + acumuloSet1 + acumuloSet2 + acumuloSet3 + acumuloOut1 + acumuloOut2 + acumuloOut3 + acumuloNov1 + acumuloNov2 + acumuloNov3 + acumuloDez1 + acumuloDez2 + acumuloDez3)) +
+ ((acumuloJan22 + acumuloFev22 + acumuloMar32 + acumuloAbr42 + acumuloMai52 + acumuloJun62 + acumuloJul72 + acumuloAgo82 + acumuloSet92 +acumuloOut102 + acumuloNov112 +acumuloDez122)/ conversacao);
 
 document.getElementById('custoAnualTodasAplicacoes').innerHTML = "R$ " + custoAnualTodasAplicacoes.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('acumuloAnualTodasAplicacoes').innerHTML = "R$ " + acumuloAnualTodasAplicacoes.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
