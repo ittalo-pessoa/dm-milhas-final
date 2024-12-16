@@ -438,6 +438,8 @@ document.getElementById('totAcumuloAnual03').innerHTML = totAcumuloAnual03.toLoc
 document.getElementById('custoMedioMilheiroSmiles').innerHTML = "R$ " + custoMedioMilheiroSmiles.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 localStorage.setItem('saldoAposUsoDeMilhasAzul', saldoAposUsoDeMilhas);
+prompt(saldoAposUsoDeMilhas)
+
 
 
 });
