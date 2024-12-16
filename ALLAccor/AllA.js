@@ -33,7 +33,7 @@ document.getElementById('calculate').addEventListener('click',function(){
     document.getElementById("res1").innerHTML =  pontosAll.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     document.getElementById("res2").innerHTML =  valTotAllEuro.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     document.getElementById("res3").innerHTML =  valEuroGasto.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("res4").innerHTML =  percentualDesconto.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";
+    document.getElementById("res4").innerHTML =  percentualDesconto.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";})
 
     document.getElementById('calculate2').addEventListener('click',function(){
 
@@ -62,7 +62,7 @@ document.getElementById('calculate').addEventListener('click',function(){
         document.getElementById("res5").innerHTML =  pontosAll2.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
         document.getElementById("res6").innerHTML =  valTotAllEuro2.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
         document.getElementById("res7").innerHTML =  valEuroGasto2.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-        document.getElementById("res8").innerHTML =  percentualDesconto2.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";
+        document.getElementById("res8").innerHTML =  percentualDesconto2.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";})
 
         document.getElementById('calculate3').addEventListener('click',function(){
 
@@ -91,7 +91,7 @@ document.getElementById('calculate').addEventListener('click',function(){
             document.getElementById("res9").innerHTML =  pontosAll3.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
             document.getElementById("res10").innerHTML =  valTotAllEuro3.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
             document.getElementById("res11").innerHTML =  valEuroGasto3.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-            document.getElementById("res12").innerHTML =  percentualDesconto3.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";
+            document.getElementById("res12").innerHTML =  percentualDesconto3.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";})
 
             document.getElementById('calculate4').addEventListener('click',function(){
 
@@ -122,6 +122,5 @@ document.getElementById('calculate').addEventListener('click',function(){
                 document.getElementById("res15").innerHTML =  valEuroGasto4.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
                 document.getElementById("res16").innerHTML =  percentualDesconto4.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "%";
             })
-        })
-    })
-})
+        
+    
