@@ -18,7 +18,6 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="acumuloSmiles.js"></script>
     <link rel="stylesheet" href="acumuloIberiaPlus.css">
 </head>
 
@@ -74,8 +73,8 @@
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS</th>
-                                        <th>CUSTO(R$ SE HOUVER)</th>
-                                        <th>ACÚMULO EM MILHAS</th>
+                                        <th>CUSTO(R$)</th>
+                                        <th>ACÚMULO</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -167,8 +166,8 @@
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS</th>
-                                        <th>CUSTO(R$ SE HOUVER)</th>
-                                        <th>ACÚMULO EM MILHAS</th>
+                                        <th>CUSTO(R$)</th>
+                                        <th>ACÚMULO</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -258,7 +257,6 @@
                         <div class="mt-4 text-center">
                             <h5>CUSTO TOTAL(R$): <span id="totalCusto1">0</span></h5>
                             <h5>ACÚMULO TOTAL: <span id="totalAcumulo1">0</span></h5>
-                            <h5>ACÚMULO ANUAL: <span id="acumuloAnual1">0</span></h5>
                             
                         </div>
                         <!-- Botão para calcular -->
@@ -281,7 +279,7 @@
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS</th>
-                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>CUSTO(R$)</th>
                                         <th>ACÚMULO</th>
                                     </tr>
                                 </thead>
@@ -374,7 +372,7 @@
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS</th>
-                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>CUSTO(R$)</th>
                                         <th>ACÚMULO</th>
                                     </tr>
                                 </thead>
@@ -482,7 +480,7 @@
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS</th>
-                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>CUSTO(R$)</th>
                                         <th>ACÚMULO</th>
                                     </tr>
                                 </thead>
@@ -576,7 +574,7 @@
                                 <thead>
                                     <tr class="cabeca">
                                         <th>MÊS</th>
-                                        <th>CUSTO(SE HOUVER)</th>
+                                        <th>CUSTO(R$)</th>
                                         <th>ACÚMULO</th>
                                     </tr>
                                 </thead>
@@ -1094,6 +1092,14 @@
                                         <td>
                                             <span class="form-control negrito" id="resultadoDez3">...</span>
                                             <span class="error-message" id="errorDezembro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="birda">
+                                        <td class="corToda">Conversor de transferência</td>
+                                        <td>
+                                            <input type="number" class="form-control custo" id="conversacao"
+                                                placeholder="Custo">
+                                            <span class="error-message" id="errorUsoMilhas4"></span>
                                         </td>
                                     </tr>
                                     <tr class="birda">
