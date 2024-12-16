@@ -421,6 +421,7 @@ if (acumuloAnualTodasAplicacoes === 0) {
 }
 
 const saldoAposUsoDeMilhas=acumuloAnualTodasAplicacoes-usoMilhas
+localStorage.setItem('saldoAposUsoDeMilhasAzul', saldoAposUsoDeMilhas);
 
 document.getElementById('saldoAposUsoDeMilhas').innerHTML = "R$ " + saldoAposUsoDeMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -437,8 +438,8 @@ const custoMedioMilheiroSmiles = ((custoMedioDoMilheiroTodas * pantasTrans1) / 1
 document.getElementById('totAcumuloAnual03').innerHTML = totAcumuloAnual03.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('custoMedioMilheiroSmiles').innerHTML = "R$ " + custoMedioMilheiroSmiles.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-localStorage.setItem('saldoAposUsoDeMilhasAzul', saldoAposUsoDeMilhas);
-prompt(saldoAposUsoDeMilhas)
+
+
 
 
 
