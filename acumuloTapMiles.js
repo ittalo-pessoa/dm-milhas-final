@@ -57,8 +57,7 @@ const acumuloDez1 = isNaN(parseFloat(document.getElementById('acumuloDez1').valu
 
     document.getElementById('totalCusto1').innerHTML = "R$ " + totalCusto1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   document.getElementById('totalAcumulo1').innerHTML = "R$ " + totalAcumulo1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-
-    document.getElementById('acumuloAnual1').innerHTML = "R$ " + acumuloAnual.toLocaleString("pt-BR", {maximumFractionDigits:2, minimumFractionDigits: 2 })
+  
  document.getElementById('calculate2').addEventListener('click',function(){
 
     const custoJan2 = isNaN(parseFloat(document.getElementById('custoJan2').value.replace(/\./g, ""))) ? 0 : parseFloat(document.getElementById('custoJan2').value.replace(/\./g, ""));
@@ -352,10 +351,12 @@ if (acumuloAnualTodasAplicacoes === 0) {
  else {
     const calc=custoAnualTodasAplicacoes/acumuloAnualTodasAplicacoes*1000
     document.getElementById('custoMedioDoMilheiroTodas').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    localStorage.setItem('custoMedioDoMilheiroTapMiles', calc);
 }
 
 const saldoAposUsoDeMilhas=acumuloAnualTodasAplicacoes-usoMilhas
 document.getElementById('saldoAposUsoDeMilhas').innerHTML = "R$ " + saldoAposUsoDeMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+localStorage.setItem('saldoAposTransfTapMiles', saldoAposUsoDeMilhas);
 
 });
 

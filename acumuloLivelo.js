@@ -400,6 +400,10 @@ document.getElementById('resultadoTotalDeAcumuloAnual4').innerHTML = "R$ " + tot
     const calc = ((custoMedioDoMilheiroDoLivelo2 * quantDePontosTransfIberia) / 1000) / totalDeAcumuloAnual4 * 1000;
     document.getElementById('custoMedioDoMilheiroIberia').innerHTML = "R$ " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
+localStorage.setItem('custoMedioDoMilheiroDoLivelo', custoMedioDoMilheiroDoLivelo2);
+localStorage.setItem('saldoAposTransf', saldoAposTransf);
+    
+
 
 
 

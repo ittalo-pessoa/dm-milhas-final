@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumerangue</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="bumerangue.css">
+    <link rel="icon" type="image/png" href="img/vmm-removebg-preview.png">
+</head>
+<body>
+
+<main>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 85px;">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <p class="invisivel">
+                    <strong>ANALISANDO AS ASSINATURAS<br>DOS CLUBES DE MILHAS</strong>
+
+                </p>
+                
+            </a>
+            <a href="https://ittalo-pessoa.github.io/dm-milhas-final/">
+            
+            <img src="img/vmm-removebg-preview.png" class="logo-vmm position-absolute" alt="Logo VMM Turbo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <p style="vertical-align: inherit;">
+                                <p style="vertical-align: inherit;"></p>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="vertical-align: inherit;">
+                            <p style="vertical-align: inherit;">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">
+                            <p style="vertical-align: inherit;">
+                                <p style="vertical-align: inherit;"></p>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-4 p-4 rounded">
+        <h2 class="text-center"></h2>
+        <div class="card">
+            <form id="formTabela">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="cabeca">
+                                    <th colspan="3" class="nova titulo-completo">1° Etapa-Transferindo para o Programa Aéreo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <p class="estiloso">PROMOÇÃO BUMERANGUE<img src="img/image111.png" class="livelo2 position-absolute"></p>
+                                <tr class="birda">
+                                    <br>
+                                    <p class="estiloso2">ESTRATÉGIA 1</p>
+                                    <td class="corToda">Percentual da Promoção no Programa Aéreo</td>
+                                    <td colspan="2">
+                                        <input type="number" class="form-control custo largura-total" id="percentProgramaAereo1"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Percentual de Promoção no Livelo</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="percentPromocaoLivelo1"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Pontos a Transferir</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="pontosTransf1"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Saída do Programa Aéreo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="saidaProgramaAereo1">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Retorno ao Livelo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="retornoLivelo1">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Bônus Final no Programa Aéreo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="bonusFinalProgramaAereo1">...</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                        
+
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="cabeca">
+                                    <th colspan="3" class="nova titulo-completo">2ª Etapa - Transferindo o retorno do Livelo,Smiles, TudoAzul ou TapMiles&Go </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr class="birda">
+                                    <td class="corToda">Transferencia do Retorno do Livelo(%)</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="transfRetornoLivelo"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Saldo com Bônus Transferido do Livelo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="saldoBonusTransfLivelo1">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Saldo Final de Milhas</td>
+                                    <td>
+                                        <span class="form-control negrito" id="saldoFinalMilhas1">...</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="cabeca">
+                                    <th colspan="3" class="nova titulo-completo">Quando Houver Compra de Pontos/Quantidade de Pontos Comprada</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr class="birda">
+                                    <td class="corToda">Custo de Compra do Milheiro do Livelo(R$)</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="custoDeCompraMilheiroLivelo1"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Custo Total dos Pontos Comprados no Livelo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="custoTotalDosPontosCompradosNoLivelo1">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Custo Médio do Milheiro</td>
+                                    <td>
+                                        <span class="form-control negrito" id="custoMedioDoMilheiro1">...</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="cabeca">
+                                    <th colspan="3" class="nova titulo-completo">1° Etapa-Transferindo para o Programa Aéreo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                    <br>
+                                    <div class="text-center">
+                                        <br>
+                                        <button type="button" class="btn btn-warning" id="calculate"
+                                                                                               style="font-size: 75%;margin-top: 15px;background: #cfa122;border:none;"><strong>CALCULAR TOTAIS</strong></button>
+                                    </div>
+                                    <p class="estiloso2"><br><br>ESTRATÉGIA 2</p>
+                         
+                                <tr class="birda">
+                                    <td class="corToda">Percentual de Promoção no Programa Aéreo</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="percentProgramaAereo2"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Percentual Da Promoção no Livelo</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="percentPromocaoLivelo2"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Pontos a Transferir</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="pontosTransf2"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Saldo do Programa Aéreo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="saidaProgramaAereo2">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Retorno ao Livelo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="retornoLivelo2">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Bônus Final no Programa Aéreo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="bonusFinalProgramaAereo2">...</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="cabeca">
+                                    <th colspan="3" class="nova titulo-completo">2ª Etapa - Transferindo o retorno do Livelo - Nova Bumerangue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr class="birda">
+                                    <td class="corToda">Percentual da Promoção no Programa Aéreo</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id=" percentProgramaAereo22"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Percentual da Promoção no Livelo</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="percentPromocaoLivelo22"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Pontos a Transferir</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="pontosTransf22"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Saída do Programa Aéreo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="saidaProgramaAereo22">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Retorno ao Livelo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="retornoLivelo22">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Bônus Final no Programa Aéreo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="bonusFinalProgramaAereo22">...</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="cabeca">
+                                    <th colspan="3" class="nova titulo-completo">Quando Houver Compra de Pontos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr class="birda">
+                                    <td class="corToda">Custo de Compra de Milheiro do Livelo</td>
+                                    <td>
+                                        <input type="number" class="form-control custo largura-total" id="custoDeCompraMilheiroLivelo2"
+                                            placeholder="Digite">
+                                        <span class="error-message" id="errorPrecoPagante"></span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Custo Total dos Pontos Comprados no Livelo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="custoTotalDosPontosCompradosNoLivelo2">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Custo Médio do Milheiro Aéreo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="custoMedioDoMilheiroAereo2">...</span>
+                                    </td>
+                                </tr>
+                                <tr class="birda">
+                                    <td class="corToda">Custo Médio do Milheiro Livelo</td>
+                                    <td>
+                                        <span class="form-control negrito" id="custoMedioDoMilheiroLivelo2">...</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="text-center">
+                            <br><br>
+                            <button type="button" class="btn btn-warning" id="calculate2"
+                                                                                   style="font-size: 75%;margin-top: 15px;background: #cfa122;border:none;"><strong>CALCULAR TOTAIS</strong></button>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Botão para calcular -->
+                    <div class="text-center">
+                        <br>
+                        <p class="estiloso2"><br><br>ESTRATÉGIA 3</p>
+                                                                               
+                    </div>
+                    
+                    
+                  
+                </div>
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="cabeca">
+                                <th colspan="3" class="nova titulo-completo">1° Etapa-Transferindo para o Programa Aéreo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                            <tr class="birda">
+                               
+                                <td class="corToda">Percentual da Promoção no Programa Aéreo</td>
+                                <td colspan="2">
+                                    <input type="number" class="form-control custo largura-total" id="percentProgramaAereo3"
+                                        placeholder="Digite">
+                                    <span class="error-message" id="errorPrecoPagante"></span>
+                                </td>
+                            </tr>
+                            <tr class="birda">
+                                <td class="corToda">Percentual de Promoção no Livelo</td>
+                                <td>
+                                    <input type="number" class="form-control custo largura-total" id="percentPromocaoLivelo3"
+                                        placeholder="Digite">
+                                    <span class="error-message" id="errorPrecoPagante"></span>
+                                </td>
+                            </tr>
+                            <tr class="birda">
+                                <td class="corToda">Pontos a Transferir</td>
+                                <td>
+                                    <input type="number" class="form-control custo largura-total" id="pontosTransf3"
+                                        placeholder="Digite">
+                                    <span class="error-message" id="errorPrecoPagante"></span>
+                                </td>
+                            </tr>
+                            <tr class="birda">
+                                <td class="corToda">Saldo do Programa Aéreo</td>
+                                <td>
+                                    <span class="form-control negrito" id="saidaProgramaAereo3">...</span>
+                                </td>
+                            </tr>
+                            <tr class="birda">
+                                <td class="corToda">Quantidade de Bônus</td>
+                                <td>
+                                    <span class="form-control negrito" id="retornoLivelo3">...</span>
+                                </td>
+                            </tr>
+                            <tr class="birda">
+                                <td class="corToda">Bônus Final no Programa Aéreo</td>
+                                <td>
+                                    <span class="form-control negrito" id="bonusFinalProgramaAereo3">...</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+
+                </div>
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="cabeca">
+                                <th colspan="3" class="nova titulo-completo">2ª Etapa - Mantendo o retorno do Livelo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                           
+                            <tr class="birda">
+                                <td class="corToda">Saldo no Livelo</td>
+                                <td>
+                                    <span class="form-control negrito" id="saldo">...</span>
+                                </td>
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="cabeca">
+                                <th colspan="3" class="nova titulo-completo">Quando Houver Compra de Pontos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr class="birda">
+                                <td class="corToda">Custo de Compra do Milheiro do Livelo(R$)</td>
+                                <td>
+                                    <input type="number" class="form-control custo largura-total" id="custoDeCompraMilheiroLivelo3"
+                                        placeholder="Digite">
+                                    <span class="error-message" id="errorPrecoPagante"></span>
+                                </td>
+                            </tr>
+                            <tr class="birda">
+                                <td class="corToda">Custo Total dos Pontos Comprados no Livelo</td>
+                                <td>
+                                    <span class="form-control negrito" id="custoTotalDosPontosCompradosNoLivelo3">...</span>
+                                </td>
+                            </tr>
+                            <tr class="birda">
+                                <td class="corToda">Custo Médio do Milheiro Aéreo</td>
+                                <td>
+                                    <span class="form-control negrito" id="custoMedioDoMilheiroAereo3">...</span>
+                                </td>
+                            </tr>
+                            <tr class="birda">
+                                <td class="corToda">Custo Médio do Milheiro Livelo</td>
+                                <td>
+                                    <span class="form-control negrito" id="custoMedioDoMilheiroLivelo3">...</span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                        
+                    </table>
+                    <div class="text-center">
+                        <br><br>
+                        <button type="button" class="btn btn-warning" id="calculate3"
+                                                                               style="font-size: 75%;margin-top: 15px;background: #cfa122;border:none;"><strong>CALCULAR TOTAIS</strong></button>
+                    </div>
+                    </table>
+
+                </div>
+        
+             
+                
+                
+              
+            </div>
+                
+            </form>
+            
+        </div>
+        
+    </div>
+</main>
+
+    <script src="bumerangue.js"></script>
+</body>
+</html>
