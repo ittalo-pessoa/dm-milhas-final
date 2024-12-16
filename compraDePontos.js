@@ -36,10 +36,15 @@ document.getElementById('calculate').addEventListener('click', function () {
     let saldoTotMil2 = quantTotPont + (quantTotPont * (percenBonus2 / 100));
     let custoFinalMil2 = (valTotPontCom / saldoTotMil2) * 1000;
 
+    function arredondar(valor) {
+        if (!valor) return 0;
+        return valor % 1 >= 0.5 ? Math.ceil(valor) : Math.floor(valor);
+    }
+
     document.getElementById("valTotCom").innerHTML = "R$ " + valTotCom.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("saldoTotMil").innerHTML = saldoTotMil.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("saldoTotMil").innerHTML = arredondar(saldoTotMil).toLocaleString("pt-BR").replace(",", ".");
     document.getElementById("custoFinalMil").innerHTML = "R$ " + custoFinalMil.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("quantTotPont").innerHTML = quantTotPont.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("saldoTotMil2").innerHTML = saldoTotMil2.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("quantTotPont").innerHTML = arredondar(quantTotPont).toLocaleString("pt-BR").replace(",", ".");
+    document.getElementById("saldoTotMil2").innerHTML = arredondar(saldoTotMil2).toLocaleString("pt-BR").replace(",", ".");
     document.getElementById("custoFinalMil2").innerHTML = "R$ " + custoFinalMil2.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
 });
