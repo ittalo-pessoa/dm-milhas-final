@@ -49,32 +49,32 @@ localStorage.setItem('outrosProgramas', outrosProgramas);
  
 
  
-  document.getElementById('acumuloLivelo').innerHTML = "R$ " + acumuloLivelo.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  document.getElementById('acumuloLivelo').innerHTML = acumuloLivelo.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('custoMedioLivelo').innerHTML = "R$ " + custoMedioLivelo.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 
-document.getElementById('acumuloEsfera').innerHTML = "R$ " + acumuloEsfera.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('acumuloEsfera').innerHTML =  acumuloEsfera.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('custoMedioEsfera').innerHTML = "R$ " + custoMedioEsfera.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-document.getElementById('acumuloOutros').innerHTML = "R$ " + acumuloOu.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('acumuloOutros').innerHTML =  acumuloOu.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('custoMedioOutros').innerHTML = "R$ " + custoMedioOu.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-document.getElementById('acumuloSmiles').innerHTML = "R$ " + acumuloSmiles.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('acumuloSmiles').innerHTML =  acumuloSmiles.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('custoMedioSmiles').innerHTML = "R$ " + custoMedioSmiles.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
  
-document.getElementById('acumuloAzul').innerHTML = "R$ " + acumuloAzul.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('acumuloAzul').innerHTML =  acumuloAzul.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('custoMedioAzul').innerHTML = "R$ " + custoMedioAzul.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-document.getElementById('acumuloLatamPass').innerHTML = "R$ " + acumuloLatam.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('acumuloLatamPass').innerHTML =  acumuloLatam.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('custoMedioLatamPass').innerHTML = "R$ " + custoMedioLatam.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-document.getElementById('acumuloTapMilesGo').innerHTML = "R$ " + acumuloTapMilesGo.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('acumuloTapMilesGo').innerHTML =  acumuloTapMilesGo.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('custoMedioTapMilesGo').innerHTML = "R$ " + custoMedioTapMilesGo.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 
 document.getElementById('custoMedioLatamPass').innerHTML = "R$ " + custoMedioLatam.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-document.getElementById('acumuloIberiaPlus').innerHTML = "R$ " + acumuloIberia.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('acumuloIberiaPlus').innerHTML =  acumuloIberia.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('custoMedioIberiaPlus').innerHTML = "R$ " + custoMedioIberia.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 const calc1=acumuloLivelo+acumuloEsfera+acumuloOu+acumuloSmiles+acumuloAzul+acumuloLatam+acumuloIberia+acumuloTapMilesGo
@@ -82,7 +82,7 @@ const calc1=acumuloLivelo+acumuloEsfera+acumuloOu+acumuloSmiles+acumuloAzul+acum
 const calc2=custoMedioLivelo+custoMedioEsfera+custoMedioOu+custoMedioSmiles+custoMedioAzul+custoMedioLatam+
 custoMedioProgramas+custoMedioTapMilesGo
 
-document.getElementById('resultadoAcumuloTotal').innerHTML = "R$ " + calc1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+document.getElementById('resultadoAcumuloTotal').innerHTML =  calc1.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 document.getElementById('resultadoCustoMedio').innerHTML = "R$ " + calc2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
  
  

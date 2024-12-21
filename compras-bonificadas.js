@@ -48,6 +48,6 @@ function calcularTotais() {
     document.getElementById('resultadoTotMilBuy').innerText = resultadoTotMilBuy.toFixed(2);
     document.getElementById('resultadoTotalMilCard').innerText = resultadoTotalMilCard.toFixed(2);
     document.getElementById('resultadoTotGerMil').innerText = resultadoTotGerMil.toFixed(2);
-    document.getElementById('resultadoValorMilAcu').innerText = resultadoValorMilAcu.toFixed(2);
-    document.getElementById('resultadoPercentDesconto').innerText = resultadoPercentDesconto.toFixed(2);
+    document.getElementById('resultadoValorMilAcu').innerText ="R$ " + resultadoValorMilAcu.toFixed(2);
+    document.getElementById('resultadoPercentDesconto').innerText = resultadoPercentDesconto.toFixed(2)+"%";
 }   
