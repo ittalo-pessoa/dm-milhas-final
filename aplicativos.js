@@ -47,10 +47,10 @@ document.getElementById("calculate").addEventListener("click", function () {
 
     document.getElementById("resultadovalorDaTaxa").innerHTML = "R$ " + valorDaTaxa.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
    
-    document.getElementById("resultadoValorEmDolar").innerHTML = "R$ " + valorEmDolar.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("resultadoQuantidadeDePontos").innerHTML = "R$ " + quantDePontos.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("resultadoValorEmDolar").innerHTML = "$ " + valorEmDolar.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("resultadoQuantidadeDePontos").innerHTML = quantDePontos.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
    
-    document.getElementById("resultadoTotalEmMilhasAposTransf").innerHTML = "R$ " + totalMilhasAposTransf.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("resultadoTotalEmMilhasAposTransf").innerHTML =  totalMilhasAposTransf.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     document.getElementById("resultadovalorDasMilhas").innerHTML = "R$ " + valorDasMilhas.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
    
     document.getElementById("resultadoresultadoFinal").innerHTML = "R$ " + resultadoFinal.toLocaleString("pt-BR", { minimumFractionDigits: 2 });

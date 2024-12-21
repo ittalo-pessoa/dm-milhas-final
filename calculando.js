@@ -38,8 +38,8 @@ document.getElementById("calculate").addEventListener("click", function () {
     const totalPontos= conversorDoCartao*valorDolar
     document.getElementById("resultadoGastoAnual").innerHTML = "R$ " + gastoAnual.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
    
-    document.getElementById("resultadoValorEmDolar").innerHTML = "R$ " + valorDolar.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("resultadoTotalDePontos").innerHTML = "R$ " + totalPontos.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("resultadoValorEmDolar").innerHTML = "$ " + valorDolar.toLocaleString("en-US", { minimumFractionDigits: 2 });
+    document.getElementById("resultadoTotalDePontos").innerHTML =  totalPontos.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     
  
     {
@@ -49,7 +49,7 @@ document.getElementById("calculate").addEventListener("click", function () {
     const valorMilhasNoAno=(0.001*valorCustoMedioMilheiro)*totalMilhasNoAno
     const lucro=valorMilhasNoAno-anuidadeDoCartao
 
-    document.getElementById("resultadoMilhasNoAno").innerHTML = "R$ " + totalMilhasNoAno.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("resultadoMilhasNoAno").innerHTML = totalMilhasNoAno.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
    
     document.getElementById("resultadovalorMilhasNoAno").innerHTML = "R$ " + valorMilhasNoAno.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
     document.getElementById("resultadoLucro").innerHTML = "R$ " + lucro.toLocaleString("pt-BR", { minimumFractionDigits: 2 });

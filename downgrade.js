@@ -36,8 +36,8 @@ document.getElementById("calculate").addEventListener("click", function () {
     let custoDoMilheiro = (anuidadeDosPlanos/totalPontosMilhasAno)*1000;
 
     document.getElementById("resultadoAnuidade").innerHTML = "R$ " + anuidadeDosPlanos.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("resultadoPontosMilhasAno").innerHTML = "R$ " + totalPontosMilhasAno.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
-    document.getElementById("resultadoCustoMilheiro").innerHTML = custoDoMilheiro.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("resultadoPontosMilhasAno").innerHTML = totalPontosMilhasAno.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+    document.getElementById("resultadoCustoMilheiro").innerHTML = "R$ " + custoDoMilheiro.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
 
     
 });
