@@ -69,12 +69,13 @@ td{
 .acumulo{
     border: none;
     margin-bottom: 5px;
+    font-size: 12px
 }
 
 .corToda{
     color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
+    /*display: flex; Opcional
+    justify-content: center;*/
     margin-top: 5px;
     font-size: 14px;
 }
@@ -190,19 +191,17 @@ input[type="number"]::placeholder{
     height: 60px; /* Tamanho padrão */
     width: 80px;
     position: absolute;
-    left: 5.3%; /* Centraliza horizontalmente */
+    left: 3.8%; /* Centraliza horizontalmente */
     top: 50%; /* Centraliza verticalmente */
     transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
 }
 .navbar {
-    background-color: rgba(15, 19, 22, 0.619) !important;
+    background-color: rgba(15, 19, 22, 0.9) !important;
     padding: 10px 15px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
-    margin: 0;
     min-height: 80px; /* Altura mínima ajustada para manter o visual proporcional */
 }
 .navbar::after {
@@ -212,7 +211,7 @@ input[type="number"]::placeholder{
     right: -290px; /* Expande 20px para o lado direito */
     width: 290px; /* Largura da "extensão" */
     height: 100%; /* Altura total */
-    background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
+    background-color:  rgba(15, 19, 22, 0.9) !important; /* Cor igual à da navbar */
 }
 .livelo2{
     max-width: 300px; /* Tamanho máximo para telas maiores */

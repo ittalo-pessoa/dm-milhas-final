@@ -115,16 +115,7 @@ input[type="number"]::placeholder{
     margin-top: 0.25rem;
 }
 /* Navbar com largura ajustável */
-.navbar {
-    width: 100%; /* Ocupa toda a largura da tela */
-    max-width: 1200px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza no desktop */
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .titulo-completo {
     width: 100%;
@@ -133,9 +124,6 @@ input[type="number"]::placeholder{
     background-color: #f8f9fa; /* Adicione uma cor de fundo se desejar */
     font-weight: bold; /* Deixa o título em negrito */
     padding: 10px 0; /* Espaçamento interno para maior visibilidade */
-}
-.largura-total {
-    width: 100%; /* Faz com que o input ocupe toda a largura da célula */
 }
 
 .titulo-completo {
@@ -203,20 +191,16 @@ input[type="number"]::placeholder{
 .navbar img {
     height: 60px; /* Tamanho padrão */
     width: 80px;
-    position: absolute;
-    left: 52.5%; /* Centraliza horizontalmente */
-    top: 50%; /* Centraliza verticalmente */
+    justify-content: center;
     transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
 }
 .navbar {
-    background-color: rgba(15, 19, 22, 0.619) !important;
+    background-color: rgba(15, 19, 22, 0.9) !important;
     padding: 10px 15px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
-    margin: 0;
     min-height: 80px; /* Altura mínima ajustada para manter o visual proporcional */
 }
 .navbar::after {
@@ -226,7 +210,7 @@ input[type="number"]::placeholder{
     right: -290px; /* Expande 20px para o lado direito */
     width: 290px; /* Largura da "extensão" */
     height: 100%; /* Altura total */
-    background-color:  rgba(15, 19, 22, 0.619) !important; /* Cor igual à da navbar */
+    background-color:  rgba(15, 19, 22, 0.9) !important; /* Cor igual à da navbar */
 }
 .livelo2{
     max-width: 300px; /* Tamanho máximo para telas maiores */
