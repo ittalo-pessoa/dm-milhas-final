@@ -56,18 +56,20 @@ td{
 .custo{
     border: none;
     margin-bottom: 5px;
-    font-size: 13px;
+    font-size: 12px;
 }
-
-
 
 .corToda{
     color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
     margin-top: 5px;
     font-size: 13px;
+    width: 300px;
 }
+
+.form-control{
+    width: 100%;
+}
+
 
 input{
     text-align: center;
@@ -118,9 +120,6 @@ input[type="number"]::placeholder{
     font-weight: bold; /* Deixa o título em negrito */
     padding: 10px 0; /* Espaçamento interno para maior visibilidade */
 }
-.largura-total {
-    width: 100%; /* Faz com que o input ocupe toda a largura da célula */
-}
 
 .titulo-completo {
     text-align: center;
@@ -147,14 +146,15 @@ input[type="number"]::placeholder{
     white-space: nowrap; /* Impede quebra de linha */
     transform: translateY(50%); /* Mantém o deslocamento vertical */
 }
+
 .logo-vmm {
     max-width: 80px; /* Tamanho padrão */
     height: 50px;
-    position: absolute; /* Permite manipular a posição */
-    top: 50%; /* Centraliza verticalmente */
-    right: 48%; /* Move para a direita de forma relativa */
-    transform: translateY(-50%); /* Ajusta para centralizar verticalmente */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 46%;
 }
+
 .menu{
     background-color:#b6e200;
 }
@@ -167,14 +167,12 @@ input[type="number"]::placeholder{
     transform: translate(-50%, -50%); /* Ajuste para a centralização completa */
 }
 .navbar {
-    background-color: rgba(15, 19, 22, 0.619) !important;
+    background-color: rgba(15, 19, 22, 0.9) !important;
     padding: 10px 15px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
-    margin: 0;
     min-height: 80px; /* Altura mínima ajustada para manter o visual proporcional */
 }
 .menu-icon {
